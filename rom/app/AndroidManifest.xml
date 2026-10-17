@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     The page of the Play Integrity Fix (module: KOWX712/PlayIntegrityFix) in the
+     Experimental features app (hardware/lenovo/custom), opened by an explicit intent.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.wnduddld0513.pif"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PlayIntegrityFix">
+
+        <!-- No Settings tile of its own. Callers must hold WRITE_SECURE_SETTINGS (the
+             system uid, Settings), so apps cannot open it. -->
+        <activity
+            android:name=".PifActivity"
+            android:label="@string/app_name"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS"
+            android:exported="true" />
+
+    </application>
+</manifest>

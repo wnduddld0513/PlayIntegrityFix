@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+-->
+<permissions>
+    <privapp-permissions package="io.github.wnduddld0513.pif">
+        <!-- Switch and pif.prop in Settings.Global -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- Restart Google Play services and the Play Store after a change -->
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+    </privapp-permissions>
+</permissions>

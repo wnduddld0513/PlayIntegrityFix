@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     Options after spoofConfig (webui/src/data/spoofConfig.ts) of
+     KOWX712/PlayIntegrityFix, tag v4.9-inject-s.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_name">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="pif_enabled"
+        android:title="@string/pif_main_switch"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:key="pif_options"
+        android:title="@string/pif_options_category">
+
+        <SwitchPreferenceCompat
+            android:key="spoofBuild"
+            android:title="@string/spoof_build_title"
+            android:summary="@string/spoof_build_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
+            android:key="spoofProps"
+            android:title="@string/spoof_props_title"
+            android:summary="@string/spoof_props_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
+            android:key="spoofProvider"
+            android:title="@string/spoof_provider_title"
+            android:summary="@string/spoof_provider_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
+            android:key="spoofSignature"
+            android:title="@string/spoof_signature_title"
+            android:summary="@string/spoof_signature_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
+            android:key="spoofVendingBuild"
+            android:title="@string/spoof_vending_build_title"
+            android:summary="@string/spoof_vending_build_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
+            android:key="spoofVendingSdk"
+            android:title="@string/spoof_vending_sdk_title"
+            android:summary="@string/spoof_vending_sdk_summary"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pif_profile"
+        android:title="@string/profile_category">
+
+        <Preference
+            android:key="profile_fingerprint"
+            android:title="@string/profile_fingerprint"
+            android:selectable="false" />
+
+        <Preference
+            android:key="profile_model"
+            android:title="@string/profile_model"
+            android:selectable="false" />
+
+        <Preference
+            android:key="profile_security_patch"
+            android:title="@string/profile_security_patch"
+            android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pif_config"
+        android:title="@string/pif_prop_name">
+
+        <Preference
+            android:key="pif_fetch"
+            android:title="@string/pif_fetch_title"
+            android:summary="@string/pif_fetch_summary" />
+
+        <Preference
+            android:key="pif_edit"
+            android:title="@string/pif_edit_title" />
+
+        <Preference
+            android:key="pif_reset"
+            android:title="@string/pif_reset_title" />
+
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="pif_footer"
+        android:title="@string/pif_footer"
+        android:selectable="false" />
+
+</PreferenceScreen>
