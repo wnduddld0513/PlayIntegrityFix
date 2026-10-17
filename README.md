@@ -12,13 +12,15 @@ are in [`rom/`](rom) and [`Android.bp`](Android.bp).
   `frameworks/base`, Apache-2.0) loads `/system_ext/framework/PlayIntegrityFixEntry.jar`
   into `com.google.android.gms.unstable` (DroidGuard) and `com.android.vending`
   and calls `RomEntry.init()`, in place of the Zygisk entry. The ROM's built-in
-  Play Integrity spoofing is used instead whenever the switch is off, the jar is
-  missing or no device profile has been fetched yet.
+  spoofing (PIHooks GMS/Play Store spoofing, attestation blocking) is skipped in this
+  mode, and used instead whenever the switch is off or the jar is missing.
 - **Spoofing.** The same as the module: build fields (`spoofBuild`,
   `spoofVendingBuild`, `spoofVendingSdk`), system properties through the module's
   property virtualizer (`spoofProps`, `libpif_propvirt`), the keystore provider
   (`spoofProvider`, skipped while the ROM has its own keybox) and the signature
   (`spoofSignature`).
+- **Scope.** The ROM does not override the system-wide build fingerprint. `spoofProps`
+  virtualizes native properties only inside the target processes (GMS, Play Store).
 - **Device profile.** Shipped with a built-in Pixel 9 tokay profile
   (`FINGERPRINT`, `MANUFACTURER`, `MODEL`, `SECURITY_PATCH`, `DEVICE_INITIAL_SDK_INT`).
   The user can view, edit, reset to default, or fetch an updated profile from
