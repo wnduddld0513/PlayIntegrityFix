@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ተጠቀም</string>
+    <string name="pif_options_category">የማስመሰል አማራጮች</string>
+    <string name="spoof_build_title">ግንባታን አስመስል</string>
+    <string name="spoof_build_summary">በpif.prop ውስጥ ያሉ መስኮችን አስመስል (በነባሪነት በርቷል)።</string>
+    <string name="spoof_props_title">ባሕርያትን አስመስል</string>
+    <string name="spoof_props_summary">የሥርዓት ባሕርያትን አስመስል፤ TrickyStore ወይም TEESimulator የማይጠቀሙ ከሆነ ያብሩ።</string>
+    <string name="spoof_provider_title">አቅራቢን አስመስል</string>
+    <string name="spoof_provider_summary">ብጁ የቁልፍ ማከማቻ አቅራቢ፤ TrickyStore ወይም TEESimulator የማይጠቀሙ ከሆነ ያብሩ።</string>
+    <string name="spoof_signature_title">ፊርማን አስመስል</string>
+    <string name="spoof_signature_summary">የROM ፊርማን አስመስል፤ ROMዎ በtestkey የተፈረመ ከሆነ ያብሩ።</string>
+    <string name="spoof_vending_build_title">ግንባታን አስመስል (Play መደብር)</string>
+    <string name="spoof_vending_build_summary">ግንባታውን ለPlay መደብር (com.android.vending) አስመስል፣ ለDroidguard ብቻ አይደለም።</string>
+    <string name="spoof_vending_sdk_title">SDKን አስመስል (Play መደብር)</string>
+    <string name="spoof_vending_sdk_summary">መሣሪያዎ Android 13 ወይም ከዚያ በላይ የሚጠቀም ከሆነ የSDK ስሪት 32ን አስመስል። ይህ አማራጭ አለመረጋጋት ሊፈጥር ይችላል (በነባሪነት ጠፍቷል)።</string>
+    <string name="profile_category">ገባሪ መገለጫ</string>
+    <string name="profile_fingerprint">የግንባታ የጣት አሻራ</string>
+    <string name="pif_fetch_title">አምጣ</string>
+    <string name="pif_fetch_summary">የቅርብ ጊዜውን pif.prop ከGitHub አውርድ፣ በቀን አንድ ጊዜ ይዘምናል።</string>
+    <string name="pif_edit_title">አሁን ገባሪ የሆነውን pif.prop ተመልከት</string>
+    <string name="pif_reset_title">ወደ ነባሪ ዳግም አስጀምር</string>
+    <string name="pif_fetch_failed">pif.propን ማምጣት አልተሳካም</string>
+    <string name="pif_invalid">ልክ ያልሆነ pif.prop</string>
+    <string name="pif_footer">ለውጦች Google Play አገልግሎቶች እና Play መደብር በሚቀጥለው ጊዜ ሲጀምሩ ተፈጻሚ ይሆናሉ። ቅንብር ሲቀይሩ ይቆማሉ።</string>
+    <string name="save">\"አስቀምጥ\"</string>
+    <string name="cancel">\"ይቅር\"</string>
+    <string name="profile_model">\"ሞዴል\"</string>
+    <string name="profile_security_patch">\"የAndroid ደህንነት ዝማኔ\"</string>
+</resources>

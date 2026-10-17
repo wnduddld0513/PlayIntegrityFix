@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Выкарыстоўваць Play Integrity Fix</string>
+    <string name="pif_options_category">Параметры падмены</string>
+    <string name="spoof_build_title">Падмяніць зборку</string>
+    <string name="spoof_build_summary">Падмяніць палі ў pif.prop (па змаўчанні ўключана).</string>
+    <string name="spoof_props_title">Падмяніць уласцівасці</string>
+    <string name="spoof_props_summary">Падмяніць сістэмныя ўласцівасці; уключыце, калі не выкарыстоўваеце TrickyStore або TEESimulator.</string>
+    <string name="spoof_provider_title">Падмяніць пастаўшчыка</string>
+    <string name="spoof_provider_summary">Уласны пастаўшчык сховішча ключоў; уключыце, калі не выкарыстоўваеце TrickyStore або TEESimulator.</string>
+    <string name="spoof_signature_title">Падмяніць подпіс</string>
+    <string name="spoof_signature_summary">Падмяніць подпіс ROM; уключыце, калі ваш ROM падпісаны testkey.</string>
+    <string name="spoof_vending_build_title">Падмяніць зборку (Play Store)</string>
+    <string name="spoof_vending_build_summary">Падмяніць зборку для Play Store (com.android.vending), а не толькі для Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Падмяніць SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Падмяніць версію SDK на 32, калі прылада працуе на Android 13 або новей. Параметр можа выклікаць нестабільнасць (па змаўчанні выключана).</string>
+    <string name="profile_category">Актыўны профіль</string>
+    <string name="profile_fingerprint">Адбітак зборкі</string>
+    <string name="pif_fetch_title">Загрузіць</string>
+    <string name="pif_fetch_summary">Спампаваць апошні pif.prop з GitHub, абнаўляецца раз на дзень.</string>
+    <string name="pif_edit_title">Прагляд актыўнага pif.prop</string>
+    <string name="pif_reset_title">Скінуць да стандартных</string>
+    <string name="pif_fetch_failed">Не ўдалося загрузіць pif.prop</string>
+    <string name="pif_invalid">Няправільны pif.prop</string>
+    <string name="pif_footer">Змены ўступаюць у сілу пры наступным запуску сэрвісаў Google Play і Play Store. Пры змене налады яны спыняюцца.</string>
+    <string name="save">\"Захаваць\"</string>
+    <string name="cancel">\"Скасаваць\"</string>
+    <string name="profile_model">\"Мадэль\"</string>
+    <string name="profile_security_patch">\"Абнаўленне сістэмы бяспекі Android\"</string>
+</resources>

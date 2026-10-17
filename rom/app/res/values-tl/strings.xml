@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Gamitin ang Play Integrity Fix</string>
+    <string name="pif_options_category">Mga opsyon sa pag-spoof</string>
+    <string name="spoof_build_title">I-spoof ang build</string>
+    <string name="spoof_build_summary">I-spoof ang mga field sa pif.prop (naka-on bilang default).</string>
+    <string name="spoof_props_title">I-spoof ang mga property</string>
+    <string name="spoof_props_summary">I-spoof ang mga property ng system; i-on kung hindi mo ginagamit ang TrickyStore o TEESimulator.</string>
+    <string name="spoof_provider_title">I-spoof ang provider</string>
+    <string name="spoof_provider_summary">Custom na provider ng keystore; i-on kung hindi mo ginagamit ang TrickyStore o TEESimulator.</string>
+    <string name="spoof_signature_title">I-spoof ang signature</string>
+    <string name="spoof_signature_summary">I-spoof ang signature ng ROM; i-on kung naka-sign ang iyong ROM gamit ang testkey.</string>
+    <string name="spoof_vending_build_title">I-spoof ang build (Play Store)</string>
+    <string name="spoof_vending_build_summary">I-spoof ang build para sa Play Store (com.android.vending), hindi lang sa Droidguard.</string>
+    <string name="spoof_vending_sdk_title">I-spoof ang SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">I-spoof ang SDK version 32 kung Android 13 o mas bago ang device mo. Maaaring magdulot ng kawalang-katatagan ang opsyong ito (naka-off bilang default).</string>
+    <string name="profile_category">Aktibong profile</string>
+    <string name="profile_fingerprint">Fingerprint ng build</string>
+    <string name="pif_fetch_title">Kunin</string>
+    <string name="pif_fetch_summary">I-download ang pinakabagong pif.prop mula sa GitHub, ina-update isang beses kada araw.</string>
+    <string name="pif_edit_title">Tingnan ang kasalukuyang aktibong pif.prop</string>
+    <string name="pif_reset_title">I-reset sa default</string>
+    <string name="pif_fetch_failed">Hindi nakuha ang pif.prop</string>
+    <string name="pif_invalid">Di-wastong pif.prop</string>
+    <string name="pif_footer">Ilalapat ang mga pagbabago sa susunod na pagsisimula ng mga serbisyo ng Google Play at Play Store. Hihinto ang mga ito kapag nagpalit ka ng setting.</string>
+    <string name="save">\"I-save\"</string>
+    <string name="cancel">\"Kanselahin\"</string>
+    <string name="profile_model">\"Modelo\"</string>
+    <string name="profile_security_patch">\"Update sa seguridad ng Android\"</string>
+</resources>

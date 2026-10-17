@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix колдонуу</string>
+    <string name="pif_options_category">Жасалмалоо параметрлери</string>
+    <string name="spoof_build_title">Курууну жасалмалоо</string>
+    <string name="spoof_build_summary">pif.prop ичиндеги талааларды жасалмалоо (демейки боюнча күйгүзүлгөн).</string>
+    <string name="spoof_props_title">Касиеттерди жасалмалоо</string>
+    <string name="spoof_props_summary">Системанын касиеттерин жасалмалоо; TrickyStore же TEESimulator колдонбосоңуз, күйгүзүңүз.</string>
+    <string name="spoof_provider_title">Камсыздоочуну жасалмалоо</string>
+    <string name="spoof_provider_summary">Ачкычтар сактагычынын жеке камсыздоочусу; TrickyStore же TEESimulator колдонбосоңуз, күйгүзүңүз.</string>
+    <string name="spoof_signature_title">Кол тамганы жасалмалоо</string>
+    <string name="spoof_signature_summary">ROM кол тамгасын жасалмалоо; ROM testkey менен кол коюлса, күйгүзүңүз.</string>
+    <string name="spoof_vending_build_title">Курууну жасалмалоо (Play Store)</string>
+    <string name="spoof_vending_build_summary">Курууну Droidguard үчүн гана эмес, Play Store (com.android.vending) үчүн да жасалмалоо.</string>
+    <string name="spoof_vending_sdk_title">SDK жасалмалоо (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Түзмөк Android 13 же андан жаңысында иштесе, SDK версиясын 32 кылып көрсөтүү. Бул параметр туруксуздукка алып келиши мүмкүн (демейки боюнча өчүк).</string>
+    <string name="profile_category">Активдүү профиль</string>
+    <string name="profile_fingerprint">Куруунун манжа изи</string>
+    <string name="pif_fetch_title">Алуу</string>
+    <string name="pif_fetch_summary">GitHub\'дан эң акыркы pif.prop жүктөп алуу, күнүнө бир жолу жаңыланат.</string>
+    <string name="pif_edit_title">Учурда активдүү pif.prop\'ту көрүү</string>
+    <string name="pif_reset_title">Демейкиге кайтаруу</string>
+    <string name="pif_fetch_failed">pif.prop алынган жок</string>
+    <string name="pif_invalid">Жараксыз pif.prop</string>
+    <string name="pif_footer">Өзгөртүүлөр Google Play кызматтары менен Play Store кийинки жолу иштеп баштаганда колдонулат. Параметр өзгөргөндө алар токтотулат.</string>
+    <string name="save">\"Сактоо\"</string>
+    <string name="cancel">\"Жок\"</string>
+    <string name="profile_model">\"Үлгүсү\"</string>
+    <string name="profile_security_patch">\"Android\\\'дин коопсуздук системасын жаңыртуу\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ব্যৱহাৰ কৰক</string>
+    <string name="pif_options_category">স্পুফিঙৰ বিকল্প</string>
+    <string name="spoof_build_title">বিল্ড স্পুফ কৰক</string>
+    <string name="spoof_build_summary">pif.propত থকা ক্ষেত্ৰ স্পুফ কৰক (ডিফল্ট হিচাপে চালু)।</string>
+    <string name="spoof_props_title">প্ৰপ’ স্পুফ কৰক</string>
+    <string name="spoof_props_summary">ছিষ্টেমৰ প্ৰপাৰ্টী স্পুফ কৰক; TrickyStore বা TEESimulator ব্যৱহাৰ নকৰিলে চালু কৰক।</string>
+    <string name="spoof_provider_title">প্ৰদানকাৰী স্পুফ কৰক</string>
+    <string name="spoof_provider_summary">কাষ্টম কীস্ট’ৰ প্ৰদানকাৰী; TrickyStore বা TEESimulator ব্যৱহাৰ নকৰিলে চালু কৰক।</string>
+    <string name="spoof_signature_title">ছিগনেচাৰ স্পুফ কৰক</string>
+    <string name="spoof_signature_summary">ROMৰ ছিগনেচাৰ স্পুফ কৰক; আপোনাৰ ROM testkeyৰে ছাইন কৰা থাকিলে চালু কৰক।</string>
+    <string name="spoof_vending_build_title">বিল্ড স্পুফ কৰক (Play Store)</string>
+    <string name="spoof_vending_build_summary">কেৱল Droidguardলৈ নহয়, Play Store (com.android.vending)লৈও বিল্ড স্পুফ কৰক।</string>
+    <string name="spoof_vending_sdk_title">SDK স্পুফ কৰক (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">আপোনাৰ ডিভাইচে Android 13 বা তাতকৈ নতুন সংস্কৰণ চলালে SDK সংস্কৰণ 32 স্পুফ কৰক। এই বিকল্পই অস্থিৰতা সৃষ্টি কৰিব পাৰে (ডিফল্ট হিচাপে বন্ধ)।</string>
+    <string name="profile_category">সক্ৰিয় প্ৰ’ফাইল</string>
+    <string name="profile_fingerprint">বিল্ড ফিংগাৰপ্ৰিণ্ট</string>
+    <string name="pif_fetch_title">আনক</string>
+    <string name="pif_fetch_summary">GitHubৰ পৰা শেহতীয়া pif.prop ডাউনলোড কৰক, দিনত এবাৰ আপডে’ট হয়।</string>
+    <string name="pif_edit_title">বৰ্তমান সক্ৰিয় pif.prop চাওক</string>
+    <string name="pif_reset_title">ডিফল্টলৈ ৰিছেট কৰক</string>
+    <string name="pif_fetch_failed">pif.prop আনিব পৰা নগ’ল</string>
+    <string name="pif_invalid">অমান্য pif.prop</string>
+    <string name="pif_footer">Google Play সেৱা আৰু Play Store পৰৱৰ্তী বাৰ আৰম্ভ হ’লে সলনিবোৰ প্ৰযোজ্য হ’ব। আপুনি কোনো ছেটিং সলনি কৰিলে সেইবোৰ বন্ধ কৰা হয়।</string>
+    <string name="save">\"ছেভ কৰক\"</string>
+    <string name="cancel">\"বাতিল কৰক\"</string>
+    <string name="profile_model">\"মডেল\"</string>
+    <string name="profile_security_patch">\"Android সুৰক্ষা আপডে’ট\"</string>
+</resources>

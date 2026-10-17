@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix пайдалану</string>
+    <string name="pif_options_category">Жалғандау опциялары</string>
+    <string name="spoof_build_title">Құрастыруды жалғандау</string>
+    <string name="spoof_build_summary">pif.prop ішіндегі өрістерді жалғандау (әдепкі бойынша қосулы).</string>
+    <string name="spoof_props_title">Сипаттарды жалғандау</string>
+    <string name="spoof_props_summary">Жүйелік сипаттарды жалғандау; TrickyStore немесе TEESimulator пайдаланбасаңыз, қосыңыз.</string>
+    <string name="spoof_provider_title">Провайдерді жалғандау</string>
+    <string name="spoof_provider_summary">Реттелетін кілт қоймасы провайдері; TrickyStore немесе TEESimulator пайдаланбасаңыз, қосыңыз.</string>
+    <string name="spoof_signature_title">Қолтаңбаны жалғандау</string>
+    <string name="spoof_signature_summary">ROM қолтаңбасын жалғандау; ROM testkey арқылы қол қойылған болса, қосыңыз.</string>
+    <string name="spoof_vending_build_title">Құрастыруды жалғандау (Play Store)</string>
+    <string name="spoof_vending_build_summary">Құрастыруды тек Droidguard үшін емес, Play Store (com.android.vending) үшін де жалғандау.</string>
+    <string name="spoof_vending_sdk_title">SDK жалғандау (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Құрылғы Android 13 немесе одан жаңасымен жұмыс істесе, SDK нұсқасын 32 деп көрсету. Бұл опция тұрақсыздық тудыруы мүмкін (әдепкі бойынша өшірулі).</string>
+    <string name="profile_category">Белсенді профиль</string>
+    <string name="profile_fingerprint">Құрастыру саусақ ізі</string>
+    <string name="pif_fetch_title">Алу</string>
+    <string name="pif_fetch_summary">GitHub-тан соңғы pif.prop файлын жүктеп алу, күніне бір рет жаңартылады.</string>
+    <string name="pif_edit_title">Қазір белсенді pif.prop файлын көру</string>
+    <string name="pif_reset_title">Әдепкіге қайтару</string>
+    <string name="pif_fetch_failed">pif.prop файлын алу мүмкін болмады</string>
+    <string name="pif_invalid">Жарамсыз pif.prop</string>
+    <string name="pif_footer">Өзгерістер Google Play қызметтері мен Play Store келесі рет іске қосылғанда қолданылады. Параметр өзгертілгенде олар тоқтатылады.</string>
+    <string name="save">\"Сақтау\"</string>
+    <string name="cancel">\"Бас тарту\"</string>
+    <string name="profile_model">\"Моделі\"</string>
+    <string name="profile_security_patch">\"Android қауіпсіздік жүйесін жаңарту\"</string>
+</resources>

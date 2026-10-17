@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix-ის გამოყენება</string>
+    <string name="pif_options_category">გაყალბების პარამეტრები</string>
+    <string name="spoof_build_title">აწყობის გაყალბება</string>
+    <string name="spoof_build_summary">pif.prop-ის ველების გაყალბება (ნაგულისხმევად ჩართულია).</string>
+    <string name="spoof_props_title">თვისებების გაყალბება</string>
+    <string name="spoof_props_summary">სისტემური თვისებების გაყალბება; ჩართეთ, თუ არ იყენებთ TrickyStore-ს ან TEESimulator-ს.</string>
+    <string name="spoof_provider_title">პროვაიდერის გაყალბება</string>
+    <string name="spoof_provider_summary">გასაღებების საცავის მორგებული პროვაიდერი; ჩართეთ, თუ არ იყენებთ TrickyStore-ს ან TEESimulator-ს.</string>
+    <string name="spoof_signature_title">ხელმოწერის გაყალბება</string>
+    <string name="spoof_signature_summary">ROM-ის ხელმოწერის გაყალბება; ჩართეთ, თუ თქვენი ROM testkey-ით არის ხელმოწერილი.</string>
+    <string name="spoof_vending_build_title">აწყობის გაყალბება (Play Store)</string>
+    <string name="spoof_vending_build_summary">აწყობის გაყალბება Play Store-ისთვის (com.android.vending), არა მხოლოდ Droidguard-ისთვის.</string>
+    <string name="spoof_vending_sdk_title">SDK-ის გაყალბება (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">SDK-ის ვერსიის 32-ად გაყალბება, თუ მოწყობილობა Android 13-ზე ან უფრო ახალზე მუშაობს. ამ პარამეტრმა შეიძლება არასტაბილურობა გამოიწვიოს (ნაგულისხმევად გამორთულია).</string>
+    <string name="profile_category">აქტიური პროფილი</string>
+    <string name="profile_fingerprint">აწყობის თითის ანაბეჭდი</string>
+    <string name="pif_fetch_title">მიღება</string>
+    <string name="pif_fetch_summary">GitHub-იდან უახლესი pif.prop-ის ჩამოტვირთვა, განახლდება დღეში ერთხელ.</string>
+    <string name="pif_edit_title">ამჟამად აქტიური pif.prop-ის ნახვა</string>
+    <string name="pif_reset_title">ნაგულისხმევზე დაბრუნება</string>
+    <string name="pif_fetch_failed">pif.prop-ის მიღება ვერ მოხერხდა</string>
+    <string name="pif_invalid">არასწორი pif.prop</string>
+    <string name="pif_footer">ცვლილებები ძალაში შევა Google Play-ს სერვისებისა და Play Store-ის შემდეგი გაშვებისას. პარამეტრის შეცვლისას ისინი გაჩერდება.</string>
+    <string name="save">\"შენახვა\"</string>
+    <string name="cancel">\"გაუქმება\"</string>
+    <string name="profile_model">\"მოდელი\"</string>
+    <string name="profile_security_patch">\"Android-ის უსაფრთხოების განახლება\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">استخدام Play Integrity Fix</string>
+    <string name="pif_options_category">خيارات الانتحال</string>
+    <string name="spoof_build_title">انتحال البنية</string>
+    <string name="spoof_build_summary">تزوير الحقل الخاص بالبنية في pif.prop، مفعل افتراضيًا.</string>
+    <string name="spoof_props_title">انتحال الخصائص</string>
+    <string name="spoof_props_summary">تزوير خصائص النظام، فعّله إذا لم تستخدم TrickyStore أو TEESimulator.</string>
+    <string name="spoof_provider_title">انتحال المزوّد</string>
+    <string name="spoof_provider_summary">مزوّد مخزن المفاتيح المخصص، فعّله إذا لم تستخدم TrickyStore أو TEESimulator.</string>
+    <string name="spoof_signature_title">انتحال التوقيع</string>
+    <string name="spoof_signature_summary">انتحال توقيع ROM، فعّله عندما يكون ROM موقّعًا بمفتاح testkey.</string>
+    <string name="spoof_vending_build_title">انتحال البنية (متجر Play)</string>
+    <string name="spoof_vending_build_summary">انتحال البنية لمتجر Play (com.android.vending) وليس لـ Droidguard فقط.</string>
+    <string name="spoof_vending_sdk_title">انتحال SDK (متجر Play)</string>
+    <string name="spoof_vending_sdk_summary">تزوير رقم SDK إلى 32 إذا كان جهازك يعمل أندرويد 13 أو أعلى؛ لن يأخذ هذا التأثير إذا كان جهازك يعمل أندرويد 12 أو أقل. قد يتسبب هذا الخيار في مشاكل تتعلق بالإستقرار، لذا فهو معطّل افتراضيًا.</string>
+    <string name="profile_category">الملف الشخصي النشط</string>
+    <string name="profile_fingerprint">بصمة البنية</string>
+    <string name="pif_fetch_title">جلب</string>
+    <string name="pif_fetch_summary">عبر GitHub، يعمل autopif في إجراء GitHub مرة يوميًا، سريع وموثوق.</string>
+    <string name="pif_edit_title">عرض pif.prop النشط حاليًا</string>
+    <string name="pif_reset_title">إعادة الضبط إلى الافتراضي</string>
+    <string name="pif_fetch_failed">فشل في جلب pif.prop</string>
+    <string name="pif_invalid">pif.prop غير صالح</string>
+    <string name="pif_footer">تُطبَّق التغييرات عند تشغيل خدمات Google Play ومتجر Play في المرة التالية. يتم إيقافها عند تغيير أي إعداد.</string>
+    <string name="save">\"حفظ\"</string>
+    <string name="cancel">\"إلغاء\"</string>
+    <string name="profile_model">\"الطراز\"</string>
+    <string name="profile_security_patch">\"‏تحديث أمان نظام Android\"</string>
+</resources>

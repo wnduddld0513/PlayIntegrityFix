@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">ใช้ Play Integrity Fix</string>
+    <string name="pif_options_category">ตัวเลือกการปลอมแปลง</string>
+    <string name="spoof_build_title">ปลอมแปลงบิลด์</string>
+    <string name="spoof_build_summary">ปลอมแปลงฟิลด์ใน pif.prop (เปิดไว้โดยค่าเริ่มต้น)</string>
+    <string name="spoof_props_title">ปลอมแปลงพร็อพเพอร์ตี้</string>
+    <string name="spoof_props_summary">ปลอมแปลงพร็อพเพอร์ตี้ของระบบ เปิดใช้หากคุณไม่ได้ใช้ TrickyStore หรือ TEESimulator</string>
+    <string name="spoof_provider_title">ปลอมแปลงผู้ให้บริการ</string>
+    <string name="spoof_provider_summary">ผู้ให้บริการคีย์สโตร์แบบกำหนดเอง เปิดใช้หากคุณไม่ได้ใช้ TrickyStore หรือ TEESimulator</string>
+    <string name="spoof_signature_title">ปลอมแปลงลายเซ็น</string>
+    <string name="spoof_signature_summary">ปลอมแปลงลายเซ็นของ ROM เปิดใช้หาก ROM ของคุณลงนามด้วย testkey</string>
+    <string name="spoof_vending_build_title">ปลอมแปลงบิลด์ (Play สโตร์)</string>
+    <string name="spoof_vending_build_summary">ปลอมแปลงบิลด์ให้ Play สโตร์ (com.android.vending) ไม่ใช่แค่ Droidguard</string>
+    <string name="spoof_vending_sdk_title">ปลอมแปลง SDK (Play สโตร์)</string>
+    <string name="spoof_vending_sdk_summary">ปลอมแปลง SDK เวอร์ชัน 32 หากอุปกรณ์ใช้ Android 13 ขึ้นไป ตัวเลือกนี้อาจทำให้ระบบไม่เสถียร (ปิดไว้โดยค่าเริ่มต้น)</string>
+    <string name="profile_category">โปรไฟล์ที่ใช้งานอยู่</string>
+    <string name="profile_fingerprint">ลายนิ้วมือของบิลด์</string>
+    <string name="pif_fetch_title">ดึงข้อมูล</string>
+    <string name="pif_fetch_summary">ดาวน์โหลด pif.prop ล่าสุดจาก GitHub อัปเดตวันละครั้ง</string>
+    <string name="pif_edit_title">ดู pif.prop ที่ใช้งานอยู่ในขณะนี้</string>
+    <string name="pif_reset_title">รีเซ็ตเป็นค่าเริ่มต้น</string>
+    <string name="pif_fetch_failed">ดึง pif.prop ไม่สำเร็จ</string>
+    <string name="pif_invalid">pif.prop ไม่ถูกต้อง</string>
+    <string name="pif_footer">การเปลี่ยนแปลงจะมีผลเมื่อบริการของ Google Play และ Play สโตร์เริ่มทำงานครั้งถัดไป และทั้งสองจะถูกหยุดเมื่อคุณเปลี่ยนการตั้งค่า</string>
+    <string name="save">\"บันทึก\"</string>
+    <string name="cancel">\"ยกเลิก\"</string>
+    <string name="profile_model">\"รุ่น\"</string>
+    <string name="profile_security_patch">\"การอัปเดตความปลอดภัยของ Android\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix භාවිත කරන්න</string>
+    <string name="pif_options_category">ව්‍යාජ කිරීමේ විකල්ප</string>
+    <string name="spoof_build_title">ගොඩනැංවීම ව්‍යාජ කරන්න</string>
+    <string name="spoof_build_summary">pif.prop හි ක්ෂේත්‍ර ව්‍යාජ කරන්න (පෙරනිමියෙන් සක්‍රියයි).</string>
+    <string name="spoof_props_title">ගුණාංග ව්‍යාජ කරන්න</string>
+    <string name="spoof_props_summary">පද්ධති ගුණාංග ව්‍යාජ කරන්න; ඔබ TrickyStore හෝ TEESimulator භාවිත නොකරන්නේ නම් සක්‍රිය කරන්න.</string>
+    <string name="spoof_provider_title">සපයන්නා ව්‍යාජ කරන්න</string>
+    <string name="spoof_provider_summary">අභිරුචි යතුරු ගබඩා සපයන්නා; ඔබ TrickyStore හෝ TEESimulator භාවිත නොකරන්නේ නම් සක්‍රිය කරන්න.</string>
+    <string name="spoof_signature_title">අත්සන ව්‍යාජ කරන්න</string>
+    <string name="spoof_signature_summary">ROM අත්සන ව්‍යාජ කරන්න; ඔබේ ROM එක testkey මගින් අත්සන් කර ඇත්නම් සක්‍රිය කරන්න.</string>
+    <string name="spoof_vending_build_title">ගොඩනැංවීම ව්‍යාජ කරන්න (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard සඳහා පමණක් නොව Play Store (com.android.vending) සඳහාත් ගොඩනැංවීම ව්‍යාජ කරන්න.</string>
+    <string name="spoof_vending_sdk_title">SDK ව්‍යාජ කරන්න (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">ඔබේ උපාංගය Android 13 හෝ ඊට ඉහළ නම් SDK අනුවාදය 32 ලෙස ව්‍යාජ කරන්න. මෙම විකල්පය අස්ථාවරභාවයක් ඇති කළ හැක (පෙරනිමියෙන් අක්‍රියයි).</string>
+    <string name="profile_category">සක්‍රිය පැතිකඩ</string>
+    <string name="profile_fingerprint">ගොඩනැංවීමේ ඇඟිලි සලකුණ</string>
+    <string name="pif_fetch_title">ලබා ගන්න</string>
+    <string name="pif_fetch_summary">GitHub වෙතින් නවතම pif.prop බාගන්න, දිනකට වරක් යාවත්කාලීන වේ.</string>
+    <string name="pif_edit_title">දැනට සක්‍රිය pif.prop බලන්න</string>
+    <string name="pif_reset_title">පෙරනිමියට යළි සකසන්න</string>
+    <string name="pif_fetch_failed">pif.prop ලබා ගැනීම අසාර්ථකයි</string>
+    <string name="pif_invalid">වලංගු නොවන pif.prop</string>
+    <string name="pif_footer">Google Play සේවා සහ Play Store ඊළඟ වතාවේ ආරම්භ වූ විට වෙනස්කම් අදාළ වේ. ඔබ සැකසුමක් වෙනස් කළ විට ඒවා නවත්වනු ලැබේ.</string>
+    <string name="save">\"සුරකින්න\"</string>
+    <string name="cancel">\"අවලංගු කරන්න\"</string>
+    <string name="profile_model">\"මාදිලිය\"</string>
+    <string name="profile_security_patch">\"Android ආරක්ෂක යාවත්කාලීනය\"</string>
+</resources>

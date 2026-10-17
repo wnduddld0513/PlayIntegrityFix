@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">ໃຊ້ Play Integrity Fix</string>
+    <string name="pif_options_category">ຕົວເລືອກການປອມແປງ</string>
+    <string name="spoof_build_title">ປອມແປງ build</string>
+    <string name="spoof_build_summary">ປອມແປງຟິວໃນ pif.prop (ເປີດໄວ້ຕາມຄ່າເລີ່ມຕົ້ນ).</string>
+    <string name="spoof_props_title">ປອມແປງຄຸນສົມບັດ</string>
+    <string name="spoof_props_summary">ປອມແປງຄຸນສົມບັດລະບົບ; ເປີດໃຊ້ຖ້າທ່ານບໍ່ໄດ້ໃຊ້ TrickyStore ຫຼື TEESimulator.</string>
+    <string name="spoof_provider_title">ປອມແປງຜູ້ໃຫ້ບໍລິການ</string>
+    <string name="spoof_provider_summary">ຜູ້ໃຫ້ບໍລິການ keystore ແບບກຳນົດເອງ; ເປີດໃຊ້ຖ້າທ່ານບໍ່ໄດ້ໃຊ້ TrickyStore ຫຼື TEESimulator.</string>
+    <string name="spoof_signature_title">ປອມແປງລາຍເຊັນ</string>
+    <string name="spoof_signature_summary">ປອມແປງລາຍເຊັນ ROM; ເປີດໃຊ້ຖ້າ ROM ຂອງທ່ານຖືກເຊັນດ້ວຍ testkey.</string>
+    <string name="spoof_vending_build_title">ປອມແປງ build (Play Store)</string>
+    <string name="spoof_vending_build_summary">ປອມແປງ build ໃຫ້ Play Store (com.android.vending) ບໍ່ແມ່ນສະເພາະ Droidguard.</string>
+    <string name="spoof_vending_sdk_title">ປອມແປງ SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">ປອມແປງ SDK ເວີຊັນ 32 ຖ້າອຸປະກອນຂອງທ່ານໃຊ້ Android 13 ຂຶ້ນໄປ. ຕົວເລືອກນີ້ອາດເຮັດໃຫ້ບໍ່ສະຖຽນ (ປິດໄວ້ຕາມຄ່າເລີ່ມຕົ້ນ).</string>
+    <string name="profile_category">ໂປຣໄຟລ໌ທີ່ໃຊ້ງານ</string>
+    <string name="profile_fingerprint">ລາຍນິ້ວມື build</string>
+    <string name="pif_fetch_title">ດຶງຂໍ້ມູນ</string>
+    <string name="pif_fetch_summary">ດາວໂຫຼດ pif.prop ຫຼ້າສຸດຈາກ GitHub, ອັບເດດມື້ລະເທື່ອ.</string>
+    <string name="pif_edit_title">ເບິ່ງ pif.prop ທີ່ໃຊ້ງານຢູ່</string>
+    <string name="pif_reset_title">ຣີເຊັດເປັນຄ່າເລີ່ມຕົ້ນ</string>
+    <string name="pif_fetch_failed">ດຶງ pif.prop ບໍ່ສຳເລັດ</string>
+    <string name="pif_invalid">pif.prop ບໍ່ຖືກຕ້ອງ</string>
+    <string name="pif_footer">ການປ່ຽນແປງຈະມີຜົນເມື່ອ Google Play Services ແລະ Play Store ເລີ່ມເທື່ອຕໍ່ໄປ. ພວກມັນຈະຖືກຢຸດເມື່ອທ່ານປ່ຽນການຕັ້ງຄ່າ.</string>
+    <string name="save">\"ບັນທຶກ\"</string>
+    <string name="cancel">\"ຍົກເລີກ\"</string>
+    <string name="profile_model">\"ໂມເດວ\"</string>
+    <string name="profile_security_patch">\"ອັບເດດຄວາມປອດໄພ Android\"</string>
+</resources>

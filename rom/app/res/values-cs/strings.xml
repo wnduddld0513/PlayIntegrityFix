@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Používat Play Integrity Fix</string>
+    <string name="pif_options_category">Možnosti podvrhování</string>
+    <string name="spoof_build_title">Podvrhnout sestavení</string>
+    <string name="spoof_build_summary">Podvrhnout pole v souboru pif.prop (ve výchozím nastavení zapnuto).</string>
+    <string name="spoof_props_title">Podvrhnout vlastnosti</string>
+    <string name="spoof_props_summary">Podvrhnout systémové vlastnosti; zapněte, pokud nepoužíváte TrickyStore ani TEESimulator.</string>
+    <string name="spoof_provider_title">Podvrhnout poskytovatele</string>
+    <string name="spoof_provider_summary">Vlastní poskytovatel úložiště klíčů; zapněte, pokud nepoužíváte TrickyStore ani TEESimulator.</string>
+    <string name="spoof_signature_title">Podvrhnout podpis</string>
+    <string name="spoof_signature_summary">Podvrhnout podpis ROM; zapněte, pokud je vaše ROM podepsána klíčem testkey.</string>
+    <string name="spoof_vending_build_title">Podvrhnout sestavení (Obchod Play)</string>
+    <string name="spoof_vending_build_summary">Podvrhnout sestavení pro Obchod Play (com.android.vending), nejen pro Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Podvrhnout SDK (Obchod Play)</string>
+    <string name="spoof_vending_sdk_summary">Podvrhnout verzi SDK 32, pokud zařízení používá Android 13 nebo novější. Tato možnost může způsobit nestabilitu (ve výchozím nastavení vypnuto).</string>
+    <string name="profile_category">Aktivní profil</string>
+    <string name="profile_fingerprint">Otisk sestavení</string>
+    <string name="pif_fetch_title">Načíst</string>
+    <string name="pif_fetch_summary">Stáhnout nejnovější pif.prop z GitHubu, aktualizuje se jednou denně.</string>
+    <string name="pif_edit_title">Zobrazit aktuálně aktivní pif.prop</string>
+    <string name="pif_reset_title">Obnovit výchozí</string>
+    <string name="pif_fetch_failed">Soubor pif.prop se nepodařilo načíst</string>
+    <string name="pif_invalid">Neplatný soubor pif.prop</string>
+    <string name="pif_footer">Změny se projeví při dalším spuštění služeb Google Play a Obchodu Play. Při změně nastavení se zastaví.</string>
+    <string name="save">\"Uložit\"</string>
+    <string name="cancel">\"Zrušit\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Aktualizace zabezpečení Androidu\"</string>
+</resources>

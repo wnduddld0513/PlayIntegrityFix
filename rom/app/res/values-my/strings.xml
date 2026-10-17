@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ကို အသုံးပြုရန်</string>
+    <string name="pif_options_category">အတုလုပ်ခြင်း ရွေးစရာများ</string>
+    <string name="spoof_build_title">ဘီးလ်ကို အတုလုပ်ရန်</string>
+    <string name="spoof_build_summary">pif.prop ရှိ အကွက်များကို အတုလုပ်ပါ (မူလအားဖြင့် ဖွင့်ထားသည်)။</string>
+    <string name="spoof_props_title">ပရော်ပါတီများကို အတုလုပ်ရန်</string>
+    <string name="spoof_props_summary">စနစ်ပရော်ပါတီများကို အတုလုပ်ပါ၊ TrickyStore သို့မဟုတ် TEESimulator ကို မသုံးပါက ဖွင့်ပါ။</string>
+    <string name="spoof_provider_title">ပံ့ပိုးသူကို အတုလုပ်ရန်</string>
+    <string name="spoof_provider_summary">စိတ်ကြိုက် ကီးစတိုးပံ့ပိုးသူ၊ TrickyStore သို့မဟုတ် TEESimulator ကို မသုံးပါက ဖွင့်ပါ။</string>
+    <string name="spoof_signature_title">လက်မှတ်ကို အတုလုပ်ရန်</string>
+    <string name="spoof_signature_summary">ROM လက်မှတ်ကို အတုလုပ်ပါ၊ သင့် ROM ကို testkey ဖြင့် လက်မှတ်ထိုးထားပါက ဖွင့်ပါ။</string>
+    <string name="spoof_vending_build_title">ဘီးလ်ကို အတုလုပ်ရန် (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard အတွက်သာမက Play Store (com.android.vending) အတွက်ပါ ဘီးလ်ကို အတုလုပ်ပါ။</string>
+    <string name="spoof_vending_sdk_title">SDK ကို အတုလုပ်ရန် (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">သင့်ကိရိယာသည် Android 13 သို့မဟုတ် ထို့ထက်မြင့်ပါက SDK ဗားရှင်း 32 ကို အတုလုပ်ပါ။ ဤရွေးစရာသည် မတည်ငြိမ်မှု ဖြစ်စေနိုင်သည် (မူလအားဖြင့် ပိတ်ထားသည်)။</string>
+    <string name="profile_category">အသုံးပြုနေသော ပရိုဖိုင်း</string>
+    <string name="profile_fingerprint">ဘီးလ် လက်ဗွေ</string>
+    <string name="pif_fetch_title">ရယူရန်</string>
+    <string name="pif_fetch_summary">GitHub မှ နောက်ဆုံး pif.prop ကို ဒေါင်းလုဒ်လုပ်ပါ၊ တစ်ရက်လျှင် တစ်ကြိမ် အပ်ဒိတ်လုပ်သည်။</string>
+    <string name="pif_edit_title">လက်ရှိ အသုံးပြုနေသော pif.prop ကို ကြည့်ရန်</string>
+    <string name="pif_reset_title">မူလအတိုင်း ပြန်လည်သတ်မှတ်ရန်</string>
+    <string name="pif_fetch_failed">pif.prop ကို မရယူနိုင်ပါ</string>
+    <string name="pif_invalid">မမှန်ကန်သော pif.prop</string>
+    <string name="pif_footer">Google Play ဝန်ဆောင်မှုများနှင့် Play Store ကို နောက်တစ်ကြိမ် စတင်သည့်အခါ ပြောင်းလဲမှုများ အသက်ဝင်သည်။ ဆက်တင်တစ်ခု ပြောင်းလိုက်သည့်အခါ ၎င်းတို့ကို ရပ်လိုက်သည်။</string>
+    <string name="save">\"သိမ်းရန်\"</string>
+    <string name="cancel">\"မလုပ်တော့\"</string>
+    <string name="profile_model">\"မိုဒယ်\"</string>
+    <string name="profile_security_patch">\"Android လုံခြုံရေးအပ်ဒိတ်\"</string>
+</resources>

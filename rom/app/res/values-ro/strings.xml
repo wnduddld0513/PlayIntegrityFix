@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Folosește Play Integrity Fix</string>
+    <string name="pif_options_category">Opțiuni de falsificare</string>
+    <string name="spoof_build_title">Falsifică versiunea</string>
+    <string name="spoof_build_summary">Falsifică câmpurile din pif.prop (activat implicit).</string>
+    <string name="spoof_props_title">Falsifică proprietățile</string>
+    <string name="spoof_props_summary">Falsifică proprietățile sistemului; activează dacă nu folosești TrickyStore sau TEESimulator.</string>
+    <string name="spoof_provider_title">Falsifică furnizorul</string>
+    <string name="spoof_provider_summary">Furnizor de keystore personalizat; activează dacă nu folosești TrickyStore sau TEESimulator.</string>
+    <string name="spoof_signature_title">Falsifică semnătura</string>
+    <string name="spoof_signature_summary">Falsifică semnătura ROM-ului; activează dacă ROM-ul tău este semnat cu testkey.</string>
+    <string name="spoof_vending_build_title">Falsifică versiunea (Magazin Play)</string>
+    <string name="spoof_vending_build_summary">Falsifică versiunea pentru Magazin Play (com.android.vending), nu doar pentru Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Falsifică SDK (Magazin Play)</string>
+    <string name="spoof_vending_sdk_summary">Falsifică versiunea SDK 32 dacă dispozitivul rulează Android 13 sau o versiune ulterioară. Această opțiune poate cauza instabilitate (dezactivată implicit).</string>
+    <string name="profile_category">Profil activ</string>
+    <string name="profile_fingerprint">Amprenta versiunii</string>
+    <string name="pif_fetch_title">Preia</string>
+    <string name="pif_fetch_summary">Descarcă cel mai recent pif.prop de pe GitHub, se actualizează o dată pe zi.</string>
+    <string name="pif_edit_title">Vezi pif.prop activ în prezent</string>
+    <string name="pif_reset_title">Resetează la valorile implicite</string>
+    <string name="pif_fetch_failed">Nu s-a putut prelua pif.prop</string>
+    <string name="pif_invalid">pif.prop nevalid</string>
+    <string name="pif_footer">Modificările se aplică la următoarea pornire a serviciilor Google Play și a Magazinului Play. Acestea sunt oprite când modifici o setare.</string>
+    <string name="save">\"Salvează\"</string>
+    <string name="cancel">\"Anulează\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Actualizare de securitate Android\"</string>
+</resources>

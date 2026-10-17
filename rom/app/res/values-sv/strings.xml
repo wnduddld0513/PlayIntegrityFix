@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Använd Play Integrity Fix</string>
+    <string name="pif_options_category">Alternativ för förfalskning</string>
+    <string name="spoof_build_title">Förfalska bygge</string>
+    <string name="spoof_build_summary">Förfalska fälten i pif.prop (aktiverat som standard).</string>
+    <string name="spoof_props_title">Förfalska egenskaper</string>
+    <string name="spoof_props_summary">Förfalska systemegenskaper; aktivera om du inte använder TrickyStore eller TEESimulator.</string>
+    <string name="spoof_provider_title">Förfalska leverantör</string>
+    <string name="spoof_provider_summary">Anpassad nyckellagerleverantör; aktivera om du inte använder TrickyStore eller TEESimulator.</string>
+    <string name="spoof_signature_title">Förfalska signatur</string>
+    <string name="spoof_signature_summary">Förfalska ROM-signaturen; aktivera om din ROM är signerad med testkey.</string>
+    <string name="spoof_vending_build_title">Förfalska bygge (Play Butik)</string>
+    <string name="spoof_vending_build_summary">Förfalska bygget för Play Butik (com.android.vending), inte bara för Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Förfalska SDK (Play Butik)</string>
+    <string name="spoof_vending_sdk_summary">Förfalska SDK-version 32 om enheten kör Android 13 eller senare. Det här alternativet kan orsaka instabilitet (inaktiverat som standard).</string>
+    <string name="profile_category">Aktiv profil</string>
+    <string name="profile_fingerprint">Byggets fingeravtryck</string>
+    <string name="pif_fetch_title">Hämta</string>
+    <string name="pif_fetch_summary">Ladda ned den senaste pif.prop från GitHub, uppdateras en gång om dagen.</string>
+    <string name="pif_edit_title">Visa aktuell aktiv pif.prop</string>
+    <string name="pif_reset_title">Återställ till standard</string>
+    <string name="pif_fetch_failed">Det gick inte att hämta pif.prop</string>
+    <string name="pif_invalid">Ogiltig pif.prop</string>
+    <string name="pif_footer">Ändringarna börjar gälla nästa gång Google Play-tjänster och Play Butik startar. De stoppas när du ändrar en inställning.</string>
+    <string name="save">\"Spara\"</string>
+    <string name="cancel">\"Avbryt\"</string>
+    <string name="profile_model">\"Modell\"</string>
+    <string name="profile_security_patch">\"Säkerhetsuppdatering för Android\"</string>
+</resources>

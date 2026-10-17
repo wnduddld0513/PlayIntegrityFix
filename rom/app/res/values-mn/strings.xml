@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ашиглах</string>
+    <string name="pif_options_category">Хуурамчаар дуурайх сонголтууд</string>
+    <string name="spoof_build_title">Бүтээлтийг хуурамчаар дуурайх</string>
+    <string name="spoof_build_summary">pif.prop доторх талбаруудыг хуурамчаар дуурайх (өгөгдмөлөөр асаалттай).</string>
+    <string name="spoof_props_title">Шинж чанаруудыг хуурамчаар дуурайх</string>
+    <string name="spoof_props_summary">Системийн шинж чанаруудыг хуурамчаар дуурайх; TrickyStore эсвэл TEESimulator ашигладаггүй бол асаана уу.</string>
+    <string name="spoof_provider_title">Үйлчилгээ үзүүлэгчийг хуурамчаар дуурайх</string>
+    <string name="spoof_provider_summary">Захиалгат түлхүүрийн сангийн үйлчилгээ үзүүлэгч; TrickyStore эсвэл TEESimulator ашигладаггүй бол асаана уу.</string>
+    <string name="spoof_signature_title">Гарын үсгийг хуурамчаар дуурайх</string>
+    <string name="spoof_signature_summary">ROM-ын гарын үсгийг хуурамчаар дуурайх; таны ROM testkey-ээр гарын үсэг зурагдсан бол асаана уу.</string>
+    <string name="spoof_vending_build_title">Бүтээлтийг хуурамчаар дуурайх (Play Store)</string>
+    <string name="spoof_vending_build_summary">Бүтээлтийг зөвхөн Droidguard-д бус Play Store-д (com.android.vending) мөн хуурамчаар дуурайх.</string>
+    <string name="spoof_vending_sdk_title">SDK-г хуурамчаар дуурайх (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Төхөөрөмж Android 13 буюу түүнээс дээш хувилбартай бол SDK хувилбарыг 32 гэж дуурайх. Энэ сонголт тогтворгүй байдал үүсгэж болзошгүй (өгөгдмөлөөр унтраалттай).</string>
+    <string name="profile_category">Идэвхтэй профайл</string>
+    <string name="profile_fingerprint">Бүтээлтийн хурууны хээ</string>
+    <string name="pif_fetch_title">Татах</string>
+    <string name="pif_fetch_summary">GitHub-аас хамгийн сүүлийн pif.prop-г татах, өдөрт нэг удаа шинэчлэгдэнэ.</string>
+    <string name="pif_edit_title">Одоо идэвхтэй pif.prop-г харах</string>
+    <string name="pif_reset_title">Өгөгдмөл болгох</string>
+    <string name="pif_fetch_failed">pif.prop татаж чадсангүй</string>
+    <string name="pif_invalid">Буруу pif.prop</string>
+    <string name="pif_footer">Өөрчлөлтүүд Google Play үйлчилгээ болон Play Store дараагийн удаа эхлэх үед хэрэгжинэ. Тохиргоог өөрчлөхөд тэдгээр зогсоогдоно.</string>
+    <string name="save">\"Хадгалах\"</string>
+    <string name="cancel">\"Цуцлах\"</string>
+    <string name="profile_model">\"Загвар\"</string>
+    <string name="profile_security_patch">\"Android-н аюулгүй байдлын шинэчлэлт\"</string>
+</resources>

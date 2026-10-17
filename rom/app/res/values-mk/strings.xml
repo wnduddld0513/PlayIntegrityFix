@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Користи Play Integrity Fix</string>
+    <string name="pif_options_category">Опции за лажирање</string>
+    <string name="spoof_build_title">Лажирај верзија</string>
+    <string name="spoof_build_summary">Лажирај ги полињата во pif.prop (стандардно вклучено).</string>
+    <string name="spoof_props_title">Лажирај својства</string>
+    <string name="spoof_props_summary">Лажирај ги системските својства; вклучете ако не користите TrickyStore или TEESimulator.</string>
+    <string name="spoof_provider_title">Лажирај давател</string>
+    <string name="spoof_provider_summary">Прилагоден давател на складиште за клучеви; вклучете ако не користите TrickyStore или TEESimulator.</string>
+    <string name="spoof_signature_title">Лажирај потпис</string>
+    <string name="spoof_signature_summary">Лажирај го потписот на ROM; вклучете ако вашиот ROM е потпишан со testkey.</string>
+    <string name="spoof_vending_build_title">Лажирај верзија (Play Store)</string>
+    <string name="spoof_vending_build_summary">Лажирај верзија за Play Store (com.android.vending), не само за Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Лажирај SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Лажирај SDK верзија 32 ако уредот работи на Android 13 или понов. Опцијава може да предизвика нестабилност (стандардно исклучено).</string>
+    <string name="profile_category">Активен профил</string>
+    <string name="profile_fingerprint">Отпечаток на верзијата</string>
+    <string name="pif_fetch_title">Преземи</string>
+    <string name="pif_fetch_summary">Преземете го најновиот pif.prop од GitHub, се ажурира еднаш дневно.</string>
+    <string name="pif_edit_title">Прегледај го тековно активниот pif.prop</string>
+    <string name="pif_reset_title">Ресетирај на стандардно</string>
+    <string name="pif_fetch_failed">Не успеа преземањето на pif.prop</string>
+    <string name="pif_invalid">Неважечки pif.prop</string>
+    <string name="pif_footer">Промените се применуваат при следното стартување на услугите на Google Play и Play Store. Се запираат кога ќе промените поставка.</string>
+    <string name="save">\"Зачувај\"</string>
+    <string name="cancel">\"Откажи\"</string>
+    <string name="profile_model">\"Модел\"</string>
+    <string name="profile_security_patch">\"Безбедносно ажурирање на Android\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Kasuta Play Integrity Fixi</string>
+    <string name="pif_options_category">Võltsimisvalikud</string>
+    <string name="spoof_build_title">Võltsi järk</string>
+    <string name="spoof_build_summary">Võltsi pif.prop-i väljad (vaikimisi sees).</string>
+    <string name="spoof_props_title">Võltsi atribuudid</string>
+    <string name="spoof_props_summary">Võltsi süsteemiatribuudid; lülita sisse, kui ei kasuta TrickyStore\'i ega TEESimulatorit.</string>
+    <string name="spoof_provider_title">Võltsi pakkuja</string>
+    <string name="spoof_provider_summary">Kohandatud võtmehoidla pakkuja; lülita sisse, kui ei kasuta TrickyStore\'i ega TEESimulatorit.</string>
+    <string name="spoof_signature_title">Võltsi allkiri</string>
+    <string name="spoof_signature_summary">Võltsi ROM-i allkiri; lülita sisse, kui ROM on allkirjastatud testkey\'ga.</string>
+    <string name="spoof_vending_build_title">Võltsi järk (Play pood)</string>
+    <string name="spoof_vending_build_summary">Võltsi järk Play poe (com.android.vending) jaoks, mitte ainult Droidguardi jaoks.</string>
+    <string name="spoof_vending_sdk_title">Võltsi SDK (Play pood)</string>
+    <string name="spoof_vending_sdk_summary">Võltsi SDK versioon 32, kui seade kasutab Android 13 või uuemat. See valik võib põhjustada ebastabiilsust (vaikimisi väljas).</string>
+    <string name="profile_category">Aktiivne profiil</string>
+    <string name="profile_fingerprint">Järgu sõrmejälg</string>
+    <string name="pif_fetch_title">Too</string>
+    <string name="pif_fetch_summary">Laadi alla uusim pif.prop GitHubist, uuendatakse kord päevas.</string>
+    <string name="pif_edit_title">Vaata praegu aktiivset pif.prop-i</string>
+    <string name="pif_reset_title">Lähtesta vaikeseadele</string>
+    <string name="pif_fetch_failed">pif.prop-i toomine ebaõnnestus</string>
+    <string name="pif_invalid">Kehtetu pif.prop</string>
+    <string name="pif_footer">Muudatused rakenduvad Google Play teenuste ja Play poe järgmisel käivitamisel. Need peatatakse seadistuse muutmisel.</string>
+    <string name="save">\"Salvesta\"</string>
+    <string name="cancel">\"Tühista\"</string>
+    <string name="profile_model">\"Mudel\"</string>
+    <string name="profile_security_patch">\"Androidi turvavärskendus\"</string>
+</resources>

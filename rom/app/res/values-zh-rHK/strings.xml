@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">使用 Play Integrity Fix</string>
+    <string name="pif_options_category">偽裝選項</string>
+    <string name="spoof_build_title">偽裝建構</string>
+    <string name="spoof_build_summary">偽裝 pif.prop 內的屬性，預設啟用。</string>
+    <string name="spoof_props_title">偽裝屬性</string>
+    <string name="spoof_props_summary">偽裝系統屬性，未使用 TrickyStore 或 TEESimulator 時請啟用。</string>
+    <string name="spoof_provider_title">偽裝提供者</string>
+    <string name="spoof_provider_summary">自訂 keystore 提供者，未使用 TrickyStore 或 TEESimulator 時請啟用。</string>
+    <string name="spoof_signature_title">偽裝簽章</string>
+    <string name="spoof_signature_summary">偽裝 ROM 簽章，當您的 ROM 使用 testkey 簽署時啟用。</string>
+    <string name="spoof_vending_build_title">偽裝建構（Play 商店）</string>
+    <string name="spoof_vending_build_summary">為 Play 商店（com.android.vending）偽裝建構，而不僅是 Droidguard。</string>
+    <string name="spoof_vending_sdk_title">偽裝 SDK（Play 商店）</string>
+    <string name="spoof_vending_sdk_summary">若您的裝置運行 Android 13 或以上版本，會將 SDK 版本偽裝為 32；若為 Android 12 或以下則不會生效。此選項可能導致系統不穩定，預設停用。</string>
+    <string name="profile_category">目前設定檔</string>
+    <string name="profile_fingerprint">建構指紋</string>
+    <string name="pif_fetch_title">取得</string>
+    <string name="pif_fetch_summary">透過 GitHub，autopif 會在 GitHub Action 中每日執行一次，速度快且穩定。</string>
+    <string name="pif_edit_title">檢視目前使用的 pif.prop</string>
+    <string name="pif_reset_title">恢復預設值</string>
+    <string name="pif_fetch_failed">取得 pif.prop 失敗</string>
+    <string name="pif_invalid">無效的 pif.prop</string>
+    <string name="pif_footer">變更會在下次啟動 Google Play 服務和 Play 商店時生效。變更設定時它們會被停止。</string>
+    <string name="save">\"儲存\"</string>
+    <string name="cancel">\"取消\"</string>
+    <string name="profile_model">\"型號\"</string>
+    <string name="profile_security_patch">\"Android 安全性更新\"</string>
+</resources>

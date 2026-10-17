@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Izmantot Play Integrity Fix</string>
+    <string name="pif_options_category">Viltošanas opcijas</string>
+    <string name="spoof_build_title">Viltot būvējumu</string>
+    <string name="spoof_build_summary">Viltot pif.prop laukus (pēc noklusējuma ieslēgts).</string>
+    <string name="spoof_props_title">Viltot rekvizītus</string>
+    <string name="spoof_props_summary">Viltot sistēmas rekvizītus; ieslēdziet, ja neizmantojat TrickyStore vai TEESimulator.</string>
+    <string name="spoof_provider_title">Viltot sniedzēju</string>
+    <string name="spoof_provider_summary">Pielāgots atslēgu krātuves sniedzējs; ieslēdziet, ja neizmantojat TrickyStore vai TEESimulator.</string>
+    <string name="spoof_signature_title">Viltot parakstu</string>
+    <string name="spoof_signature_summary">Viltot ROM parakstu; ieslēdziet, ja jūsu ROM ir parakstīts ar testkey.</string>
+    <string name="spoof_vending_build_title">Viltot būvējumu (Play veikals)</string>
+    <string name="spoof_vending_build_summary">Viltot būvējumu Play veikalam (com.android.vending), ne tikai Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Viltot SDK (Play veikals)</string>
+    <string name="spoof_vending_sdk_summary">Viltot SDK versiju 32, ja ierīcē darbojas Android 13 vai jaunāka versija. Šī opcija var radīt nestabilitāti (pēc noklusējuma izslēgta).</string>
+    <string name="profile_category">Aktīvais profils</string>
+    <string name="profile_fingerprint">Būvējuma pirkstu nospiedums</string>
+    <string name="pif_fetch_title">Iegūt</string>
+    <string name="pif_fetch_summary">Lejupielādēt jaunāko pif.prop no GitHub, tiek atjaunināts reizi dienā.</string>
+    <string name="pif_edit_title">Skatīt pašlaik aktīvo pif.prop</string>
+    <string name="pif_reset_title">Atiestatīt noklusējumu</string>
+    <string name="pif_fetch_failed">Neizdevās iegūt pif.prop</string>
+    <string name="pif_invalid">Nederīgs pif.prop</string>
+    <string name="pif_footer">Izmaiņas tiek piemērotas, kad Google Play pakalpojumi un Play veikals tiek palaisti nākamreiz. Mainot iestatījumu, tie tiek apturēti.</string>
+    <string name="save">\"Saglabāt\"</string>
+    <string name="cancel">\"Atcelt\"</string>
+    <string name="profile_model">\"Modelis\"</string>
+    <string name="profile_security_patch">\"Android drošības atjauninājums\"</string>
+</resources>

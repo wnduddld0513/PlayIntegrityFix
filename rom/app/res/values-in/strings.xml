@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Gunakan Play Integrity Fix</string>
+    <string name="pif_options_category">Opsi pemalsuan</string>
+    <string name="spoof_build_title">Palsukan build</string>
+    <string name="spoof_build_summary">Spoof build di pif.prop (Diaktifkan secara default).</string>
+    <string name="spoof_props_title">Palsukan properti</string>
+    <string name="spoof_props_summary">Spoof properti sistem, aktifkan jika tidak menggunakan TrickyStore atau TEESimulator.</string>
+    <string name="spoof_provider_title">Palsukan penyedia</string>
+    <string name="spoof_provider_summary">Penyedia keystore kustom, aktifkan jika tidak menggunakan TrickyStore atau TEESimulator.</string>
+    <string name="spoof_signature_title">Palsukan tanda tangan</string>
+    <string name="spoof_signature_summary">Palsukan tanda tangan ROM, aktifkan jika ROM Anda ditandatangani dengan testkey.</string>
+    <string name="spoof_vending_build_title">Palsukan build (Play Store)</string>
+    <string name="spoof_vending_build_summary">Palsukan build untuk Play Store (com.android.vending), tidak hanya untuk Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Palsukan SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Spoof versi SDK ke 32 jika perangkat Anda menjalankan Android 13 atau lebih tinggi, tidak akan berpengaruh jika perangkat Anda menjalankan Android 12 atau lebih rendah. Opsi ini dapat menyebabkan ketidakstabilan (Dinonaktifkan secara default).</string>
+    <string name="profile_category">Profil aktif</string>
+    <string name="profile_fingerprint">Sidik jari build</string>
+    <string name="pif_fetch_title">Ambil</string>
+    <string name="pif_fetch_summary">Melalui GitHub, Autopif dijalankan di GitHub action sekali sehari, cepat dan andal.</string>
+    <string name="pif_edit_title">Lihat pif.prop aktif saat ini</string>
+    <string name="pif_reset_title">Setel ulang ke default</string>
+    <string name="pif_fetch_failed">Gagal mengambil pif.prop</string>
+    <string name="pif_invalid">pif.prop tidak valid</string>
+    <string name="pif_footer">Perubahan diterapkan saat layanan Google Play dan Play Store dimulai berikutnya. Keduanya dihentikan saat Anda mengubah setelan.</string>
+    <string name="save">\"Simpan\"</string>
+    <string name="cancel">\"Batal\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Update keamanan Android\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">ប្រើ Play Integrity Fix</string>
+    <string name="pif_options_category">ជម្រើសក្លែងបន្លំ</string>
+    <string name="spoof_build_title">ក្លែងបន្លំកំណែបង្កើត</string>
+    <string name="spoof_build_summary">ក្លែងបន្លំវាលក្នុង pif.prop (បើកតាមលំនាំដើម)។</string>
+    <string name="spoof_props_title">ក្លែងបន្លំលក្ខណសម្បត្តិ</string>
+    <string name="spoof_props_summary">ក្លែងបន្លំលក្ខណសម្បត្តិប្រព័ន្ធ ហើយបើកវា ប្រសិនបើអ្នកមិនប្រើ TrickyStore ឬ TEESimulator។</string>
+    <string name="spoof_provider_title">ក្លែងបន្លំអ្នកផ្តល់សេវា</string>
+    <string name="spoof_provider_summary">អ្នកផ្តល់សេវាកន្លែងផ្ទុកសោផ្ទាល់ខ្លួន ហើយបើកវា ប្រសិនបើអ្នកមិនប្រើ TrickyStore ឬ TEESimulator។</string>
+    <string name="spoof_signature_title">ក្លែងបន្លំហត្ថលេខា</string>
+    <string name="spoof_signature_summary">ក្លែងបន្លំហត្ថលេខា ROM ហើយបើកវា ប្រសិនបើ ROM របស់អ្នកចុះហត្ថលេខាដោយ testkey។</string>
+    <string name="spoof_vending_build_title">ក្លែងបន្លំកំណែបង្កើត (Play Store)</string>
+    <string name="spoof_vending_build_summary">ក្លែងបន្លំកំណែបង្កើតសម្រាប់ Play Store (com.android.vending) មិនមែនត្រឹមតែ Droidguard ទេ។</string>
+    <string name="spoof_vending_sdk_title">ក្លែងបន្លំ SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">ក្លែងបន្លំកំណែ SDK ជា 32 ប្រសិនបើឧបករណ៍របស់អ្នកដំណើរការ Android 13 ឬខ្ពស់ជាង។ ជម្រើសនេះអាចបណ្តាលឱ្យមិនស្ថិរភាព (បិទតាមលំនាំដើម)។</string>
+    <string name="profile_category">ប្រូហ្វាល់សកម្ម</string>
+    <string name="profile_fingerprint">ស្នាមម្រាមដៃនៃកំណែបង្កើត</string>
+    <string name="pif_fetch_title">ទាញយក</string>
+    <string name="pif_fetch_summary">ទាញយក pif.prop ចុងក្រោយពី GitHub ដែលធ្វើបច្ចុប្បន្នភាពម្តងក្នុងមួយថ្ងៃ។</string>
+    <string name="pif_edit_title">មើល pif.prop ដែលកំពុងសកម្ម</string>
+    <string name="pif_reset_title">កំណត់ឡើងវិញទៅលំនាំដើម</string>
+    <string name="pif_fetch_failed">មិនអាចទាញយក pif.prop បានទេ</string>
+    <string name="pif_invalid">pif.prop មិនត្រឹមត្រូវ</string>
+    <string name="pif_footer">ការផ្លាស់ប្តូរនឹងមានប្រសិទ្ធភាពនៅពេលសេវាកម្ម Google Play និង Play Store ចាប់ផ្តើមលើកក្រោយ។ ពួកវាត្រូវបានបញ្ឈប់នៅពេលអ្នកប្តូរការកំណត់។</string>
+    <string name="save">\"រក្សាទុក\"</string>
+    <string name="cancel">\"បោះ​បង់​\"</string>
+    <string name="profile_model">\"ម៉ូដែល\"</string>
+    <string name="profile_security_patch">\"កំណែ​សុវត្ថិភាពថ្មី​របស់ Android\"</string>
+</resources>

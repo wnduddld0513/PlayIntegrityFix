@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix’dan foydalanish</string>
+    <string name="pif_options_category">Soxtalashtirish parametrlari</string>
+    <string name="spoof_build_title">Yigʻilmani soxtalashtirish</string>
+    <string name="spoof_build_summary">pif.prop ichidagi maydonlarni soxtalashtirish (sukut boʻyicha yoqilgan).</string>
+    <string name="spoof_props_title">Xossalarni soxtalashtirish</string>
+    <string name="spoof_props_summary">Tizim xossalarini soxtalashtirish; TrickyStore yoki TEESimulator ishlatmasangiz, yoqing.</string>
+    <string name="spoof_provider_title">Taʼminotchini soxtalashtirish</string>
+    <string name="spoof_provider_summary">Maxsus kalitlar ombori taʼminotchisi; TrickyStore yoki TEESimulator ishlatmasangiz, yoqing.</string>
+    <string name="spoof_signature_title">Imzoni soxtalashtirish</string>
+    <string name="spoof_signature_summary">ROM imzosini soxtalashtirish; ROM testkey bilan imzolangan boʻlsa, yoqing.</string>
+    <string name="spoof_vending_build_title">Yigʻilmani soxtalashtirish (Play Market)</string>
+    <string name="spoof_vending_build_summary">Yigʻilmani faqat Droidguard uchun emas, Play Market (com.android.vending) uchun ham soxtalashtirish.</string>
+    <string name="spoof_vending_sdk_title">SDK’ni soxtalashtirish (Play Market)</string>
+    <string name="spoof_vending_sdk_summary">Qurilma Android 13 yoki undan yangisida ishlasa, SDK versiyasini 32 deb koʻrsatish. Bu parametr barqarorlikni buzishi mumkin (sukut boʻyicha oʻchiq).</string>
+    <string name="profile_category">Faol profil</string>
+    <string name="profile_fingerprint">Yigʻilma barmoq izi</string>
+    <string name="pif_fetch_title">Olish</string>
+    <string name="pif_fetch_summary">GitHub’dan eng oxirgi pif.prop faylini yuklab olish, kuniga bir marta yangilanadi.</string>
+    <string name="pif_edit_title">Hozir faol pif.prop’ni koʻrish</string>
+    <string name="pif_reset_title">Standart holatga qaytarish</string>
+    <string name="pif_fetch_failed">pif.prop faylini olib boʻlmadi</string>
+    <string name="pif_invalid">Yaroqsiz pif.prop</string>
+    <string name="pif_footer">Oʻzgarishlar Google Play xizmatlari va Play Market keyingi safar ishga tushganda qoʻllanadi. Sozlama oʻzgartirilganda ular toʻxtatiladi.</string>
+    <string name="save">\"Saqlash\"</string>
+    <string name="cancel">\"Bekor qilish\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Android xavfsizlik yangilanishi\"</string>
+</resources>

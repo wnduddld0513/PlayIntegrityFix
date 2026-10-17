@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix प्रयोग गर्नुहोस्</string>
+    <string name="pif_options_category">स्पूफिङ विकल्पहरू</string>
+    <string name="spoof_build_title">बिल्ड स्पूफ गर्नुहोस्</string>
+    <string name="spoof_build_summary">pif.prop मा रहेका फिल्डहरू स्पूफ गर्नुहोस् (डिफल्ट रूपमा खुला)।</string>
+    <string name="spoof_props_title">प्रोपर्टीहरू स्पूफ गर्नुहोस्</string>
+    <string name="spoof_props_summary">सिस्टम प्रोपर्टीहरू स्पूफ गर्नुहोस्; तपाईंले TrickyStore वा TEESimulator प्रयोग गर्नुभएको छैन भने खोल्नुहोस्।</string>
+    <string name="spoof_provider_title">प्रोभाइडर स्पूफ गर्नुहोस्</string>
+    <string name="spoof_provider_summary">कस्टम कीस्टोर प्रोभाइडर; तपाईंले TrickyStore वा TEESimulator प्रयोग गर्नुभएको छैन भने खोल्नुहोस्।</string>
+    <string name="spoof_signature_title">हस्ताक्षर स्पूफ गर्नुहोस्</string>
+    <string name="spoof_signature_summary">ROM को हस्ताक्षर स्पूफ गर्नुहोस्; तपाईंको ROM testkey ले साइन गरिएको छ भने खोल्नुहोस्।</string>
+    <string name="spoof_vending_build_title">बिल्ड स्पूफ गर्नुहोस् (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard मात्र होइन, Play Store (com.android.vending) का लागि पनि बिल्ड स्पूफ गर्नुहोस्।</string>
+    <string name="spoof_vending_sdk_title">SDK स्पूफ गर्नुहोस् (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">तपाईंको डिभाइस Android 13 वा सोभन्दा माथिको संस्करणमा चल्छ भने SDK संस्करण 32 स्पूफ गर्नुहोस्। यो विकल्पले अस्थिरता ल्याउन सक्छ (डिफल्ट रूपमा बन्द)।</string>
+    <string name="profile_category">सक्रिय प्रोफाइल</string>
+    <string name="profile_fingerprint">बिल्ड फिङ्गरप्रिन्ट</string>
+    <string name="pif_fetch_title">ल्याउनुहोस्</string>
+    <string name="pif_fetch_summary">GitHub बाट पछिल्लो pif.prop डाउनलोड गर्नुहोस्, दिनमा एकपटक अपडेट हुन्छ।</string>
+    <string name="pif_edit_title">हाल सक्रिय pif.prop हेर्नुहोस्</string>
+    <string name="pif_reset_title">डिफल्टमा रिसेट गर्नुहोस्</string>
+    <string name="pif_fetch_failed">pif.prop ल्याउन सकिएन</string>
+    <string name="pif_invalid">अमान्य pif.prop</string>
+    <string name="pif_footer">Google Play सेवाहरू र Play Store अर्को पटक सुरु हुँदा परिवर्तनहरू लागू हुन्छन्। सेटिङ परिवर्तन गर्दा तिनलाई रोकिन्छ।</string>
+    <string name="save">\"सेभ गर्नुहोस्\"</string>
+    <string name="cancel">\"रद्द गर्नुहोस्\"</string>
+    <string name="profile_model">\"मोडेल\"</string>
+    <string name="profile_security_patch">\"Android को सुरक्षासम्बन्धी अपडेट\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Erabili Play Integrity Fix</string>
+    <string name="pif_options_category">Faltsutze-aukerak</string>
+    <string name="spoof_build_title">Faltsutu konpilazioa</string>
+    <string name="spoof_build_summary">Faltsutu pif.prop-eko eremuak (modu lehenetsian aktibatuta).</string>
+    <string name="spoof_props_title">Faltsutu propietateak</string>
+    <string name="spoof_props_summary">Faltsutu sistemaren propietateak; aktibatu TrickyStore edo TEESimulator erabiltzen ez baduzu.</string>
+    <string name="spoof_provider_title">Faltsutu hornitzailea</string>
+    <string name="spoof_provider_summary">Gako-biltegiaren hornitzaile pertsonalizatua; aktibatu TrickyStore edo TEESimulator erabiltzen ez baduzu.</string>
+    <string name="spoof_signature_title">Faltsutu sinadura</string>
+    <string name="spoof_signature_summary">Faltsutu ROMaren sinadura; aktibatu zure ROMa testkey bidez sinatuta badago.</string>
+    <string name="spoof_vending_build_title">Faltsutu konpilazioa (Play Store)</string>
+    <string name="spoof_vending_build_summary">Faltsutu konpilazioa Play Storerako (com.android.vending), ez Droidguardentzat bakarrik.</string>
+    <string name="spoof_vending_sdk_title">Faltsutu SDKa (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Faltsutu 32 SDK bertsioa gailuak Android 13 edo berriagoa erabiltzen badu. Aukera honek ezegonkortasuna eragin dezake (modu lehenetsian desaktibatuta).</string>
+    <string name="profile_category">Profil aktiboa</string>
+    <string name="profile_fingerprint">Konpilazioaren hatz-marka</string>
+    <string name="pif_fetch_title">Eskuratu</string>
+    <string name="pif_fetch_summary">Deskargatu pif.prop azkena GitHubetik, egunean behin eguneratzen da.</string>
+    <string name="pif_edit_title">Ikusi une honetan aktibo dagoen pif.prop</string>
+    <string name="pif_reset_title">Berrezarri lehenespenak</string>
+    <string name="pif_fetch_failed">Ezin izan da pif.prop eskuratu</string>
+    <string name="pif_invalid">pif.prop baliogabea</string>
+    <string name="pif_footer">Aldaketak Google Play zerbitzuak eta Play Store hurrengo aldiz abiaraztean aplikatzen dira. Ezarpen bat aldatzean gelditzen dira.</string>
+    <string name="save">\"Gorde\"</string>
+    <string name="cancel">\"Utzi\"</string>
+    <string name="profile_model">\"Modeloa\"</string>
+    <string name="profile_security_patch">\"Android-en segurtasun-eguneratzea\"</string>
+</resources>

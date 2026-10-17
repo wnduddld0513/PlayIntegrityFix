@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Brug Play Integrity Fix</string>
+    <string name="pif_options_category">Indstillinger for spoofing</string>
+    <string name="spoof_build_title">Spoof build</string>
+    <string name="spoof_build_summary">Spoof felter i pif.prop (slået til som standard).</string>
+    <string name="spoof_props_title">Spoof egenskaber</string>
+    <string name="spoof_props_summary">Spoof systemegenskaber; slå til, hvis du ikke bruger TrickyStore eller TEESimulator.</string>
+    <string name="spoof_provider_title">Spoof udbyder</string>
+    <string name="spoof_provider_summary">Tilpasset nøglelagerudbyder; slå til, hvis du ikke bruger TrickyStore eller TEESimulator.</string>
+    <string name="spoof_signature_title">Spoof signatur</string>
+    <string name="spoof_signature_summary">Spoof ROM-signaturen; slå til, hvis din ROM er signeret med testkey.</string>
+    <string name="spoof_vending_build_title">Spoof build (Play Butik)</string>
+    <string name="spoof_vending_build_summary">Spoof build til Play Butik (com.android.vending), ikke kun til Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Spoof SDK (Play Butik)</string>
+    <string name="spoof_vending_sdk_summary">Spoof SDK-version 32, hvis din enhed kører Android 13 eller nyere. Denne indstilling kan give ustabilitet (slået fra som standard).</string>
+    <string name="profile_category">Aktiv profil</string>
+    <string name="profile_fingerprint">Build-fingeraftryk</string>
+    <string name="pif_fetch_title">Hent</string>
+    <string name="pif_fetch_summary">Download den nyeste pif.prop fra GitHub, opdateres én gang om dagen.</string>
+    <string name="pif_edit_title">Se den aktuelt aktive pif.prop</string>
+    <string name="pif_reset_title">Nulstil til standard</string>
+    <string name="pif_fetch_failed">Kunne ikke hente pif.prop</string>
+    <string name="pif_invalid">Ugyldig pif.prop</string>
+    <string name="pif_footer">Ændringer træder i kraft, næste gang Google Play-tjenester og Play Butik starter. De stoppes, når du ændrer en indstilling.</string>
+    <string name="save">\"Gem\"</string>
+    <string name="cancel">\"Annuller\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Sikkerhedsopdatering til Android\"</string>
+</resources>

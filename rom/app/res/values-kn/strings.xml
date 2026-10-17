@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ಬಳಸಿ</string>
+    <string name="pif_options_category">ಸ್ಪೂಫಿಂಗ್ ಆಯ್ಕೆಗಳು</string>
+    <string name="spoof_build_title">ಬಿಲ್ಡ್ ಸ್ಪೂಫ್ ಮಾಡಿ</string>
+    <string name="spoof_build_summary">pif.prop ನಲ್ಲಿರುವ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ (ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆನ್).</string>
+    <string name="spoof_props_title">ಪ್ರಾಪರ್ಟಿಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ</string>
+    <string name="spoof_props_summary">ಸಿಸ್ಟಂ ಪ್ರಾಪರ್ಟಿಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ; TrickyStore ಅಥವಾ TEESimulator ಬಳಸದಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
+    <string name="spoof_provider_title">ಪ್ರೊವೈಡರ್ ಸ್ಪೂಫ್ ಮಾಡಿ</string>
+    <string name="spoof_provider_summary">ಕಸ್ಟಮ್ ಕೀಸ್ಟೋರ್ ಪ್ರೊವೈಡರ್; TrickyStore ಅಥವಾ TEESimulator ಬಳಸದಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
+    <string name="spoof_signature_title">ಸಹಿಯನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ</string>
+    <string name="spoof_signature_summary">ROM ಸಹಿಯನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ; ನಿಮ್ಮ ROM testkey ನಿಂದ ಸಹಿ ಮಾಡಲ್ಪಟ್ಟಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
+    <string name="spoof_vending_build_title">ಬಿಲ್ಡ್ ಸ್ಪೂಫ್ ಮಾಡಿ (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard ಗೆ ಮಾತ್ರವಲ್ಲದೆ Play Store (com.android.vending) ಗೂ ಬಿಲ್ಡ್ ಸ್ಪೂಫ್ ಮಾಡಿ.</string>
+    <string name="spoof_vending_sdk_title">SDK ಸ್ಪೂಫ್ ಮಾಡಿ (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">ನಿಮ್ಮ ಸಾಧನವು Android 13 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯಲ್ಲಿದ್ದರೆ SDK ಆವೃತ್ತಿ 32 ಅನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ. ಈ ಆಯ್ಕೆಯು ಅಸ್ಥಿರತೆಗೆ ಕಾರಣವಾಗಬಹುದು (ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆಫ್).</string>
+    <string name="profile_category">ಸಕ್ರಿಯ ಪ್ರೊಫೈಲ್</string>
+    <string name="profile_fingerprint">ಬಿಲ್ಡ್ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್</string>
+    <string name="pif_fetch_title">ಪಡೆಯಿರಿ</string>
+    <string name="pif_fetch_summary">GitHub ನಿಂದ ಇತ್ತೀಚಿನ pif.prop ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ, ದಿನಕ್ಕೊಮ್ಮೆ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ.</string>
+    <string name="pif_edit_title">ಪ್ರಸ್ತುತ ಸಕ್ರಿಯವಾಗಿರುವ pif.prop ವೀಕ್ಷಿಸಿ</string>
+    <string name="pif_reset_title">ಡೀಫಾಲ್ಟ್‌ಗೆ ರೀಸೆಟ್ ಮಾಡಿ</string>
+    <string name="pif_fetch_failed">pif.prop ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ</string>
+    <string name="pif_invalid">ಅಮಾನ್ಯ pif.prop</string>
+    <string name="pif_footer">Google Play ಸೇವೆಗಳು ಮತ್ತು Play Store ಮುಂದಿನ ಬಾರಿ ಪ್ರಾರಂಭವಾದಾಗ ಬದಲಾವಣೆಗಳು ಅನ್ವಯವಾಗುತ್ತವೆ. ಸೆಟ್ಟಿಂಗ್ ಬದಲಾಯಿಸಿದಾಗ ಅವುಗಳನ್ನು ನಿಲ್ಲಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="save">\"ಸೇವ್ ಮಾಡಿ\"</string>
+    <string name="cancel">\"ರದ್ದುಮಾಡಿ\"</string>
+    <string name="profile_model">\"ಮಾಡೆಲ್\"</string>
+    <string name="profile_security_patch">\"Android ಭದ್ರತೆ ಅಪ್‌ಡೇಟ್\"</string>
+</resources>

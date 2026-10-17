@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix を使用</string>
+    <string name="pif_options_category">偽装オプション</string>
+    <string name="spoof_build_title">ビルドを偽装</string>
+    <string name="spoof_build_summary">pif.prop のフィールドを偽装します（デフォルトで有効）。</string>
+    <string name="spoof_props_title">プロパティを偽装</string>
+    <string name="spoof_props_summary">システムプロパティを偽装します。TrickyStore や TEESimulator を使用していない場合は有効にしてください。</string>
+    <string name="spoof_provider_title">プロバイダを偽装</string>
+    <string name="spoof_provider_summary">カスタムのキーストアプロバイダです。TrickyStore や TEESimulator を使用していない場合は有効にしてください。</string>
+    <string name="spoof_signature_title">署名を偽装</string>
+    <string name="spoof_signature_summary">ROM の署名を偽装します。ROM が testkey で署名されている場合は有効にしてください。</string>
+    <string name="spoof_vending_build_title">ビルドを偽装（Play ストア）</string>
+    <string name="spoof_vending_build_summary">Droidguard だけでなく、Play ストア（com.android.vending）に対してもビルドを偽装します。</string>
+    <string name="spoof_vending_sdk_title">SDK を偽装（Play ストア）</string>
+    <string name="spoof_vending_sdk_summary">端末が Android 13 以降の場合、SDK バージョンを 32 に偽装します。このオプションは動作が不安定になる可能性があります（デフォルトで無効）。</string>
+    <string name="profile_category">有効なプロファイル</string>
+    <string name="profile_fingerprint">ビルドのフィンガープリント</string>
+    <string name="pif_fetch_title">取得</string>
+    <string name="pif_fetch_summary">GitHub から最新の pif.prop をダウンロードします。1 日 1 回更新されます。</string>
+    <string name="pif_edit_title">現在有効な pif.prop を表示</string>
+    <string name="pif_reset_title">デフォルトにリセット</string>
+    <string name="pif_fetch_failed">pif.prop を取得できませんでした</string>
+    <string name="pif_invalid">pif.prop が無効です</string>
+    <string name="pif_footer">変更は、Google Play 開発者サービスと Play ストアの次回起動時に反映されます。設定を変更すると、これらは停止されます。</string>
+    <string name="save">\"保存\"</string>
+    <string name="cancel">\"キャンセル\"</string>
+    <string name="profile_model">\"モデル\"</string>
+    <string name="profile_security_patch">\"Android セキュリティ アップデート\"</string>
+</resources>

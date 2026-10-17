@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Naudoti „Play Integrity Fix“</string>
+    <string name="pif_options_category">Klastojimo parinktys</string>
+    <string name="spoof_build_title">Klastoti darinį</string>
+    <string name="spoof_build_summary">Klastoti pif.prop laukus (pagal numatytuosius nustatymus įjungta).</string>
+    <string name="spoof_props_title">Klastoti ypatybes</string>
+    <string name="spoof_props_summary">Klastoti sistemos ypatybes; įjunkite, jei nenaudojate „TrickyStore“ ar „TEESimulator“.</string>
+    <string name="spoof_provider_title">Klastoti teikėją</string>
+    <string name="spoof_provider_summary">Tinkintas raktų saugyklos teikėjas; įjunkite, jei nenaudojate „TrickyStore“ ar „TEESimulator“.</string>
+    <string name="spoof_signature_title">Klastoti parašą</string>
+    <string name="spoof_signature_summary">Klastoti ROM parašą; įjunkite, jei jūsų ROM pasirašytas „testkey“.</string>
+    <string name="spoof_vending_build_title">Klastoti darinį („Play“ parduotuvė)</string>
+    <string name="spoof_vending_build_summary">Klastoti darinį „Play“ parduotuvei (com.android.vending), ne tik „Droidguard“.</string>
+    <string name="spoof_vending_sdk_title">Klastoti SDK („Play“ parduotuvė)</string>
+    <string name="spoof_vending_sdk_summary">Klastoti SDK 32 versiją, jei įrenginyje veikia „Android 13“ ar naujesnė. Ši parinktis gali sukelti nestabilumą (pagal numatytuosius nustatymus išjungta).</string>
+    <string name="profile_category">Aktyvus profilis</string>
+    <string name="profile_fingerprint">Darinio kontrolinis kodas</string>
+    <string name="pif_fetch_title">Gauti</string>
+    <string name="pif_fetch_summary">Atsisiųsti naujausią pif.prop iš „GitHub“, atnaujinama kartą per dieną.</string>
+    <string name="pif_edit_title">Peržiūrėti šiuo metu aktyvų pif.prop</string>
+    <string name="pif_reset_title">Atkurti numatytuosius</string>
+    <string name="pif_fetch_failed">Nepavyko gauti pif.prop</string>
+    <string name="pif_invalid">Netinkamas pif.prop</string>
+    <string name="pif_footer">Pakeitimai pradedami taikyti kitą kartą paleidus „Google Play“ paslaugas ir „Play“ parduotuvę. Pakeitus nustatymą jos sustabdomos.</string>
+    <string name="save">\"Išsaugoti\"</string>
+    <string name="cancel">\"Atšaukti\"</string>
+    <string name="profile_model">\"Modelis\"</string>
+    <string name="profile_security_patch">\"„Android“ saugos naujinys\"</string>
+</resources>

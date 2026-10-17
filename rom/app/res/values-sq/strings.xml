@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Përdor Play Integrity Fix</string>
+    <string name="pif_options_category">Opsionet e falsifikimit</string>
+    <string name="spoof_build_title">Falsifiko ndërtimin</string>
+    <string name="spoof_build_summary">Falsifiko fushat në pif.prop (e aktivizuar si parazgjedhje).</string>
+    <string name="spoof_props_title">Falsifiko veçoritë</string>
+    <string name="spoof_props_summary">Falsifiko veçoritë e sistemit; aktivizoje nëse nuk përdor TrickyStore ose TEESimulator.</string>
+    <string name="spoof_provider_title">Falsifiko ofruesin</string>
+    <string name="spoof_provider_summary">Ofrues i personalizuar i ruajtjes së çelësave; aktivizoje nëse nuk përdor TrickyStore ose TEESimulator.</string>
+    <string name="spoof_signature_title">Falsifiko nënshkrimin</string>
+    <string name="spoof_signature_summary">Falsifiko nënshkrimin e ROM-it; aktivizoje nëse ROM-i yt është nënshkruar me testkey.</string>
+    <string name="spoof_vending_build_title">Falsifiko ndërtimin (Play Store)</string>
+    <string name="spoof_vending_build_summary">Falsifiko ndërtimin për Play Store (com.android.vending), jo vetëm për Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Falsifiko SDK-në (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Falsifiko versionin e SDK-së 32 nëse pajisja jote përdor Android 13 ose më të ri. Ky opsion mund të shkaktojë paqëndrueshmëri (i çaktivizuar si parazgjedhje).</string>
+    <string name="profile_category">Profili aktiv</string>
+    <string name="profile_fingerprint">Shenja e gishtit e ndërtimit</string>
+    <string name="pif_fetch_title">Merr</string>
+    <string name="pif_fetch_summary">Shkarko pif.prop-in më të fundit nga GitHub, përditësohet një herë në ditë.</string>
+    <string name="pif_edit_title">Shiko pif.prop-in aktiv aktualisht</string>
+    <string name="pif_reset_title">Rivendos në parazgjedhje</string>
+    <string name="pif_fetch_failed">Marrja e pif.prop dështoi</string>
+    <string name="pif_invalid">pif.prop i pavlefshëm</string>
+    <string name="pif_footer">Ndryshimet zbatohen herën tjetër që nisen shërbimet e Google Play dhe Play Store. Ato ndalohen kur ndryshon një cilësim.</string>
+    <string name="save">\"Ruaj\"</string>
+    <string name="cancel">\"Anulo\"</string>
+    <string name="profile_model">\"Modeli\"</string>
+    <string name="profile_security_patch">\"Përditësim sigurie për Android\"</string>
+</resources>

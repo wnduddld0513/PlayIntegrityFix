@@ -1,0 +1,86 @@
+//
+// Play Integrity Fix (inject-s) - ROM integration
+// Copyright (C) 2026 wnduddld0513
+// SPDX-License-Identifier: GPL-3.0-only
+//
+// Builds the module (KOWX712/PlayIntegrityFix, tag v4.9-inject-s) for the ROM
+// without root, Magisk or Zygisk:
+//   PlayIntegrityFixEntry    the Java part that the ROM's PropImitationHooks loads
+//                            into Google Play services (DroidGuard) and the Play Store
+//   libpif_propvirt          the module's property virtualizer
+//   PlayIntegrityFixSettings the Play Integrity Fix page (Experimental features app)
+// The ROM only contains a generic hook; it does nothing while PlayIntegrityFixEntry
+// is not installed or the switch is off.
+//
+
+java_library {
+    name: "PlayIntegrityFixEntry",
+    srcs: ["rom/entry/src/**/*.java"],
+    platform_apis: true,
+    system_ext_specific: true,
+    installable: true,
+    required: [
+        "libpif_propvirt",
+        "pif.prop.rom",
+    ],
+}
+
+cc_library_shared {
+    name: "libpif_propvirt",
+    srcs: [
+        "rom/native/pif_jni.cpp",
+        "zygisk/src/main/cpp/pif_config.cpp",
+        "zygisk/src/main/cpp/property_virtualizer.cpp",
+    ],
+    local_include_dirs: ["zygisk/src/main/cpp"],
+    shared_libs: ["liblog"],
+    cpp_std: "c++20",
+    cflags: [
+        "-Wno-error",
+        "-Wno-unused-parameter",
+    ],
+}
+
+prebuilt_etc {
+    name: "pif.prop.rom",
+    src: "rom/etc/pif.prop",
+    filename: "pif.prop",
+    sub_dir: "PlayIntegrityFix",
+    system_ext_specific: true,
+}
+
+android_app {
+    name: "PlayIntegrityFixSettings",
+
+    srcs: [
+        "rom/app/src/**/*.java",
+        "rom/entry/src/es/chiteroman/playintegrityfix/PifConfig.java",
+    ],
+    manifest: "rom/app/AndroidManifest.xml",
+    resource_dirs: ["rom/app/res"],
+    certificate: "platform",
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: true,
+
+    static_libs: [
+        "SettingsLib",
+        "androidx.preference_preference",
+    ],
+
+    required: [
+        "PlayIntegrityFixEntry",
+        "privapp-permissions-pif.xml",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["rom/app/proguard.flags"],
+    },
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-pif.xml",
+    src: "rom/app/privapp-permissions-pif.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
+}

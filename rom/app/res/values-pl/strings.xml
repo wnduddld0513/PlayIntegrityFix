@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Używaj Play Integrity Fix</string>
+    <string name="pif_options_category">Opcje podszywania</string>
+    <string name="spoof_build_title">Podszyj kompilację</string>
+    <string name="spoof_build_summary">Spoof pola w pif.prop (domyślnie włączone).</string>
+    <string name="spoof_props_title">Podszyj właściwości</string>
+    <string name="spoof_props_summary">Spoof właściwości systemowe, włącz gdy nie używasz TrickyStore lub TEESimulator.</string>
+    <string name="spoof_provider_title">Podszyj dostawcę</string>
+    <string name="spoof_provider_summary">Niestandardowy dostawca keystore, włącz gdy nie używasz TrickyStore lub TEESimulator.</string>
+    <string name="spoof_signature_title">Podszyj podpis</string>
+    <string name="spoof_signature_summary">Podszywa podpis ROM-u, włącz, gdy Twój ROM jest podpisany kluczem testkey.</string>
+    <string name="spoof_vending_build_title">Podszyj kompilację (Sklep Play)</string>
+    <string name="spoof_vending_build_summary">Podszywa kompilację dla Sklepu Play (com.android.vending), nie tylko dla Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Podszyj SDK (Sklep Play)</string>
+    <string name="spoof_vending_sdk_summary">Spoof wersji SDK do 32, jeśli Twoje urządzenie działa na Androidzie 13 lub nowszym; nie zadziała na Androidzie 12 lub starszym. Ta opcja może powodować niestabilność (domyślnie wyłączona).</string>
+    <string name="profile_category">Aktywny profil</string>
+    <string name="profile_fingerprint">Odcisk kompilacji</string>
+    <string name="pif_fetch_title">Pobierz</string>
+    <string name="pif_fetch_summary">Przez GitHub, Autopif uruchamia się w GitHub Actions raz dziennie, szybko i niezawodnie.</string>
+    <string name="pif_edit_title">Pokaż aktualnie aktywny pif.prop</string>
+    <string name="pif_reset_title">Przywróć domyślne</string>
+    <string name="pif_fetch_failed">Nie udało się pobrać pif.prop</string>
+    <string name="pif_invalid">Nieprawidłowy plik pif.prop</string>
+    <string name="pif_footer">Zmiany zostaną zastosowane przy następnym uruchomieniu usług Google Play i Sklepu Play. Zatrzymują się one po zmianie ustawienia.</string>
+    <string name="save">\"Zapisz\"</string>
+    <string name="cancel">\"Anuluj\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Aktualizacja zabezpieczeń Androida\"</string>
+</resources>

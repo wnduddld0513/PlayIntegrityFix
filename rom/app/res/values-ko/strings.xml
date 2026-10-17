@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix 사용</string>
+    <string name="pif_options_category">위장 옵션</string>
+    <string name="spoof_build_title">빌드 위장</string>
+    <string name="spoof_build_summary">pif.prop의 필드를 위장합니다(기본적으로 사용).</string>
+    <string name="spoof_props_title">속성 위장</string>
+    <string name="spoof_props_summary">시스템 속성을 위장합니다. TrickyStore 또는 TEESimulator를 사용하지 않는 경우 사용하세요.</string>
+    <string name="spoof_provider_title">제공자 위장</string>
+    <string name="spoof_provider_summary">맞춤 키 저장소 제공자입니다. TrickyStore 또는 TEESimulator를 사용하지 않는 경우 사용하세요.</string>
+    <string name="spoof_signature_title">서명 위장</string>
+    <string name="spoof_signature_summary">ROM 서명을 위장합니다. ROM이 testkey로 서명된 경우 사용하세요.</string>
+    <string name="spoof_vending_build_title">빌드 위장(Play 스토어)</string>
+    <string name="spoof_vending_build_summary">Droidguard뿐만 아니라 Play 스토어(com.android.vending)에도 빌드를 위장합니다.</string>
+    <string name="spoof_vending_sdk_title">SDK 위장(Play 스토어)</string>
+    <string name="spoof_vending_sdk_summary">기기가 Android 13 이상인 경우 SDK 버전을 32로 위장합니다. 이 옵션은 불안정을 일으킬 수 있습니다(기본적으로 사용 안 함).</string>
+    <string name="profile_category">활성 프로필</string>
+    <string name="profile_fingerprint">빌드 지문</string>
+    <string name="pif_fetch_title">가져오기</string>
+    <string name="pif_fetch_summary">GitHub에서 최신 pif.prop을 다운로드합니다. 하루에 한 번 업데이트됩니다.</string>
+    <string name="pif_edit_title">현재 활성 pif.prop 보기</string>
+    <string name="pif_reset_title">기본값으로 재설정</string>
+    <string name="pif_fetch_failed">pif.prop을 가져오지 못했습니다</string>
+    <string name="pif_invalid">잘못된 pif.prop</string>
+    <string name="pif_footer">변경사항은 Google Play 서비스와 Play 스토어가 다음에 시작될 때 적용됩니다. 설정을 변경하면 해당 앱이 중지됩니다.</string>
+    <string name="save">\"저장\"</string>
+    <string name="cancel">\"취소\"</string>
+    <string name="profile_model">\"모델\"</string>
+    <string name="profile_security_patch">\"Android 보안 업데이트\"</string>
+</resources>

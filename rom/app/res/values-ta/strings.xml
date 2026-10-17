@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ஐப் பயன்படுத்து</string>
+    <string name="pif_options_category">ஸ்பூஃபிங் விருப்பங்கள்</string>
+    <string name="spoof_build_title">பில்டை ஸ்பூஃப் செய்</string>
+    <string name="spoof_build_summary">pif.prop இலுள்ள புலங்களை ஸ்பூஃப் செய் (இயல்பாக இயக்கத்தில்).</string>
+    <string name="spoof_props_title">பண்புகளை ஸ்பூஃப் செய்</string>
+    <string name="spoof_props_summary">சிஸ்டம் பண்புகளை ஸ்பூஃப் செய்; TrickyStore அல்லது TEESimulator ஐப் பயன்படுத்தவில்லை எனில் இயக்கவும்.</string>
+    <string name="spoof_provider_title">வழங்குநரை ஸ்பூஃப் செய்</string>
+    <string name="spoof_provider_summary">தனிப்பயன் கீஸ்டோர் வழங்குநர்; TrickyStore அல்லது TEESimulator ஐப் பயன்படுத்தவில்லை எனில் இயக்கவும்.</string>
+    <string name="spoof_signature_title">கையொப்பத்தை ஸ்பூஃப் செய்</string>
+    <string name="spoof_signature_summary">ROM கையொப்பத்தை ஸ்பூஃப் செய்; உங்கள் ROM testkey மூலம் கையொப்பமிடப்பட்டிருந்தால் இயக்கவும்.</string>
+    <string name="spoof_vending_build_title">பில்டை ஸ்பூஃப் செய் (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard க்கு மட்டுமல்லாமல் Play Store (com.android.vending) க்கும் பில்டை ஸ்பூஃப் செய்.</string>
+    <string name="spoof_vending_sdk_title">SDK ஐ ஸ்பூஃப் செய் (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">உங்கள் சாதனம் Android 13 அல்லது அதற்குப் பிந்தையதில் இயங்கினால் SDK பதிப்பு 32 ஐ ஸ்பூஃப் செய். இந்த விருப்பம் நிலையற்ற தன்மையை ஏற்படுத்தலாம் (இயல்பாக முடக்கத்தில்).</string>
+    <string name="profile_category">செயலில் உள்ள சுயவிவரம்</string>
+    <string name="profile_fingerprint">பில்டு கைரேகை</string>
+    <string name="pif_fetch_title">பெறு</string>
+    <string name="pif_fetch_summary">GitHub இலிருந்து சமீபத்திய pif.prop ஐப் பதிவிறக்கு, ஒரு நாளுக்கு ஒருமுறை புதுப்பிக்கப்படும்.</string>
+    <string name="pif_edit_title">தற்போது செயலில் உள்ள pif.prop ஐப் பார்</string>
+    <string name="pif_reset_title">இயல்புநிலைக்கு மீட்டமை</string>
+    <string name="pif_fetch_failed">pif.prop ஐப் பெற முடியவில்லை</string>
+    <string name="pif_invalid">தவறான pif.prop</string>
+    <string name="pif_footer">Google Play சேவைகளும் Play Store உம் அடுத்த முறை தொடங்கும்போது மாற்றங்கள் பொருந்தும். அமைப்பை மாற்றும்போது அவை நிறுத்தப்படும்.</string>
+    <string name="save">\"சேமி\"</string>
+    <string name="cancel">\"வேண்டாம்\"</string>
+    <string name="profile_model">\"மாடல்\"</string>
+    <string name="profile_security_patch">\"Android பாதுகாப்புப் புதுப்பிப்பு\"</string>
+</resources>

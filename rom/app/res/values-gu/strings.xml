@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix નો ઉપયોગ કરો</string>
+    <string name="pif_options_category">સ્પૂફિંગ વિકલ્પો</string>
+    <string name="spoof_build_title">બિલ્ડ સ્પૂફ કરો</string>
+    <string name="spoof_build_summary">pif.prop માંના ફીલ્ડ સ્પૂફ કરો (ડિફોલ્ટ રૂપે ચાલુ).</string>
+    <string name="spoof_props_title">પ્રોપર્ટી સ્પૂફ કરો</string>
+    <string name="spoof_props_summary">સિસ્ટમ પ્રોપર્ટી સ્પૂફ કરો; જો તમે TrickyStore અથવા TEESimulator વાપરતા ન હો તો ચાલુ કરો.</string>
+    <string name="spoof_provider_title">પ્રોવાઇડર સ્પૂફ કરો</string>
+    <string name="spoof_provider_summary">કસ્ટમ કીસ્ટોર પ્રોવાઇડર; જો તમે TrickyStore અથવા TEESimulator વાપરતા ન હો તો ચાલુ કરો.</string>
+    <string name="spoof_signature_title">સહી સ્પૂફ કરો</string>
+    <string name="spoof_signature_summary">ROM ની સહી સ્પૂફ કરો; જો તમારું ROM testkey થી સહી કરેલું હોય તો ચાલુ કરો.</string>
+    <string name="spoof_vending_build_title">બિલ્ડ સ્પૂફ કરો (Play Store)</string>
+    <string name="spoof_vending_build_summary">ફક્ત Droidguard માટે નહીં, Play Store (com.android.vending) માટે પણ બિલ્ડ સ્પૂફ કરો.</string>
+    <string name="spoof_vending_sdk_title">SDK સ્પૂફ કરો (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">જો તમારું ડિવાઇસ Android 13 કે તેથી નવું ચલાવતું હોય તો SDK વર્ઝન 32 સ્પૂફ કરો. આ વિકલ્પ અસ્થિરતા લાવી શકે છે (ડિફોલ્ટ રૂપે બંધ).</string>
+    <string name="profile_category">સક્રિય પ્રોફાઇલ</string>
+    <string name="profile_fingerprint">બિલ્ડ ફિંગરપ્રિન્ટ</string>
+    <string name="pif_fetch_title">મેળવો</string>
+    <string name="pif_fetch_summary">GitHub પરથી નવીનતમ pif.prop ડાઉનલોડ કરો, દિવસમાં એકવાર અપડેટ થાય છે.</string>
+    <string name="pif_edit_title">હાલમાં સક્રિય pif.prop જુઓ</string>
+    <string name="pif_reset_title">ડિફોલ્ટ પર રીસેટ કરો</string>
+    <string name="pif_fetch_failed">pif.prop મેળવવામાં નિષ્ફળ</string>
+    <string name="pif_invalid">અમાન્ય pif.prop</string>
+    <string name="pif_footer">Google Play સેવાઓ અને Play Store આગલી વખતે શરૂ થાય ત્યારે ફેરફારો લાગુ થશે. સેટિંગ બદલો ત્યારે તે બંધ થાય છે.</string>
+    <string name="save">\"સાચવો\"</string>
+    <string name="cancel">\"રદ કરો\"</string>
+    <string name="profile_model">\"મૉડલ\"</string>
+    <string name="profile_security_patch">\"Android માટે સુરક્ષા અપડેટ\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Gebruik Play Integrity Fix</string>
+    <string name="pif_options_category">Naboots-opsies</string>
+    <string name="spoof_build_title">Boots bou na</string>
+    <string name="spoof_build_summary">Boots velde in pif.prop na (by verstek aan).</string>
+    <string name="spoof_props_title">Boots eienskappe na</string>
+    <string name="spoof_props_summary">Boots stelseleienskappe na; skakel aan as jy nie TrickyStore of TEESimulator gebruik nie.</string>
+    <string name="spoof_provider_title">Boots verskaffer na</string>
+    <string name="spoof_provider_summary">Pasgemaakte sleutelstoor-verskaffer; skakel aan as jy nie TrickyStore of TEESimulator gebruik nie.</string>
+    <string name="spoof_signature_title">Boots handtekening na</string>
+    <string name="spoof_signature_summary">Boots die ROM-handtekening na; skakel aan as jou ROM met testkey onderteken is.</string>
+    <string name="spoof_vending_build_title">Boots bou na (Play Winkel)</string>
+    <string name="spoof_vending_build_summary">Boots die bou na vir die Play Winkel (com.android.vending), nie net vir Droidguard nie.</string>
+    <string name="spoof_vending_sdk_title">Boots SDK na (Play Winkel)</string>
+    <string name="spoof_vending_sdk_summary">Boots SDK-weergawe 32 na as jou toestel Android 13 of nuwer gebruik. Hierdie opsie kan onstabiliteit veroorsaak (by verstek af).</string>
+    <string name="profile_category">Aktiewe profiel</string>
+    <string name="profile_fingerprint">Bou-vingerafdruk</string>
+    <string name="pif_fetch_title">Haal op</string>
+    <string name="pif_fetch_summary">Laai die nuutste pif.prop vanaf GitHub af, een keer per dag opgedateer.</string>
+    <string name="pif_edit_title">Wys huidige aktiewe pif.prop</string>
+    <string name="pif_reset_title">Stel terug na verstek</string>
+    <string name="pif_fetch_failed">Kon nie pif.prop ophaal nie</string>
+    <string name="pif_invalid">Ongeldige pif.prop</string>
+    <string name="pif_footer">Veranderinge geld wanneer Google Play-dienste en die Play Winkel weer begin. Hulle word gestop wanneer jy \'n instelling verander.</string>
+    <string name="save">\"Stoor\"</string>
+    <string name="cancel">\"Kanselleer \"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Android-sekuriteitopdatering\"</string>
+</resources>

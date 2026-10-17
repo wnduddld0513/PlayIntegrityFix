@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Use Play Integrity Fix</string>
+    <string name="pif_options_category">Spoofing options</string>
+    <string name="spoof_build_title">Spoof build</string>
+    <string name="spoof_build_summary">Spoof field in pif.prop (Enabled by default).</string>
+    <string name="spoof_props_title">Spoof props</string>
+    <string name="spoof_props_summary">Spoof system properties, enable when not using TrickyStore or TEESimulator.</string>
+    <string name="spoof_provider_title">Spoof provider</string>
+    <string name="spoof_provider_summary">Custom keystore provider, enable when not using TrickyStore or TEESimulator.</string>
+    <string name="spoof_signature_title">Spoof signature</string>
+    <string name="spoof_signature_summary">Spoof ROM signature, enable when your ROM is signed by testkey.</string>
+    <string name="spoof_vending_build_title">Spoof build (Play Store)</string>
+    <string name="spoof_vending_build_summary">Spoof the build to the Play Store (com.android.vending), not only to Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Spoof SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Spoof SDK version to 32 if your device runs Android 13 or higher, it will not take effect if your device is running Android 12 or lower. This option can cause instability (Disabled by default).</string>
+    <string name="profile_category">Active profile</string>
+    <string name="profile_fingerprint">Build fingerprint</string>
+    <string name="pif_fetch_title">Fetch</string>
+    <string name="pif_fetch_summary">Via GitHub, Autopif run in GitHub action once a day, fast and reliable.</string>
+    <string name="pif_edit_title">View current active pif.prop</string>
+    <string name="pif_reset_title">Reset to default</string>
+    <string name="pif_fetch_failed">Failed to fetch pif.prop</string>
+    <string name="pif_invalid">Invalid pif.prop</string>
+    <string name="pif_footer">Changes apply the next time Google Play services and the Play Store start. They are stopped when you change a setting.</string>
+    <string name="save">\"‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‏‎‏‏‏‏‏‎‏‎‏‎‏‏‎‏‎‏‏‏‏‎‎‏‎‏‏‎‎‏‎‎‎‏‎‎‏‎‎‏‏‎‎‎‏‎‎‏‏‎‎‎‎‎‏‎‏‏‏‏‏‎‏‏‏‏‏‏‏‎‎Save‎‏‎‎‏‎\"</string>
+    <string name="cancel">\"‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‏‎‏‏‏‏‏‏‏‎‏‎‎‎‎‎‎‏‏‎‏‏‏‎‎‎‎‏‏‎‎‏‎‎‎‎‏‎‏‎‏‏‏‎‏‎‏‎‎‏‏‎‎‎‏‎‎‏‏‏‎‎‏‏‎‎‎‎‎‏‎‎Cancel‎‏‎‎‏‎\"</string>
+    <string name="profile_model">\"‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‏‎‏‏‏‏‏‏‏‏‏‏‏‎‎‏‏‎‏‏‏‎‏‏‏‎‎‎‏‏‎‏‏‎‏‎‏‏‎‎‏‏‎‎‏‏‏‎‏‏‏‏‏‏‏‎‎‏‏‏‎‎‎‏‏‎‏‏‎‎‎‎Model‎‏‎‎‏‎\"</string>
+    <string name="profile_security_patch">\"‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‏‎‏‏‏‏‏‎‏‏‏‎‎‎‏‎‎‎‎‎‎‏‏‏‎‎‏‎‎‎‏‎‏‎‎‏‎‎‎‎‎‏‏‏‏‏‎‏‏‏‏‎‎‏‎‎‏‎‏‎‏‏‎‎‏‎‎‏‏‎‎Android security update‎‏‎‎‏‎\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Dùng Play Integrity Fix</string>
+    <string name="pif_options_category">Tùy chọn giả mạo</string>
+    <string name="spoof_build_title">Giả mạo bản dựng</string>
+    <string name="spoof_build_summary">Giả mạo các trường trong pif.prop (bật theo mặc định).</string>
+    <string name="spoof_props_title">Giả mạo thuộc tính</string>
+    <string name="spoof_props_summary">Giả mạo thuộc tính hệ thống; hãy bật nếu bạn không dùng TrickyStore hoặc TEESimulator.</string>
+    <string name="spoof_provider_title">Giả mạo trình cung cấp</string>
+    <string name="spoof_provider_summary">Trình cung cấp kho khóa tùy chỉnh; hãy bật nếu bạn không dùng TrickyStore hoặc TEESimulator.</string>
+    <string name="spoof_signature_title">Giả mạo chữ ký</string>
+    <string name="spoof_signature_summary">Giả mạo chữ ký của ROM; hãy bật nếu ROM của bạn được ký bằng testkey.</string>
+    <string name="spoof_vending_build_title">Giả mạo bản dựng (Cửa hàng Play)</string>
+    <string name="spoof_vending_build_summary">Giả mạo bản dựng cho Cửa hàng Play (com.android.vending), không chỉ cho Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Giả mạo SDK (Cửa hàng Play)</string>
+    <string name="spoof_vending_sdk_summary">Giả mạo phiên bản SDK 32 nếu thiết bị chạy Android 13 trở lên. Tùy chọn này có thể gây mất ổn định (tắt theo mặc định).</string>
+    <string name="profile_category">Hồ sơ đang dùng</string>
+    <string name="profile_fingerprint">Dấu vân tay bản dựng</string>
+    <string name="pif_fetch_title">Tìm nạp</string>
+    <string name="pif_fetch_summary">Tải pif.prop mới nhất từ GitHub, cập nhật mỗi ngày một lần.</string>
+    <string name="pif_edit_title">Xem pif.prop đang dùng</string>
+    <string name="pif_reset_title">Đặt lại về mặc định</string>
+    <string name="pif_fetch_failed">Không tìm nạp được pif.prop</string>
+    <string name="pif_invalid">pif.prop không hợp lệ</string>
+    <string name="pif_footer">Các thay đổi được áp dụng vào lần tiếp theo Dịch vụ Google Play và Cửa hàng Play khởi động. Các ứng dụng này sẽ bị dừng khi bạn thay đổi một chế độ cài đặt.</string>
+    <string name="save">\"Lưu\"</string>
+    <string name="cancel">\"Hủy\"</string>
+    <string name="profile_model">\"Kiểu máy\"</string>
+    <string name="profile_security_patch">\"Bản cập nhật bảo mật Android\"</string>
+</resources>

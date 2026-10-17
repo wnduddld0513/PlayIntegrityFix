@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Օգտագործել Play Integrity Fix-ը</string>
+    <string name="pif_options_category">Կեղծման ընտրանքներ</string>
+    <string name="spoof_build_title">Կեղծել կառուցվածքը</string>
+    <string name="spoof_build_summary">Կեղծել pif.prop-ի դաշտերը (կանխադրված՝ միացված)։</string>
+    <string name="spoof_props_title">Կեղծել հատկությունները</string>
+    <string name="spoof_props_summary">Կեղծել համակարգային հատկությունները․ միացրեք, եթե չեք օգտագործում TrickyStore կամ TEESimulator։</string>
+    <string name="spoof_provider_title">Կեղծել մատակարարին</string>
+    <string name="spoof_provider_summary">Անհատական բանալիների պահոցի մատակարար․ միացրեք, եթե չեք օգտագործում TrickyStore կամ TEESimulator։</string>
+    <string name="spoof_signature_title">Կեղծել ստորագրությունը</string>
+    <string name="spoof_signature_summary">Կեղծել ROM-ի ստորագրությունը․ միացրեք, եթե ձեր ROM-ը ստորագրված է testkey-ով։</string>
+    <string name="spoof_vending_build_title">Կեղծել կառուցվածքը (Play Store)</string>
+    <string name="spoof_vending_build_summary">Կեղծել կառուցվածքը Play Store-ի (com.android.vending) համար, ոչ միայն Droidguard-ի։</string>
+    <string name="spoof_vending_sdk_title">Կեղծել SDK-ն (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Կեղծել SDK 32 տարբերակը, եթե սարքը գործարկում է Android 13 կամ ավելի նոր տարբերակ։ Այս ընտրանքը կարող է անկայունություն առաջացնել (կանխադրված՝ անջատված)։</string>
+    <string name="profile_category">Ակտիվ պրոֆիլ</string>
+    <string name="profile_fingerprint">Կառուցվածքի մատնահետք</string>
+    <string name="pif_fetch_title">Ստանալ</string>
+    <string name="pif_fetch_summary">Ներբեռնել pif.prop-ի վերջին տարբերակը GitHub-ից, թարմացվում է օրը մեկ անգամ։</string>
+    <string name="pif_edit_title">Դիտել ներկայումս ակտիվ pif.prop-ը</string>
+    <string name="pif_reset_title">Վերականգնել կանխադրվածը</string>
+    <string name="pif_fetch_failed">Չհաջողվեց ստանալ pif.prop-ը</string>
+    <string name="pif_invalid">Անվավեր pif.prop</string>
+    <string name="pif_footer">Փոփոխությունները կկիրառվեն Google Play ծառայությունների և Play Store-ի հաջորդ գործարկման ժամանակ։ Կարգավորումը փոխելիս դրանք կանգնեցվում են։</string>
+    <string name="save">\"Պահել\"</string>
+    <string name="cancel">\"Չեղարկել\"</string>
+    <string name="profile_model">\"Մոդել\"</string>
+    <string name="profile_security_patch">\"Android-ի անվտանգության համակարգի թարմացում\"</string>
+</resources>

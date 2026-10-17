@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Usar Play Integrity Fix</string>
+    <string name="pif_options_category">Opciones de suplantación</string>
+    <string name="spoof_build_title">Suplantar compilación</string>
+    <string name="spoof_build_summary">Suplantar los campos de pif.prop (activado de forma predeterminada).</string>
+    <string name="spoof_props_title">Suplantar propiedades</string>
+    <string name="spoof_props_summary">Suplantar las propiedades del sistema; actívalo si no usas TrickyStore ni TEESimulator.</string>
+    <string name="spoof_provider_title">Suplantar proveedor</string>
+    <string name="spoof_provider_summary">Proveedor de almacén de claves personalizado; actívalo si no usas TrickyStore ni TEESimulator.</string>
+    <string name="spoof_signature_title">Suplantar firma</string>
+    <string name="spoof_signature_summary">Suplantar la firma de la ROM; actívalo si tu ROM está firmada con testkey.</string>
+    <string name="spoof_vending_build_title">Suplantar compilación (Play Store)</string>
+    <string name="spoof_vending_build_summary">Suplantar la compilación para Play Store (com.android.vending), no solo para Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Suplantar SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Suplantar la versión de SDK 32 si el dispositivo usa Android 13 o posterior. Esta opción puede causar inestabilidad (desactivada de forma predeterminada).</string>
+    <string name="profile_category">Perfil activo</string>
+    <string name="profile_fingerprint">Huella de la compilación</string>
+    <string name="pif_fetch_title">Obtener</string>
+    <string name="pif_fetch_summary">Descargar el último pif.prop de GitHub, se actualiza una vez al día.</string>
+    <string name="pif_edit_title">Ver el pif.prop activo actual</string>
+    <string name="pif_reset_title">Restablecer valores predeterminados</string>
+    <string name="pif_fetch_failed">No se pudo obtener pif.prop</string>
+    <string name="pif_invalid">pif.prop no válido</string>
+    <string name="pif_footer">Los cambios se aplican la próxima vez que se inicien los servicios de Google Play y Play Store. Se detienen al cambiar un ajuste.</string>
+    <string name="save">\"Guardar\"</string>
+    <string name="cancel">\"Cancelar\"</string>
+    <string name="profile_model">\"Modelo\"</string>
+    <string name="profile_security_patch">\"Actualización de seguridad de Android\"</string>
+</resources>

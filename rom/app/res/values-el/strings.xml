@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Χρήση του Play Integrity Fix</string>
+    <string name="pif_options_category">Επιλογές πλαστογράφησης</string>
+    <string name="spoof_build_title">Πλαστογράφηση έκδοσης</string>
+    <string name="spoof_build_summary">Πλαστογράφηση των πεδίων στο pif.prop (ενεργό από προεπιλογή).</string>
+    <string name="spoof_props_title">Πλαστογράφηση ιδιοτήτων</string>
+    <string name="spoof_props_summary">Πλαστογράφηση ιδιοτήτων συστήματος· ενεργοποιήστε το αν δεν χρησιμοποιείτε TrickyStore ή TEESimulator.</string>
+    <string name="spoof_provider_title">Πλαστογράφηση παρόχου</string>
+    <string name="spoof_provider_summary">Προσαρμοσμένος πάροχος αποθήκης κλειδιών· ενεργοποιήστε το αν δεν χρησιμοποιείτε TrickyStore ή TEESimulator.</string>
+    <string name="spoof_signature_title">Πλαστογράφηση υπογραφής</string>
+    <string name="spoof_signature_summary">Πλαστογράφηση της υπογραφής του ROM· ενεργοποιήστε το αν το ROM είναι υπογεγραμμένο με testkey.</string>
+    <string name="spoof_vending_build_title">Πλαστογράφηση έκδοσης (Play Store)</string>
+    <string name="spoof_vending_build_summary">Πλαστογράφηση της έκδοσης για το Play Store (com.android.vending), όχι μόνο για το Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Πλαστογράφηση SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Πλαστογράφηση της έκδοσης SDK 32 αν η συσκευή εκτελεί Android 13 ή νεότερο. Αυτή η επιλογή μπορεί να προκαλέσει αστάθεια (απενεργοποιημένη από προεπιλογή).</string>
+    <string name="profile_category">Ενεργό προφίλ</string>
+    <string name="profile_fingerprint">Αποτύπωμα έκδοσης</string>
+    <string name="pif_fetch_title">Λήψη</string>
+    <string name="pif_fetch_summary">Λήψη του πιο πρόσφατου pif.prop από το GitHub, ενημερώνεται μία φορά την ημέρα.</string>
+    <string name="pif_edit_title">Προβολή του τρέχοντος ενεργού pif.prop</string>
+    <string name="pif_reset_title">Επαναφορά στις προεπιλογές</string>
+    <string name="pif_fetch_failed">Αποτυχία λήψης του pif.prop</string>
+    <string name="pif_invalid">Μη έγκυρο pif.prop</string>
+    <string name="pif_footer">Οι αλλαγές εφαρμόζονται στην επόμενη εκκίνηση των υπηρεσιών Google Play και του Play Store. Σταματούν όταν αλλάζετε μια ρύθμιση.</string>
+    <string name="save">\"Αποθήκευση\"</string>
+    <string name="cancel">\"Ακύρωση\"</string>
+    <string name="profile_model">\"Μοντέλο\"</string>
+    <string name="profile_security_patch">\"Ενημέρωση ασφαλείας Android\"</string>
+</resources>

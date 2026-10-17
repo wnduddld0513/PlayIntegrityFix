@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Käytä Play Integrity Fixiä</string>
+    <string name="pif_options_category">Väärennysasetukset</string>
+    <string name="spoof_build_title">Väärennä koontiversio</string>
+    <string name="spoof_build_summary">Väärennä pif.propin kentät (oletuksena käytössä).</string>
+    <string name="spoof_props_title">Väärennä ominaisuudet</string>
+    <string name="spoof_props_summary">Väärennä järjestelmän ominaisuudet; ota käyttöön, jos et käytä TrickyStorea tai TEESimulatoria.</string>
+    <string name="spoof_provider_title">Väärennä tarjoaja</string>
+    <string name="spoof_provider_summary">Mukautettu avainsäilön tarjoaja; ota käyttöön, jos et käytä TrickyStorea tai TEESimulatoria.</string>
+    <string name="spoof_signature_title">Väärennä allekirjoitus</string>
+    <string name="spoof_signature_summary">Väärennä ROMin allekirjoitus; ota käyttöön, jos ROM on allekirjoitettu testkey-avaimella.</string>
+    <string name="spoof_vending_build_title">Väärennä koontiversio (Play Kauppa)</string>
+    <string name="spoof_vending_build_summary">Väärennä koontiversio Play Kaupalle (com.android.vending), ei vain Droidguardille.</string>
+    <string name="spoof_vending_sdk_title">Väärennä SDK (Play Kauppa)</string>
+    <string name="spoof_vending_sdk_summary">Väärennä SDK-versio 32, jos laitteessa on Android 13 tai uudempi. Tämä asetus voi aiheuttaa epävakautta (oletuksena pois käytöstä).</string>
+    <string name="profile_category">Aktiivinen profiili</string>
+    <string name="profile_fingerprint">Koontiversion sormenjälki</string>
+    <string name="pif_fetch_title">Hae</string>
+    <string name="pif_fetch_summary">Lataa uusin pif.prop GitHubista, päivitetään kerran päivässä.</string>
+    <string name="pif_edit_title">Näytä tällä hetkellä aktiivinen pif.prop</string>
+    <string name="pif_reset_title">Palauta oletukset</string>
+    <string name="pif_fetch_failed">pif.propin haku epäonnistui</string>
+    <string name="pif_invalid">Virheellinen pif.prop</string>
+    <string name="pif_footer">Muutokset tulevat voimaan, kun Google Play -palvelut ja Play Kauppa käynnistyvät seuraavan kerran. Ne pysäytetään, kun muutat asetusta.</string>
+    <string name="save">\"Tallenna\"</string>
+    <string name="cancel">\"Peru\"</string>
+    <string name="profile_model">\"Malli\"</string>
+    <string name="profile_security_patch">\"Androidin tietoturvapäivitys\"</string>
+</resources>

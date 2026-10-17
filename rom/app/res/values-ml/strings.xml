@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ഉപയോഗിക്കുക</string>
+    <string name="pif_options_category">സ്‌പൂഫിംഗ് ഓപ്ഷനുകൾ</string>
+    <string name="spoof_build_title">ബിൽഡ് സ്‌പൂഫ് ചെയ്യുക</string>
+    <string name="spoof_build_summary">pif.prop-ലെ ഫീൽഡുകൾ സ്‌പൂഫ് ചെയ്യുക (ഡിഫോൾട്ടായി ഓണാണ്).</string>
+    <string name="spoof_props_title">പ്രോപ്പർട്ടികൾ സ്‌പൂഫ് ചെയ്യുക</string>
+    <string name="spoof_props_summary">സിസ്‌റ്റം പ്രോപ്പർട്ടികൾ സ്‌പൂഫ് ചെയ്യുക; TrickyStore അല്ലെങ്കിൽ TEESimulator ഉപയോഗിക്കുന്നില്ലെങ്കിൽ ഓണാക്കുക.</string>
+    <string name="spoof_provider_title">പ്രൊവൈഡർ സ്‌പൂഫ് ചെയ്യുക</string>
+    <string name="spoof_provider_summary">ഇഷ്ടാനുസൃത കീസ്റ്റോർ പ്രൊവൈഡർ; TrickyStore അല്ലെങ്കിൽ TEESimulator ഉപയോഗിക്കുന്നില്ലെങ്കിൽ ഓണാക്കുക.</string>
+    <string name="spoof_signature_title">ഒപ്പ് സ്‌പൂഫ് ചെയ്യുക</string>
+    <string name="spoof_signature_summary">ROM ഒപ്പ് സ്‌പൂഫ് ചെയ്യുക; നിങ്ങളുടെ ROM testkey ഉപയോഗിച്ച് ഒപ്പിട്ടതാണെങ്കിൽ ഓണാക്കുക.</string>
+    <string name="spoof_vending_build_title">ബിൽഡ് സ്‌പൂഫ് ചെയ്യുക (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard-ന് മാത്രമല്ല, Play Store-നും (com.android.vending) ബിൽഡ് സ്‌പൂഫ് ചെയ്യുക.</string>
+    <string name="spoof_vending_sdk_title">SDK സ്‌പൂഫ് ചെയ്യുക (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">നിങ്ങളുടെ ഉപകരണം Android 13 അല്ലെങ്കിൽ അതിനു മുകളിലാണെങ്കിൽ SDK പതിപ്പ് 32 സ്‌പൂഫ് ചെയ്യുക. ഈ ഓപ്ഷൻ അസ്ഥിരതയ്ക്ക് കാരണമായേക്കാം (ഡിഫോൾട്ടായി ഓഫ്).</string>
+    <string name="profile_category">സജീവ പ്രൊഫൈൽ</string>
+    <string name="profile_fingerprint">ബിൽഡ് ഫിംഗർപ്രിന്റ്</string>
+    <string name="pif_fetch_title">ലഭ്യമാക്കുക</string>
+    <string name="pif_fetch_summary">GitHub-ൽ നിന്ന് ഏറ്റവും പുതിയ pif.prop ഡൗൺലോഡ് ചെയ്യുക, ദിവസത്തിൽ ഒരിക്കൽ അപ്‌ഡേറ്റ് ചെയ്യും.</string>
+    <string name="pif_edit_title">നിലവിൽ സജീവമായ pif.prop കാണുക</string>
+    <string name="pif_reset_title">ഡിഫോൾട്ടിലേക്ക് റീസെറ്റ് ചെയ്യുക</string>
+    <string name="pif_fetch_failed">pif.prop ലഭ്യമാക്കാനായില്ല</string>
+    <string name="pif_invalid">അസാധുവായ pif.prop</string>
+    <string name="pif_footer">Google Play സേവനങ്ങളും Play Store-ഉം അടുത്തതവണ ആരംഭിക്കുമ്പോൾ മാറ്റങ്ങൾ ബാധകമാകും. ക്രമീകരണം മാറ്റുമ്പോൾ അവ നിർത്തപ്പെടും.</string>
+    <string name="save">\"സംരക്ഷിക്കുക\"</string>
+    <string name="cancel">\"റദ്ദാക്കുക\"</string>
+    <string name="profile_model">\"മോഡല്‍\"</string>
+    <string name="profile_security_patch">\"Android സുരക്ഷാ അപ്ഡേറ്റ്\"</string>
+</resources>

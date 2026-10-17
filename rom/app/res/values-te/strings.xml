@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix ను ఉపయోగించండి</string>
+    <string name="pif_options_category">స్పూఫింగ్ ఎంపికలు</string>
+    <string name="spoof_build_title">బిల్డ్‌ను స్పూఫ్ చేయండి</string>
+    <string name="spoof_build_summary">pif.prop లోని ఫీల్డ్‌లను స్పూఫ్ చేయండి (ఆటోమేటిక్‌గా ఆన్).</string>
+    <string name="spoof_props_title">ప్రాపర్టీలను స్పూఫ్ చేయండి</string>
+    <string name="spoof_props_summary">సిస్టమ్ ప్రాపర్టీలను స్పూఫ్ చేయండి; మీరు TrickyStore లేదా TEESimulator ఉపయోగించకపోతే ఆన్ చేయండి.</string>
+    <string name="spoof_provider_title">ప్రొవైడర్‌ను స్పూఫ్ చేయండి</string>
+    <string name="spoof_provider_summary">అనుకూల కీస్టోర్ ప్రొవైడర్; మీరు TrickyStore లేదా TEESimulator ఉపయోగించకపోతే ఆన్ చేయండి.</string>
+    <string name="spoof_signature_title">సంతకాన్ని స్పూఫ్ చేయండి</string>
+    <string name="spoof_signature_summary">ROM సంతకాన్ని స్పూఫ్ చేయండి; మీ ROM testkey తో సంతకం చేయబడి ఉంటే ఆన్ చేయండి.</string>
+    <string name="spoof_vending_build_title">బిల్డ్‌ను స్పూఫ్ చేయండి (Play Store)</string>
+    <string name="spoof_vending_build_summary">Droidguard కు మాత్రమే కాకుండా Play Store (com.android.vending) కు కూడా బిల్డ్‌ను స్పూఫ్ చేయండి.</string>
+    <string name="spoof_vending_sdk_title">SDK ను స్పూఫ్ చేయండి (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">మీ పరికరం Android 13 లేదా ఆపై వెర్షన్‌లో నడుస్తుంటే SDK వెర్షన్ 32 ను స్పూఫ్ చేయండి. ఈ ఎంపిక అస్థిరతకు కారణం కావచ్చు (ఆటోమేటిక్‌గా ఆఫ్).</string>
+    <string name="profile_category">యాక్టివ్ ప్రొఫైల్</string>
+    <string name="profile_fingerprint">బిల్డ్ ఫింగర్‌ప్రింట్</string>
+    <string name="pif_fetch_title">పొందండి</string>
+    <string name="pif_fetch_summary">GitHub నుండి తాజా pif.prop ను డౌన్‌లోడ్ చేయండి, రోజుకు ఒకసారి అప్‌డేట్ అవుతుంది.</string>
+    <string name="pif_edit_title">ప్రస్తుతం యాక్టివ్‌గా ఉన్న pif.prop ను చూడండి</string>
+    <string name="pif_reset_title">డిఫాల్ట్‌కు రీసెట్ చేయండి</string>
+    <string name="pif_fetch_failed">pif.prop ను పొందడం విఫలమైంది</string>
+    <string name="pif_invalid">చెల్లని pif.prop</string>
+    <string name="pif_footer">Google Play సేవలు మరియు Play Store తదుపరిసారి ప్రారంభమైనప్పుడు మార్పులు వర్తిస్తాయి. సెట్టింగ్‌ను మార్చినప్పుడు అవి ఆపివేయబడతాయి.</string>
+    <string name="save">\"సేవ్ చేయండి\"</string>
+    <string name="cancel">\"రద్దు చేయండి\"</string>
+    <string name="profile_model">\"మోడల్\"</string>
+    <string name="profile_security_patch">\"Android సెక్యూరిటీ అప్‌డేట్\"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">استفاده از Play Integrity Fix</string>
+    <string name="pif_options_category">گزینه‌های جعل</string>
+    <string name="spoof_build_title">جعل ساخت</string>
+    <string name="spoof_build_summary">جعل فیلدهای pif.prop (به‌طور پیش‌فرض روشن).</string>
+    <string name="spoof_props_title">جعل ویژگی‌ها</string>
+    <string name="spoof_props_summary">جعل ویژگی‌های سیستم؛ اگر از TrickyStore یا TEESimulator استفاده نمی‌کنید روشن کنید.</string>
+    <string name="spoof_provider_title">جعل ارائه‌دهنده</string>
+    <string name="spoof_provider_summary">ارائه‌دهندهٔ سفارشی انبار کلید؛ اگر از TrickyStore یا TEESimulator استفاده نمی‌کنید روشن کنید.</string>
+    <string name="spoof_signature_title">جعل امضا</string>
+    <string name="spoof_signature_summary">جعل امضای ROM؛ اگر ROM شما با testkey امضا شده روشن کنید.</string>
+    <string name="spoof_vending_build_title">جعل ساخت (Play Store)</string>
+    <string name="spoof_vending_build_summary">جعل ساخت برای Play Store (com.android.vending) و نه فقط Droidguard.</string>
+    <string name="spoof_vending_sdk_title">جعل SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">اگر دستگاه شما Android 13 یا بالاتر دارد، نسخهٔ SDK را 32 جعل کنید. این گزینه ممکن است ناپایداری ایجاد کند (به‌طور پیش‌فرض خاموش).</string>
+    <string name="profile_category">نمایهٔ فعال</string>
+    <string name="profile_fingerprint">اثر انگشت ساخت</string>
+    <string name="pif_fetch_title">دریافت</string>
+    <string name="pif_fetch_summary">دریافت جدیدترین pif.prop از GitHub، روزی یک بار به‌روز می‌شود.</string>
+    <string name="pif_edit_title">مشاهدهٔ pif.prop فعال فعلی</string>
+    <string name="pif_reset_title">بازنشانی به پیش‌فرض</string>
+    <string name="pif_fetch_failed">دریافت pif.prop ناموفق بود</string>
+    <string name="pif_invalid">pif.prop نامعتبر</string>
+    <string name="pif_footer">تغییرات هنگام راه‌اندازی بعدی خدمات Google Play و Play Store اعمال می‌شوند. با تغییر تنظیمات متوقف می‌شوند.</string>
+    <string name="save">\"ذخیره\"</string>
+    <string name="cancel">\"لغو\"</string>
+    <string name="profile_model">\"مدل\"</string>
+    <string name="profile_security_patch">\"‏به‌روزرسانی امنیتی Android\"</string>
+</resources>

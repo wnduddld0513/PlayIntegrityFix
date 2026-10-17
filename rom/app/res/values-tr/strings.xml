@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Play Integrity Fix kullan</string>
+    <string name="pif_options_category">Taklit seçenekleri</string>
+    <string name="spoof_build_title">Derlemeyi taklit et</string>
+    <string name="spoof_build_summary">Pif.prop\'ta sahte alan, varsayılan olarak etkindir.</string>
+    <string name="spoof_props_title">Özellikleri taklit et</string>
+    <string name="spoof_props_summary">Sistem özelliklerini kandır, TrickyStore veya TEESimulator kullanılmadığında etkinleştirilir.</string>
+    <string name="spoof_provider_title">Sağlayıcıyı taklit et</string>
+    <string name="spoof_provider_summary">Özel keystore sağlayıcısı, TrickyStore veya TEESimulator\'ı kullanmadığınızda etkinleştirin.</string>
+    <string name="spoof_signature_title">İmzayı taklit et</string>
+    <string name="spoof_signature_summary">ROM imzasını taklit eder, ROM\'unuz testkey ile imzalanmışsa etkinleştirin.</string>
+    <string name="spoof_vending_build_title">Derlemeyi taklit et (Play Store)</string>
+    <string name="spoof_vending_build_summary">Derlemeyi yalnızca Droidguard için değil, Play Store (com.android.vending) için de taklit eder.</string>
+    <string name="spoof_vending_sdk_title">SDK\'yı taklit et (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Cihazınız Android 13 veya daha yüksek bir sürüm çalıştırıyorsa 32 \'ye kadar olan sahte sdk sürümü, cihazınız Android 12 veya daha düşük bir sürüm çalıştırıyorsa etkili olmaz. Bu seçenek dengesizliğe neden olabilir, varsayılan olarak devre dışıdır.</string>
+    <string name="profile_category">Etkin profil</string>
+    <string name="profile_fingerprint">Derleme parmak izi</string>
+    <string name="pif_fetch_title">Veri Çek</string>
+    <string name="pif_fetch_summary">GitHub aracılığıyla, GitHub eyleminde günde bir kez autopif çalıştırın, hızlı ve güvenilir.</string>
+    <string name="pif_edit_title">Mevcut etkin pif.prop\'u görüntüle</string>
+    <string name="pif_reset_title">Varsayılana sıfırla</string>
+    <string name="pif_fetch_failed">Pif.prop getirilemedi</string>
+    <string name="pif_invalid">Geçersiz pif.prop</string>
+    <string name="pif_footer">Değişiklikler Google Play hizmetleri ve Play Store\'un bir sonraki başlatılışında uygulanır. Bir ayarı değiştirdiğinizde durdurulurlar.</string>
+    <string name="save">\"Kaydet\"</string>
+    <string name="cancel">\"İptal\"</string>
+    <string name="profile_model">\"Model\"</string>
+    <string name="profile_security_patch">\"Android güvenlik güncellemesi\"</string>
+</resources>

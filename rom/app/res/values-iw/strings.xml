@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">שימוש ב-Play Integrity Fix</string>
+    <string name="pif_options_category">אפשרויות התחזות</string>
+    <string name="spoof_build_title">התחזות לגרסת Build</string>
+    <string name="spoof_build_summary">התחזות לשדות ב-pif.prop (מופעל כברירת מחדל).</string>
+    <string name="spoof_props_title">התחזות למאפיינים</string>
+    <string name="spoof_props_summary">התחזות למאפייני המערכת; כדאי להפעיל אם לא נעשה שימוש ב-TrickyStore או ב-TEESimulator.</string>
+    <string name="spoof_provider_title">התחזות לספק</string>
+    <string name="spoof_provider_summary">ספק מאגר מפתחות מותאם אישית; כדאי להפעיל אם לא נעשה שימוש ב-TrickyStore או ב-TEESimulator.</string>
+    <string name="spoof_signature_title">התחזות לחתימה</string>
+    <string name="spoof_signature_summary">התחזות לחתימת ה-ROM; כדאי להפעיל אם ה-ROM חתום ב-testkey.</string>
+    <string name="spoof_vending_build_title">התחזות לגרסת Build (חנות Play)</string>
+    <string name="spoof_vending_build_summary">התחזות לגרסת Build עבור חנות Play‏ (com.android.vending), ולא רק עבור Droidguard.</string>
+    <string name="spoof_vending_sdk_title">התחזות ל-SDK (חנות Play)</string>
+    <string name="spoof_vending_sdk_summary">התחזות לגרסת SDK 32 אם המכשיר פועל ב-Android 13 ומעלה. האפשרות עלולה לגרום לחוסר יציבות (כבויה כברירת מחדל).</string>
+    <string name="profile_category">פרופיל פעיל</string>
+    <string name="profile_fingerprint">טביעת אצבע של Build</string>
+    <string name="pif_fetch_title">אחזור</string>
+    <string name="pif_fetch_summary">הורדת pif.prop העדכני מ-GitHub, מתעדכן פעם ביום.</string>
+    <string name="pif_edit_title">הצגת pif.prop הפעיל כעת</string>
+    <string name="pif_reset_title">איפוס לברירת המחדל</string>
+    <string name="pif_fetch_failed">אחזור pif.prop נכשל</string>
+    <string name="pif_invalid">pif.prop לא תקין</string>
+    <string name="pif_footer">השינויים ייכנסו לתוקף בהפעלה הבאה של שירותי Google Play וחנות Play. הם נעצרים כשמשנים הגדרה.</string>
+    <string name="save">\"שמירה\"</string>
+    <string name="cancel">\"ביטול\"</string>
+    <string name="profile_model">\"דגם\"</string>
+    <string name="profile_security_patch">\"‏עדכון אבטחה ל-‏Android\"</string>
+</resources>

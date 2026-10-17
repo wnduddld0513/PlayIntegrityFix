@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Usar o Play Integrity Fix</string>
+    <string name="pif_options_category">Opções de falsificação</string>
+    <string name="spoof_build_title">Falsificar build</string>
+    <string name="spoof_build_summary">Falsificar os campos do pif.prop (ativado por padrão).</string>
+    <string name="spoof_props_title">Falsificar propriedades</string>
+    <string name="spoof_props_summary">Falsificar as propriedades do sistema; ative se você não usa TrickyStore nem TEESimulator.</string>
+    <string name="spoof_provider_title">Falsificar provedor</string>
+    <string name="spoof_provider_summary">Provedor de keystore personalizado; ative se você não usa TrickyStore nem TEESimulator.</string>
+    <string name="spoof_signature_title">Falsificar assinatura</string>
+    <string name="spoof_signature_summary">Falsificar a assinatura da ROM; ative se sua ROM for assinada com testkey.</string>
+    <string name="spoof_vending_build_title">Falsificar build (Play Store)</string>
+    <string name="spoof_vending_build_summary">Falsificar a build para a Play Store (com.android.vending), não apenas para o Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Falsificar SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Falsificar a versão de SDK 32 se o dispositivo usa o Android 13 ou mais recente. Essa opção pode causar instabilidade (desativada por padrão).</string>
+    <string name="profile_category">Perfil ativo</string>
+    <string name="profile_fingerprint">Impressão digital da build</string>
+    <string name="pif_fetch_title">Buscar</string>
+    <string name="pif_fetch_summary">Baixa o pif.prop mais recente do GitHub, atualizado uma vez por dia.</string>
+    <string name="pif_edit_title">Ver o pif.prop ativo no momento</string>
+    <string name="pif_reset_title">Redefinir para o padrão</string>
+    <string name="pif_fetch_failed">Falha ao buscar o pif.prop</string>
+    <string name="pif_invalid">pif.prop inválido</string>
+    <string name="pif_footer">As alterações são aplicadas na próxima vez que os serviços do Google Play e a Play Store forem iniciados. Eles são interrompidos quando você altera uma configuração.</string>
+    <string name="save">\"Guardar\"</string>
+    <string name="cancel">\"Cancelar\"</string>
+    <string name="profile_model">\"Modelo\"</string>
+    <string name="profile_security_patch">\"Atualização de segurança do Android\"</string>
+</resources>

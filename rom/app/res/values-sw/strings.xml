@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Tumia Play Integrity Fix</string>
+    <string name="pif_options_category">Chaguo za kughushi</string>
+    <string name="spoof_build_title">Ghushi muundo</string>
+    <string name="spoof_build_summary">Ghushi sehemu katika pif.prop (imewashwa kwa chaguomsingi).</string>
+    <string name="spoof_props_title">Ghushi sifa</string>
+    <string name="spoof_props_summary">Ghushi sifa za mfumo; washa ikiwa hutumii TrickyStore au TEESimulator.</string>
+    <string name="spoof_provider_title">Ghushi mtoa huduma</string>
+    <string name="spoof_provider_summary">Mtoa huduma maalum wa hifadhi ya vitufe; washa ikiwa hutumii TrickyStore au TEESimulator.</string>
+    <string name="spoof_signature_title">Ghushi sahihi</string>
+    <string name="spoof_signature_summary">Ghushi sahihi ya ROM; washa ikiwa ROM yako imesainiwa kwa testkey.</string>
+    <string name="spoof_vending_build_title">Ghushi muundo (Play Store)</string>
+    <string name="spoof_vending_build_summary">Ghushi muundo kwa Play Store (com.android.vending), si Droidguard pekee.</string>
+    <string name="spoof_vending_sdk_title">Ghushi SDK (Play Store)</string>
+    <string name="spoof_vending_sdk_summary">Ghushi toleo la SDK 32 ikiwa kifaa chako kinatumia Android 13 au matoleo mapya zaidi. Chaguo hili linaweza kusababisha kutokuwa thabiti (limezimwa kwa chaguomsingi).</string>
+    <string name="profile_category">Wasifu unaotumika</string>
+    <string name="profile_fingerprint">Alama ya kidole ya muundo</string>
+    <string name="pif_fetch_title">Leta</string>
+    <string name="pif_fetch_summary">Pakua pif.prop ya hivi karibuni kutoka GitHub, husasishwa mara moja kwa siku.</string>
+    <string name="pif_edit_title">Angalia pif.prop inayotumika sasa</string>
+    <string name="pif_reset_title">Weka upya hadi chaguomsingi</string>
+    <string name="pif_fetch_failed">Imeshindwa kuleta pif.prop</string>
+    <string name="pif_invalid">pif.prop si sahihi</string>
+    <string name="pif_footer">Mabadiliko hutumika Huduma za Google Play na Play Store zitakapoanza tena. Husimamishwa unapobadilisha mipangilio.</string>
+    <string name="save">\"Hifadhi\"</string>
+    <string name="cancel">\"Ghairi\"</string>
+    <string name="profile_model">\"Muundo\"</string>
+    <string name="profile_security_patch">\"Sasisho la usalama la Android\"</string>
+</resources>

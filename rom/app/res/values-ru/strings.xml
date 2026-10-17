@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
+     module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
+     module's translations where it has them. save, cancel, profile_model and
+     profile_security_patch are strings of the AOSP Settings (Apache-2.0).
+-->
+<resources>
+    <string name="pif_main_switch">Использовать Play Integrity Fix</string>
+    <string name="pif_options_category">Параметры подмены</string>
+    <string name="spoof_build_title">Подмена сборки</string>
+    <string name="spoof_build_summary">Подменять поля в pif.prop (по умолчанию включено).</string>
+    <string name="spoof_props_title">Подмена свойств</string>
+    <string name="spoof_props_summary">Подменять системные свойства; включите, если не используете TrickyStore или TEESimulator.</string>
+    <string name="spoof_provider_title">Подмена поставщика</string>
+    <string name="spoof_provider_summary">Пользовательский поставщик хранилища ключей; включите, если не используете TrickyStore или TEESimulator.</string>
+    <string name="spoof_signature_title">Подмена подписи</string>
+    <string name="spoof_signature_summary">Подменять подпись ROM; включите, если ваш ROM подписан ключом testkey.</string>
+    <string name="spoof_vending_build_title">Подмена сборки (Play Маркет)</string>
+    <string name="spoof_vending_build_summary">Подменять сборку для Play Маркета (com.android.vending), а не только для Droidguard.</string>
+    <string name="spoof_vending_sdk_title">Подмена SDK (Play Маркет)</string>
+    <string name="spoof_vending_sdk_summary">Подменять версию SDK на 32, если на устройстве Android 13 или новее. Параметр может вызывать нестабильность (по умолчанию выключено).</string>
+    <string name="profile_category">Активный профиль</string>
+    <string name="profile_fingerprint">Отпечаток сборки</string>
+    <string name="pif_fetch_title">Получить</string>
+    <string name="pif_fetch_summary">Загрузить последний pif.prop с GitHub, обновляется раз в сутки.</string>
+    <string name="pif_edit_title">Просмотреть активный pif.prop</string>
+    <string name="pif_reset_title">Сбросить по умолчанию</string>
+    <string name="pif_fetch_failed">Не удалось получить pif.prop</string>
+    <string name="pif_invalid">Недопустимый pif.prop</string>
+    <string name="pif_footer">Изменения вступят в силу при следующем запуске сервисов Google Play и Play Маркета. При изменении настройки они останавливаются.</string>
+    <string name="save">\"Сохранить\"</string>
+    <string name="cancel">\"Отмена\"</string>
+    <string name="profile_model">\"Модель\"</string>
+    <string name="profile_security_patch">\"Обновление системы безопасности Android\"</string>
+</resources>

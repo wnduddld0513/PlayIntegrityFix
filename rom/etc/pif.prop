@@ -1,0 +1,16 @@
+# pif.prop shipped with the ROM: module/pif.prop of KOWX712/PlayIntegrityFix
+# v4.9-inject-s, with spoofProvider=true (the ROM has no TrickyStore; the provider
+# is skipped while the ROM keybox is set) and spoofVendingBuild=false (the Play Store
+# keeps the real device identity). GPL-3.0, see LICENSE.
+FINGERPRINT=google/bluejay_beta/bluejay:CANARY/ZP11.260918.007/16484274:user/release-keys
+MANUFACTURER=Google
+MODEL=Pixel 6a
+SECURITY_PATCH=2026-10-05
+DEVICE_INITIAL_SDK_INT=32
+spoofBuild=true
+spoofProps=true
+spoofProvider=true
+spoofSignature=false
+spoofVendingBuild=false
+spoofVendingSdk=false
+DEBUG=false
