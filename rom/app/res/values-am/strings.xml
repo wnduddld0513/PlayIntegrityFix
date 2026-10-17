@@ -38,4 +38,5 @@
     <string name="cancel">\"ይቅር\"</string>
     <string name="profile_model">\"ሞዴል\"</string>
     <string name="profile_security_patch">\"የAndroid ደህንነት ዝማኔ\"</string>
+    <string name="pif_not_fetched">ገና አልተገኘም</string>
 </resources>

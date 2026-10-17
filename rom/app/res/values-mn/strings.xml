@@ -38,4 +38,5 @@
     <string name="cancel">\"Цуцлах\"</string>
     <string name="profile_model">\"Загвар\"</string>
     <string name="profile_security_patch">\"Android-н аюулгүй байдлын шинэчлэлт\"</string>
+    <string name="pif_not_fetched">Хараахан татаагүй</string>
 </resources>

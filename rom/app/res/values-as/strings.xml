@@ -38,4 +38,5 @@
     <string name="cancel">\"বাতিল কৰক\"</string>
     <string name="profile_model">\"মডেল\"</string>
     <string name="profile_security_patch">\"Android সুৰক্ষা আপডে’ট\"</string>
+    <string name="pif_not_fetched">এতিয়ালৈকে অনা হোৱা নাই</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"Peru\"</string>
     <string name="profile_model">\"Malli\"</string>
     <string name="profile_security_patch">\"Androidin tietoturvapäivitys\"</string>
+    <string name="pif_not_fetched">Ei vielä noudettu</string>
 </resources>

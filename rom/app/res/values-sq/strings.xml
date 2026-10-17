@@ -38,4 +38,5 @@
     <string name="cancel">\"Anulo\"</string>
     <string name="profile_model">\"Modeli\"</string>
     <string name="profile_security_patch">\"Përditësim sigurie për Android\"</string>
+    <string name="pif_not_fetched">Ende i pamarrë</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"Tühista\"</string>
     <string name="profile_model">\"Mudel\"</string>
     <string name="profile_security_patch">\"Androidi turvavärskendus\"</string>
+    <string name="pif_not_fetched">Pole veel toodud</string>
 </resources>

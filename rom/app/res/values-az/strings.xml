@@ -38,4 +38,5 @@
     <string name="cancel">\"Ləğv edin\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Android güvənlik güncəllənməsi\"</string>
+    <string name="pif_not_fetched">Hələ əldə edilməyib</string>
 </resources>

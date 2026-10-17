@@ -38,4 +38,5 @@
     <string name="cancel">\"إلغاء\"</string>
     <string name="profile_model">\"الطراز\"</string>
     <string name="profile_security_patch">\"‏تحديث أمان نظام Android\"</string>
+    <string name="pif_not_fetched">لم يتم الجلب بعد</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"Otkaži\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Bezbednosno ažuriranje za Android\"</string>
+    <string name="pif_not_fetched">Još nije preuzeto</string>
 </resources>

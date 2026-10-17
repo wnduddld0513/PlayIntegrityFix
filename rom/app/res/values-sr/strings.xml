@@ -38,4 +38,5 @@
     <string name="cancel">\"Откажи\"</string>
     <string name="profile_model">\"Модел\"</string>
     <string name="profile_security_patch">\"Безбедносно ажурирање за Android\"</string>
+    <string name="pif_not_fetched">Још није преузето</string>
 </resources>

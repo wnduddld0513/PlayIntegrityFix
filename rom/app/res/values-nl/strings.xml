@@ -38,4 +38,5 @@
     <string name="cancel">\"Annuleren\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Android-beveiligingsupdate\"</string>
+    <string name="pif_not_fetched">Nog niet opgehaald</string>
 </resources>

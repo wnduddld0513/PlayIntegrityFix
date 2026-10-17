@@ -38,4 +38,5 @@
     <string name="cancel">\"Batal\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Update keamanan Android\"</string>
+    <string name="pif_not_fetched">Belum diambil</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"Atcelt\"</string>
     <string name="profile_model">\"Modelis\"</string>
     <string name="profile_security_patch">\"Android drošības atjauninājums\"</string>
+    <string name="pif_not_fetched">Vēl nav iegūts</string>
 </resources>

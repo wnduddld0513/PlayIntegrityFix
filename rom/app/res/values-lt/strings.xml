@@ -38,4 +38,5 @@
     <string name="cancel">\"Atšaukti\"</string>
     <string name="profile_model">\"Modelis\"</string>
     <string name="profile_security_patch">\"„Android“ saugos naujinys\"</string>
+    <string name="pif_not_fetched">Dar negauta</string>
 </resources>

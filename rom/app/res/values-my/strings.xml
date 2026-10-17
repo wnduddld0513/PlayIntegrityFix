@@ -38,4 +38,5 @@
     <string name="cancel">\"မလုပ်တော့\"</string>
     <string name="profile_model">\"မိုဒယ်\"</string>
     <string name="profile_security_patch">\"Android လုံခြုံရေးအပ်ဒိတ်\"</string>
+    <string name="pif_not_fetched">မရယူရသေးပါ</string>
 </resources>

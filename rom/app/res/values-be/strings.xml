@@ -38,4 +38,5 @@
     <string name="cancel">\"Скасаваць\"</string>
     <string name="profile_model">\"Мадэль\"</string>
     <string name="profile_security_patch">\"Абнаўленне сістэмы бяспекі Android\"</string>
+    <string name="pif_not_fetched">Яшчэ не атрымана</string>
 </resources>

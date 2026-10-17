@@ -38,4 +38,5 @@
     <string name="cancel">\"रहने दें\"</string>
     <string name="profile_model">\"मॉडल\"</string>
     <string name="profile_security_patch">\"Android का सिक्योरिटी अपडेट\"</string>
+    <string name="pif_not_fetched">अभी तक नहीं लाया गया</string>
 </resources>

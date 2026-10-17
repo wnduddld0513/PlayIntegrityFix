@@ -125,9 +125,9 @@ public class PifFragment extends SettingsBasePreferenceFragment {
         // PifConfig's spoofVendingSdk only applies while spoofVendingBuild is off (zygisk.cpp)
         findPreference(PifConfig.SPOOF_VENDING_SDK).setEnabled(!config.spoofVendingBuild);
 
-        findPreference("profile_fingerprint").setSummary(config.props.get("FINGERPRINT"));
-        findPreference("profile_model").setSummary(config.props.get("MODEL"));
-        findPreference("profile_security_patch").setSummary(config.securityPatch);
+        findPreference("profile_fingerprint").setSummary(PifStore.profileValue(context, config.props.get("FINGERPRINT")));
+        findPreference("profile_model").setSummary(PifStore.profileValue(context, config.props.get("MODEL")));
+        findPreference("profile_security_patch").setSummary(PifStore.profileValue(context, config.securityPatch));
         mReset.setEnabled(PifStore.hasCustom(context));
     }
 

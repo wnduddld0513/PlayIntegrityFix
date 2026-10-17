@@ -39,17 +39,21 @@ public final class RomEntry {
 
     private RomEntry() {}
 
-    public static void init(Context context, String processName) {
+    /**
+     * Spoofs the process. Returns false when it did nothing (not a target process, or no
+     * profile fetched yet), so the caller can keep its own handling.
+     */
+    public static boolean init(Context context, String processName) {
         final boolean droidGuard = DROIDGUARD_PACKAGE.equals(processName);
         final boolean vending = VENDING_PACKAGE.equals(processName);
         if (!droidGuard && !vending) {
-            return;
+            return false;
         }
         try {
             final String text = PifConfig.readConfigText(context);
             if (!PifConfig.isValid(text)) {
-                Log.e(TAG, "pif.prop is empty or has no FINGERPRINT");
-                return;
+                Log.w(TAG, "No profile fetched yet, not spoofing");
+                return false;
             }
             final PifConfig config = PifConfig.parse(text);
             if (droidGuard) {
@@ -66,8 +70,10 @@ public final class RomEntry {
             } else if (config.spoofVendingSdk) {
                 spoofVendingSdk();
             }
+            return true;
         } catch (Throwable t) {
             Log.e(TAG, "init", t);
+            return false;
         }
     }
 

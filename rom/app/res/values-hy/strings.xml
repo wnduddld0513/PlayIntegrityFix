@@ -38,4 +38,5 @@
     <string name="cancel">\"Չեղարկել\"</string>
     <string name="profile_model">\"Մոդել\"</string>
     <string name="profile_security_patch">\"Android-ի անվտանգության համակարգի թարմացում\"</string>
+    <string name="pif_not_fetched">Դեռ չի ստացվել</string>
 </resources>

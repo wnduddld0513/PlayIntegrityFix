@@ -38,4 +38,5 @@
     <string name="cancel">\"Anuluj\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Aktualizacja zabezpieczeń Androida\"</string>
+    <string name="pif_not_fetched">Jeszcze nie pobrano</string>
 </resources>

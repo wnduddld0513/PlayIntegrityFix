@@ -38,4 +38,5 @@
     <string name="cancel">\"Mégse\"</string>
     <string name="profile_model">\"Modell\"</string>
     <string name="profile_security_patch">\"Android biztonsági frissítés\"</string>
+    <string name="pif_not_fetched">Még nincs lekérve</string>
 </resources>

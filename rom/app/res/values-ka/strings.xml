@@ -38,4 +38,5 @@
     <string name="cancel">\"გაუქმება\"</string>
     <string name="profile_model">\"მოდელი\"</string>
     <string name="profile_security_patch">\"Android-ის უსაფრთხოების განახლება\"</string>
+    <string name="pif_not_fetched">ჯერ არ არის მიღებული</string>
 </resources>

@@ -18,6 +18,9 @@
 package io.github.wnduddld0513.pif;
 
 import android.app.ActivityManager;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
 import android.content.Context;
 import android.provider.Settings;
 
@@ -35,6 +38,8 @@ import java.util.Map;
 final class PifStore {
     /** Read by PropImitationHooks: unset or 1 loads the module into GMS (DroidGuard) and the Play Store; only 0 turns it off. */
     static final String SWITCH_SETTING = "lenovo_pif_module";
+
+    private static final int FETCH_JOB_ID = 1;
 
     // module/pif.prop of the module's repository (webui/src/constant.ts).
     private static final String FETCH_URL =
@@ -59,6 +64,25 @@ final class PifStore {
     static void setEnabled(Context context, boolean enabled) {
         Settings.Global.putInt(context.getContentResolver(), SWITCH_SETTING, enabled ? 1 : 0);
         stopTargets(context);
+        scheduleFetchIfNeeded(context);
+    }
+
+    /** Whether a profile (a fingerprint) is stored or set up, so the module has something to apply. */
+    static boolean hasProfile(Context context) {
+        return PifConfig.isValid(text(context));
+    }
+
+    /** First run: with the switch on and no profile, fetch it as soon as the network is up. */
+    static void scheduleFetchIfNeeded(Context context) {
+        if (!isEnabled(context) || hasProfile(context)) {
+            return;
+        }
+        final JobScheduler scheduler = context.getSystemService(JobScheduler.class);
+        scheduler.schedule(new JobInfo.Builder(FETCH_JOB_ID,
+                new ComponentName(context, PifFetchService.class))
+                .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
+                .setBackoffCriteria(30000, JobInfo.BACKOFF_POLICY_EXPONENTIAL)
+                .build());
     }
 
     /** The pif.prop in effect. */
@@ -72,6 +96,12 @@ final class PifStore {
         return custom != null && !custom.isBlank();
     }
 
+    /** The profile field of the pif.prop in effect, or the "not fetched yet" text. */
+    static String profileValue(Context context, String value) {
+        return hasProfile(context) && value != null ? value
+                : context.getString(R.string.pif_not_fetched);
+    }
+
     static void setOption(Context context, String key, boolean value) {
         write(context, PifConfig.withValue(text(context), key, Boolean.toString(value)));
     }
@@ -81,10 +111,11 @@ final class PifStore {
         stopTargets(context);
     }
 
-    /** Back to the pif.prop shipped with the system. */
+    /** Drops the stored profile and options (back to the shipped option defaults) and fetches again. */
     static void reset(Context context) {
         Settings.Global.putString(context.getContentResolver(), PifConfig.CONFIG_SETTING, "");
         stopTargets(context);
+        scheduleFetchIfNeeded(context);
     }
 
     /**

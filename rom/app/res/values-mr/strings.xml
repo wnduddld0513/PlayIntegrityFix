@@ -38,4 +38,5 @@
     <string name="cancel">\"रद्द करा\"</string>
     <string name="profile_model">\"मॉडेल\"</string>
     <string name="profile_security_patch">\"Android सुरक्षा अपडेट\"</string>
+    <string name="pif_not_fetched">अद्याप आणलेले नाही</string>
 </resources>

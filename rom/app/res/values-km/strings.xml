@@ -38,4 +38,5 @@
     <string name="cancel">\"បោះ​បង់​\"</string>
     <string name="profile_model">\"ម៉ូដែល\"</string>
     <string name="profile_security_patch">\"កំណែ​សុវត្ថិភាពថ្មី​របស់ Android\"</string>
+    <string name="pif_not_fetched">មិនទាន់ទាញយកនៅឡើយ</string>
 </resources>

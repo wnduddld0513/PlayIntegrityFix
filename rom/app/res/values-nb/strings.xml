@@ -38,4 +38,5 @@
     <string name="cancel">\"Avbryt\"</string>
     <string name="profile_model">\"Modell\"</string>
     <string name="profile_security_patch">\"Sikkerhetsoppdatering for Android\"</string>
+    <string name="pif_not_fetched">Ikke hentet ennå</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"ביטול\"</string>
     <string name="profile_model">\"דגם\"</string>
     <string name="profile_security_patch">\"‏עדכון אבטחה ל-‏Android\"</string>
+    <string name="pif_not_fetched">עדיין לא אוחזר</string>
 </resources>

@@ -38,4 +38,5 @@
     <string name="cancel">\"ਰੱਦ ਕਰੋ\"</string>
     <string name="profile_model">\"ਮਾਡਲ\"</string>
     <string name="profile_security_patch">\"Android ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ\"</string>
+    <string name="pif_not_fetched">ਹਾਲੇ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ</string>
 </resources>

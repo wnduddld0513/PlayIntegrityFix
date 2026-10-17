@@ -38,4 +38,5 @@
     <string name="cancel">\"Ghairi\"</string>
     <string name="profile_model">\"Muundo\"</string>
     <string name="profile_security_patch">\"Sasisho la usalama la Android\"</string>
+    <string name="pif_not_fetched">Haijaletwa bado</string>
 </resources>

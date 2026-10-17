@@ -38,4 +38,5 @@
     <string name="cancel">\"取消\"</string>
     <string name="profile_model">\"型號\"</string>
     <string name="profile_security_patch">\"Android 安全性更新\"</string>
+    <string name="pif_not_fetched">尚未擷取</string>
 </resources>

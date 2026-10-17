@@ -38,4 +38,5 @@
     <string name="cancel">\"Khansela\"</string>
     <string name="profile_model">\"Imodeli\"</string>
     <string name="profile_security_patch">\"Isibuyekezo sokuvikela kwe-Android\"</string>
+    <string name="pif_not_fetched">Akulethwa okwamanje</string>
 </resources>
