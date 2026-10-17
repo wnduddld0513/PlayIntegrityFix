@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Suplanta la compilació</string>
     <string name="spoof_build_summary">Suplanta els camps de pif.prop (activat per defecte).</string>
     <string name="spoof_props_title">Suplanta les propietats</string>
-    <string name="spoof_props_summary">Suplanta les propietats del sistema; activeu-ho si no feu servir TrickyStore ni TEESimulator.</string>
+    <string name="spoof_props_summary">Suplanta les propietats del sistema.</string>
     <string name="spoof_provider_title">Suplanta el proveïdor</string>
-    <string name="spoof_provider_summary">Proveïdor d\'emmagatzematge de claus personalitzat; activeu-ho si no feu servir TrickyStore ni TEESimulator.</string>
+    <string name="spoof_provider_summary">Proveïdor d\'emmagatzematge de claus personalitzat.</string>
     <string name="spoof_signature_title">Suplanta la signatura</string>
     <string name="spoof_signature_summary">Suplanta la signatura de la ROM; activeu-ho si la ROM està signada amb testkey.</string>
     <string name="spoof_vending_build_title">Suplanta la compilació (Play Store)</string>

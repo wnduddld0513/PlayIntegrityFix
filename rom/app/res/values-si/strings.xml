@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">ගොඩනැංවීම ව්‍යාජ කරන්න</string>
     <string name="spoof_build_summary">pif.prop හි ක්ෂේත්‍ර ව්‍යාජ කරන්න (පෙරනිමියෙන් සක්‍රියයි).</string>
     <string name="spoof_props_title">ගුණාංග ව්‍යාජ කරන්න</string>
-    <string name="spoof_props_summary">පද්ධති ගුණාංග ව්‍යාජ කරන්න; ඔබ TrickyStore හෝ TEESimulator භාවිත නොකරන්නේ නම් සක්‍රිය කරන්න.</string>
+    <string name="spoof_props_summary">පද්ධති ගුණාංග ව්‍යාජ කරන්න.</string>
     <string name="spoof_provider_title">සපයන්නා ව්‍යාජ කරන්න</string>
-    <string name="spoof_provider_summary">අභිරුචි යතුරු ගබඩා සපයන්නා; ඔබ TrickyStore හෝ TEESimulator භාවිත නොකරන්නේ නම් සක්‍රිය කරන්න.</string>
+    <string name="spoof_provider_summary">අභිරුචි යතුරු ගබඩා සපයන්නා.</string>
     <string name="spoof_signature_title">අත්සන ව්‍යාජ කරන්න</string>
     <string name="spoof_signature_summary">ROM අත්සන ව්‍යාජ කරන්න; ඔබේ ROM එක testkey මගින් අත්සන් කර ඇත්නම් සක්‍රිය කරන්න.</string>
     <string name="spoof_vending_build_title">ගොඩනැංවීම ව්‍යාජ කරන්න (Play Store)</string>

@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Подмяна на изграждането</string>
     <string name="spoof_build_summary">Подмяна на полетата в pif.prop (включено по подразбиране).</string>
     <string name="spoof_props_title">Подмяна на свойствата</string>
-    <string name="spoof_props_summary">Подмяна на системните свойства; включете, ако не използвате TrickyStore или TEESimulator.</string>
+    <string name="spoof_props_summary">Подмяна на системните свойства.</string>
     <string name="spoof_provider_title">Подмяна на доставчика</string>
-    <string name="spoof_provider_summary">Персонализиран доставчик на хранилище за ключове; включете, ако не използвате TrickyStore или TEESimulator.</string>
+    <string name="spoof_provider_summary">Персонализиран доставчик на хранилище за ключове.</string>
     <string name="spoof_signature_title">Подмяна на подписа</string>
     <string name="spoof_signature_summary">Подмяна на подписа на ROM; включете, ако ROM е подписан с testkey.</string>
     <string name="spoof_vending_build_title">Подмяна на изграждането (Play Магазин)</string>

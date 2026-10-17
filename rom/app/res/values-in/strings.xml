@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Palsukan build</string>
     <string name="spoof_build_summary">Spoof build di pif.prop (Diaktifkan secara default).</string>
     <string name="spoof_props_title">Palsukan properti</string>
-    <string name="spoof_props_summary">Spoof properti sistem, aktifkan jika tidak menggunakan TrickyStore atau TEESimulator.</string>
+    <string name="spoof_props_summary">Palsukan properti sistem.</string>
     <string name="spoof_provider_title">Palsukan penyedia</string>
-    <string name="spoof_provider_summary">Penyedia keystore kustom, aktifkan jika tidak menggunakan TrickyStore atau TEESimulator.</string>
+    <string name="spoof_provider_summary">Penyedia keystore khusus.</string>
     <string name="spoof_signature_title">Palsukan tanda tangan</string>
     <string name="spoof_signature_summary">Palsukan tanda tangan ROM, aktifkan jika ROM Anda ditandatangani dengan testkey.</string>
     <string name="spoof_vending_build_title">Palsukan build (Play Store)</string>

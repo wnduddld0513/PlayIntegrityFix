@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">აწყობის გაყალბება</string>
     <string name="spoof_build_summary">pif.prop-ის ველების გაყალბება (ნაგულისხმევად ჩართულია).</string>
     <string name="spoof_props_title">თვისებების გაყალბება</string>
-    <string name="spoof_props_summary">სისტემური თვისებების გაყალბება; ჩართეთ, თუ არ იყენებთ TrickyStore-ს ან TEESimulator-ს.</string>
+    <string name="spoof_props_summary">სისტემური თვისებების გაყალბება.</string>
     <string name="spoof_provider_title">პროვაიდერის გაყალბება</string>
-    <string name="spoof_provider_summary">გასაღებების საცავის მორგებული პროვაიდერი; ჩართეთ, თუ არ იყენებთ TrickyStore-ს ან TEESimulator-ს.</string>
+    <string name="spoof_provider_summary">გასაღებების საცავის მორგებული პროვაიდერი.</string>
     <string name="spoof_signature_title">ხელმოწერის გაყალბება</string>
     <string name="spoof_signature_summary">ROM-ის ხელმოწერის გაყალბება; ჩართეთ, თუ თქვენი ROM testkey-ით არის ხელმოწერილი.</string>
     <string name="spoof_vending_build_title">აწყობის გაყალბება (Play Store)</string>

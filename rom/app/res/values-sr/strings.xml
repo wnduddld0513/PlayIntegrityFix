@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Лажирај верзију</string>
     <string name="spoof_build_summary">Лажирај поља у датотеци pif.prop (подразумевано укључено).</string>
     <string name="spoof_props_title">Лажирај својства</string>
-    <string name="spoof_props_summary">Лажирај системска својства; укључите ако не користите TrickyStore или TEESimulator.</string>
+    <string name="spoof_props_summary">Лажирај системска својства.</string>
     <string name="spoof_provider_title">Лажирај добављача</string>
-    <string name="spoof_provider_summary">Прилагођени добављач складишта кључева; укључите ако не користите TrickyStore или TEESimulator.</string>
+    <string name="spoof_provider_summary">Прилагођени добављач складишта кључева.</string>
     <string name="spoof_signature_title">Лажирај потпис</string>
     <string name="spoof_signature_summary">Лажирај потпис ROM-а; укључите ако је ваш ROM потписан помоћу testkey.</string>
     <string name="spoof_vending_build_title">Лажирај верзију (Play продавница)</string>

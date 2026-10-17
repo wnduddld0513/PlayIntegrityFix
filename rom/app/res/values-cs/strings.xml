@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Podvrhnout sestavení</string>
     <string name="spoof_build_summary">Podvrhnout pole v souboru pif.prop (ve výchozím nastavení zapnuto).</string>
     <string name="spoof_props_title">Podvrhnout vlastnosti</string>
-    <string name="spoof_props_summary">Podvrhnout systémové vlastnosti; zapněte, pokud nepoužíváte TrickyStore ani TEESimulator.</string>
+    <string name="spoof_props_summary">Podvrhnout systémové vlastnosti.</string>
     <string name="spoof_provider_title">Podvrhnout poskytovatele</string>
-    <string name="spoof_provider_summary">Vlastní poskytovatel úložiště klíčů; zapněte, pokud nepoužíváte TrickyStore ani TEESimulator.</string>
+    <string name="spoof_provider_summary">Vlastní poskytovatel úložiště klíčů.</string>
     <string name="spoof_signature_title">Podvrhnout podpis</string>
     <string name="spoof_signature_summary">Podvrhnout podpis ROM; zapněte, pokud je vaše ROM podepsána klíčem testkey.</string>
     <string name="spoof_vending_build_title">Podvrhnout sestavení (Obchod Play)</string>

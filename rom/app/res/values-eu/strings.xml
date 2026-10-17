@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Faltsutu konpilazioa</string>
     <string name="spoof_build_summary">Faltsutu pif.prop-eko eremuak (modu lehenetsian aktibatuta).</string>
     <string name="spoof_props_title">Faltsutu propietateak</string>
-    <string name="spoof_props_summary">Faltsutu sistemaren propietateak; aktibatu TrickyStore edo TEESimulator erabiltzen ez baduzu.</string>
+    <string name="spoof_props_summary">Faltsutu sistemaren propietateak.</string>
     <string name="spoof_provider_title">Faltsutu hornitzailea</string>
-    <string name="spoof_provider_summary">Gako-biltegiaren hornitzaile pertsonalizatua; aktibatu TrickyStore edo TEESimulator erabiltzen ez baduzu.</string>
+    <string name="spoof_provider_summary">Gako-biltegiaren hornitzaile pertsonalizatua.</string>
     <string name="spoof_signature_title">Faltsutu sinadura</string>
     <string name="spoof_signature_summary">Faltsutu ROMaren sinadura; aktibatu zure ROMa testkey bidez sinatuta badago.</string>
     <string name="spoof_vending_build_title">Faltsutu konpilazioa (Play Store)</string>

@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Yigʻilmani soxtalashtirish</string>
     <string name="spoof_build_summary">pif.prop ichidagi maydonlarni soxtalashtirish (sukut boʻyicha yoqilgan).</string>
     <string name="spoof_props_title">Xossalarni soxtalashtirish</string>
-    <string name="spoof_props_summary">Tizim xossalarini soxtalashtirish; TrickyStore yoki TEESimulator ishlatmasangiz, yoqing.</string>
+    <string name="spoof_props_summary">Tizim xossalarini soxtalashtirish.</string>
     <string name="spoof_provider_title">Taʼminotchini soxtalashtirish</string>
-    <string name="spoof_provider_summary">Maxsus kalitlar ombori taʼminotchisi; TrickyStore yoki TEESimulator ishlatmasangiz, yoqing.</string>
+    <string name="spoof_provider_summary">Maxsus kalitlar ombori taʼminotchisi.</string>
     <string name="spoof_signature_title">Imzoni soxtalashtirish</string>
     <string name="spoof_signature_summary">ROM imzosini soxtalashtirish; ROM testkey bilan imzolangan boʻlsa, yoqing.</string>
     <string name="spoof_vending_build_title">Yigʻilmani soxtalashtirish (Play Market)</string>

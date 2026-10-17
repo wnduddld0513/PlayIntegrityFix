@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">ປອມແປງ build</string>
     <string name="spoof_build_summary">ປອມແປງຟິວໃນ pif.prop (ເປີດໄວ້ຕາມຄ່າເລີ່ມຕົ້ນ).</string>
     <string name="spoof_props_title">ປອມແປງຄຸນສົມບັດ</string>
-    <string name="spoof_props_summary">ປອມແປງຄຸນສົມບັດລະບົບ; ເປີດໃຊ້ຖ້າທ່ານບໍ່ໄດ້ໃຊ້ TrickyStore ຫຼື TEESimulator.</string>
+    <string name="spoof_props_summary">ປອມແປງຄຸນສົມບັດລະບົບ.</string>
     <string name="spoof_provider_title">ປອມແປງຜູ້ໃຫ້ບໍລິການ</string>
-    <string name="spoof_provider_summary">ຜູ້ໃຫ້ບໍລິການ keystore ແບບກຳນົດເອງ; ເປີດໃຊ້ຖ້າທ່ານບໍ່ໄດ້ໃຊ້ TrickyStore ຫຼື TEESimulator.</string>
+    <string name="spoof_provider_summary">ຜູ້ໃຫ້ບໍລິການ keystore ແບບກຳນົດເອງ.</string>
     <string name="spoof_signature_title">ປອມແປງລາຍເຊັນ</string>
     <string name="spoof_signature_summary">ປອມແປງລາຍເຊັນ ROM; ເປີດໃຊ້ຖ້າ ROM ຂອງທ່ານຖືກເຊັນດ້ວຍ testkey.</string>
     <string name="spoof_vending_build_title">ປອມແປງ build (Play Store)</string>

@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">பில்டை ஸ்பூஃப் செய்</string>
     <string name="spoof_build_summary">pif.prop இலுள்ள புலங்களை ஸ்பூஃப் செய் (இயல்பாக இயக்கத்தில்).</string>
     <string name="spoof_props_title">பண்புகளை ஸ்பூஃப் செய்</string>
-    <string name="spoof_props_summary">சிஸ்டம் பண்புகளை ஸ்பூஃப் செய்; TrickyStore அல்லது TEESimulator ஐப் பயன்படுத்தவில்லை எனில் இயக்கவும்.</string>
+    <string name="spoof_props_summary">சிஸ்டம் பண்புகளை ஸ்பூஃப் செய்.</string>
     <string name="spoof_provider_title">வழங்குநரை ஸ்பூஃப் செய்</string>
-    <string name="spoof_provider_summary">தனிப்பயன் கீஸ்டோர் வழங்குநர்; TrickyStore அல்லது TEESimulator ஐப் பயன்படுத்தவில்லை எனில் இயக்கவும்.</string>
+    <string name="spoof_provider_summary">தனிப்பயன் கீஸ்டோர் வழங்குநர்.</string>
     <string name="spoof_signature_title">கையொப்பத்தை ஸ்பூஃப் செய்</string>
     <string name="spoof_signature_summary">ROM கையொப்பத்தை ஸ்பூஃப் செய்; உங்கள் ROM testkey மூலம் கையொப்பமிடப்பட்டிருந்தால் இயக்கவும்.</string>
     <string name="spoof_vending_build_title">பில்டை ஸ்பூஃப் செய் (Play Store)</string>

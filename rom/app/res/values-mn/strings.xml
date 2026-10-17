@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Бүтээлтийг хуурамчаар дуурайх</string>
     <string name="spoof_build_summary">pif.prop доторх талбаруудыг хуурамчаар дуурайх (өгөгдмөлөөр асаалттай).</string>
     <string name="spoof_props_title">Шинж чанаруудыг хуурамчаар дуурайх</string>
-    <string name="spoof_props_summary">Системийн шинж чанаруудыг хуурамчаар дуурайх; TrickyStore эсвэл TEESimulator ашигладаггүй бол асаана уу.</string>
+    <string name="spoof_props_summary">Системийн шинж чанаруудыг хуурамчаар дуурайх.</string>
     <string name="spoof_provider_title">Үйлчилгээ үзүүлэгчийг хуурамчаар дуурайх</string>
-    <string name="spoof_provider_summary">Захиалгат түлхүүрийн сангийн үйлчилгээ үзүүлэгч; TrickyStore эсвэл TEESimulator ашигладаггүй бол асаана уу.</string>
+    <string name="spoof_provider_summary">Захиалгат түлхүүрийн сангийн үйлчилгээ үзүүлэгч.</string>
     <string name="spoof_signature_title">Гарын үсгийг хуурамчаар дуурайх</string>
     <string name="spoof_signature_summary">ROM-ын гарын үсгийг хуурамчаар дуурайх; таны ROM testkey-ээр гарын үсэг зурагдсан бол асаана уу.</string>
     <string name="spoof_vending_build_title">Бүтээлтийг хуурамчаар дуурайх (Play Store)</string>

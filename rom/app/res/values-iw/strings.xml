@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">התחזות לגרסת Build</string>
     <string name="spoof_build_summary">התחזות לשדות ב-pif.prop (מופעל כברירת מחדל).</string>
     <string name="spoof_props_title">התחזות למאפיינים</string>
-    <string name="spoof_props_summary">התחזות למאפייני המערכת; כדאי להפעיל אם לא נעשה שימוש ב-TrickyStore או ב-TEESimulator.</string>
+    <string name="spoof_props_summary">התחזות למאפייני המערכת.</string>
     <string name="spoof_provider_title">התחזות לספק</string>
-    <string name="spoof_provider_summary">ספק מאגר מפתחות מותאם אישית; כדאי להפעיל אם לא נעשה שימוש ב-TrickyStore או ב-TEESimulator.</string>
+    <string name="spoof_provider_summary">ספק מאגר מפתחות מותאם אישית.</string>
     <string name="spoof_signature_title">התחזות לחתימה</string>
     <string name="spoof_signature_summary">התחזות לחתימת ה-ROM; כדאי להפעיל אם ה-ROM חתום ב-testkey.</string>
     <string name="spoof_vending_build_title">התחזות לגרסת Build (חנות Play)</string>

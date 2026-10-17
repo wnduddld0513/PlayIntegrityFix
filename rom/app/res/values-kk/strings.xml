@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Құрастыруды жалғандау</string>
     <string name="spoof_build_summary">pif.prop ішіндегі өрістерді жалғандау (әдепкі бойынша қосулы).</string>
     <string name="spoof_props_title">Сипаттарды жалғандау</string>
-    <string name="spoof_props_summary">Жүйелік сипаттарды жалғандау; TrickyStore немесе TEESimulator пайдаланбасаңыз, қосыңыз.</string>
+    <string name="spoof_props_summary">Жүйелік сипаттарды жалғандау.</string>
     <string name="spoof_provider_title">Провайдерді жалғандау</string>
-    <string name="spoof_provider_summary">Реттелетін кілт қоймасы провайдері; TrickyStore немесе TEESimulator пайдаланбасаңыз, қосыңыз.</string>
+    <string name="spoof_provider_summary">Реттелетін кілт қоймасы провайдері.</string>
     <string name="spoof_signature_title">Қолтаңбаны жалғандау</string>
     <string name="spoof_signature_summary">ROM қолтаңбасын жалғандау; ROM testkey арқылы қол қойылған болса, қосыңыз.</string>
     <string name="spoof_vending_build_title">Құрастыруды жалғандау (Play Store)</string>

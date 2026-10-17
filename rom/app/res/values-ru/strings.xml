@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Подмена сборки</string>
     <string name="spoof_build_summary">Подменять поля в pif.prop (по умолчанию включено).</string>
     <string name="spoof_props_title">Подмена свойств</string>
-    <string name="spoof_props_summary">Подменять системные свойства; включите, если не используете TrickyStore или TEESimulator.</string>
+    <string name="spoof_props_summary">Подменять системные свойства.</string>
     <string name="spoof_provider_title">Подмена поставщика</string>
-    <string name="spoof_provider_summary">Пользовательский поставщик хранилища ключей; включите, если не используете TrickyStore или TEESimulator.</string>
+    <string name="spoof_provider_summary">Пользовательский поставщик хранилища ключей.</string>
     <string name="spoof_signature_title">Подмена подписи</string>
     <string name="spoof_signature_summary">Подменять подпись ROM; включите, если ваш ROM подписан ключом testkey.</string>
     <string name="spoof_vending_build_title">Подмена сборки (Play Маркет)</string>

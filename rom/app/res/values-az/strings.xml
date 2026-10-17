@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Quruluşu saxtalaşdır</string>
     <string name="spoof_build_summary">pif.prop-dakı sahələri saxtalaşdır (defolt olaraq aktivdir).</string>
     <string name="spoof_props_title">Xassələri saxtalaşdır</string>
-    <string name="spoof_props_summary">Sistem xassələrini saxtalaşdır; TrickyStore və ya TEESimulator istifadə etmirsinizsə aktiv edin.</string>
+    <string name="spoof_props_summary">Sistem xassələrini saxtalaşdır.</string>
     <string name="spoof_provider_title">Provayderi saxtalaşdır</string>
-    <string name="spoof_provider_summary">Fərdi açar anbarı provayderi; TrickyStore və ya TEESimulator istifadə etmirsinizsə aktiv edin.</string>
+    <string name="spoof_provider_summary">Fərdi açar anbarı provayderi.</string>
     <string name="spoof_signature_title">İmzanı saxtalaşdır</string>
     <string name="spoof_signature_summary">ROM imzasını saxtalaşdır; ROM-unuz testkey ilə imzalanıbsa aktiv edin.</string>
     <string name="spoof_vending_build_title">Quruluşu saxtalaşdır (Play Store)</string>

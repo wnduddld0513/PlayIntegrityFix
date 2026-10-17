@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">ବିଲ୍ଡ ସ୍ପୁଫ୍ କରନ୍ତୁ</string>
     <string name="spoof_build_summary">pif.prop ରେ ଥିବା ଫିଲ୍ଡଗୁଡ଼ିକୁ ସ୍ପୁଫ୍ କରନ୍ତୁ (ଡିଫଲ୍ଟ ଭାବେ ଚାଲୁ)।</string>
     <string name="spoof_props_title">ପ୍ରୋପର୍ଟି ସ୍ପୁଫ୍ କରନ୍ତୁ</string>
-    <string name="spoof_props_summary">ସିଷ୍ଟମ ପ୍ରୋପର୍ଟି ସ୍ପୁଫ୍ କରନ୍ତୁ; ଆପଣ TrickyStore କିମ୍ବା TEESimulator ବ୍ୟବହାର ନକଲେ ଚାଲୁ କରନ୍ତୁ।</string>
+    <string name="spoof_props_summary">ସିଷ୍ଟମ ପ୍ରୋପର୍ଟି ସ୍ପୁଫ୍ କରନ୍ତୁ.</string>
     <string name="spoof_provider_title">ପ୍ରୋଭାଇଡର ସ୍ପୁଫ୍ କରନ୍ତୁ</string>
-    <string name="spoof_provider_summary">କଷ୍ଟମ୍ କୀଷ୍ଟୋର ପ୍ରୋଭାଇଡର; ଆପଣ TrickyStore କିମ୍ବା TEESimulator ବ୍ୟବହାର ନକଲେ ଚାଲୁ କରନ୍ତୁ।</string>
+    <string name="spoof_provider_summary">କଷ୍ଟମ୍ କୀଷ୍ଟୋର ପ୍ରୋଭାଇଡର.</string>
     <string name="spoof_signature_title">ସ୍ୱାକ୍ଷର ସ୍ପୁଫ୍ କରନ୍ତୁ</string>
     <string name="spoof_signature_summary">ROM ସ୍ୱାକ୍ଷର ସ୍ପୁଫ୍ କରନ୍ତୁ; ଆପଣଙ୍କ ROM testkey ଦ୍ୱାରା ସ୍ୱାକ୍ଷରିତ ହୋଇଥିଲେ ଚାଲୁ କରନ୍ତୁ।</string>
     <string name="spoof_vending_build_title">ବିଲ୍ଡ ସ୍ପୁଫ୍ କରନ୍ତୁ (Play Store)</string>

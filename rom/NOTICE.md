@@ -14,7 +14,8 @@ directory runs the same logic inside the ROM instead.
 | `rom/etc/pif.prop` | `module/pif.prop`, with `spoofProvider=true` |
 | `rom/app/**` | settings page after `webui/src/data/spoofConfig.ts`, `App.tsx`, `lib/Update.ts`; strings after `webui/public/locales/strings` (translations of ar, id, pl, tr, zh-CN, zh-TW reused) |
 
-Not reproducible without root: the module scripts (`post-fs-data.sh`, `service.sh`:
-resetprop of boot/lock state props), Zygisk denylist unmounting, `autopif.sh` and
-`security_patch.sh` (TrickyStore). The ROM-side hook is the Apache-2.0 code in
+Intentionally not included (they depend on root-only tooling): the module scripts
+(`post-fs-data.sh`, `service.sh`: resetprop of verified boot / lock state props),
+the Zygisk denylist handling, the TrickyStore / TEESimulator integration
+(`autopif.sh`, `security_patch.sh`). The ROM-side hook is the Apache-2.0 code in
 frameworks/base `PropImitationHooks.loadPifModule()`; it only loads this jar.

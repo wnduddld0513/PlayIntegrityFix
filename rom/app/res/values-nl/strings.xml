@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Build vervalsen</string>
     <string name="spoof_build_summary">Velden in pif.prop vervalsen (standaard ingeschakeld).</string>
     <string name="spoof_props_title">Eigenschappen vervalsen</string>
-    <string name="spoof_props_summary">Systeemeigenschappen vervalsen; schakel in als je TrickyStore of TEESimulator niet gebruikt.</string>
+    <string name="spoof_props_summary">Systeemeigenschappen vervalsen.</string>
     <string name="spoof_provider_title">Provider vervalsen</string>
-    <string name="spoof_provider_summary">Aangepaste keystore-provider; schakel in als je TrickyStore of TEESimulator niet gebruikt.</string>
+    <string name="spoof_provider_summary">Aangepaste keystore-provider.</string>
     <string name="spoof_signature_title">Handtekening vervalsen</string>
     <string name="spoof_signature_summary">ROM-handtekening vervalsen; schakel in als je ROM is ondertekend met testkey.</string>
     <string name="spoof_vending_build_title">Build vervalsen (Play Store)</string>

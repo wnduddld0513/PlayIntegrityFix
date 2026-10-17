@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">偽裝建構</string>
     <string name="spoof_build_summary">偽裝 pif.prop 內的屬性，預設啟用。</string>
     <string name="spoof_props_title">偽裝屬性</string>
-    <string name="spoof_props_summary">偽裝系統屬性，未使用 TrickyStore 或 TEESimulator 時請啟用。</string>
+    <string name="spoof_props_summary">偽裝系統屬性。</string>
     <string name="spoof_provider_title">偽裝提供者</string>
-    <string name="spoof_provider_summary">自訂 keystore 提供者，未使用 TrickyStore 或 TEESimulator 時請啟用。</string>
+    <string name="spoof_provider_summary">自訂金鑰庫提供者。</string>
     <string name="spoof_signature_title">偽裝簽章</string>
     <string name="spoof_signature_summary">偽裝 ROM 簽章，當您的 ROM 使用 testkey 簽署時啟用。</string>
     <string name="spoof_vending_build_title">偽裝建構（Play 商店）</string>

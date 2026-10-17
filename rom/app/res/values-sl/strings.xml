@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Ponaredi gradnjo</string>
     <string name="spoof_build_summary">Ponaredi polja v datoteki pif.prop (privzeto vklopljeno).</string>
     <string name="spoof_props_title">Ponaredi lastnosti</string>
-    <string name="spoof_props_summary">Ponaredi sistemske lastnosti; vklopite, če ne uporabljate TrickyStore ali TEESimulator.</string>
+    <string name="spoof_props_summary">Ponaredi sistemske lastnosti.</string>
     <string name="spoof_provider_title">Ponaredi ponudnika</string>
-    <string name="spoof_provider_summary">Ponudnik shrambe ključev po meri; vklopite, če ne uporabljate TrickyStore ali TEESimulator.</string>
+    <string name="spoof_provider_summary">Ponudnik shrambe ključev po meri.</string>
     <string name="spoof_signature_title">Ponaredi podpis</string>
     <string name="spoof_signature_summary">Ponaredi podpis ROM-a; vklopite, če je vaš ROM podpisan s testkey.</string>
     <string name="spoof_vending_build_title">Ponaredi gradnjo (Trgovina Play)</string>

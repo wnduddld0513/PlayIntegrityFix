@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Falsificar build</string>
     <string name="spoof_build_summary">Falsificar os campos do pif.prop (ativado por padrão).</string>
     <string name="spoof_props_title">Falsificar propriedades</string>
-    <string name="spoof_props_summary">Falsificar as propriedades do sistema; ative se você não usa TrickyStore nem TEESimulator.</string>
+    <string name="spoof_props_summary">Falsificar as propriedades do sistema.</string>
     <string name="spoof_provider_title">Falsificar provedor</string>
-    <string name="spoof_provider_summary">Provedor de keystore personalizado; ative se você não usa TrickyStore nem TEESimulator.</string>
+    <string name="spoof_provider_summary">Provedor de keystore personalizado.</string>
     <string name="spoof_signature_title">Falsificar assinatura</string>
     <string name="spoof_signature_summary">Falsificar a assinatura da ROM; ative se sua ROM for assinada com testkey.</string>
     <string name="spoof_vending_build_title">Falsificar build (Play Store)</string>

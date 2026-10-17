@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">বিল্ড স্পুফ কৰক</string>
     <string name="spoof_build_summary">pif.propত থকা ক্ষেত্ৰ স্পুফ কৰক (ডিফল্ট হিচাপে চালু)।</string>
     <string name="spoof_props_title">প্ৰপ’ স্পুফ কৰক</string>
-    <string name="spoof_props_summary">ছিষ্টেমৰ প্ৰপাৰ্টী স্পুফ কৰক; TrickyStore বা TEESimulator ব্যৱহাৰ নকৰিলে চালু কৰক।</string>
+    <string name="spoof_props_summary">ছিষ্টেমৰ প্ৰপাৰ্টী স্পুফ কৰক.</string>
     <string name="spoof_provider_title">প্ৰদানকাৰী স্পুফ কৰক</string>
-    <string name="spoof_provider_summary">কাষ্টম কীস্ট’ৰ প্ৰদানকাৰী; TrickyStore বা TEESimulator ব্যৱহাৰ নকৰিলে চালু কৰক।</string>
+    <string name="spoof_provider_summary">কাষ্টম কীস্ট’ৰ প্ৰদানকাৰী.</string>
     <string name="spoof_signature_title">ছিগনেচাৰ স্পুফ কৰক</string>
     <string name="spoof_signature_summary">ROMৰ ছিগনেচাৰ স্পুফ কৰক; আপোনাৰ ROM testkeyৰে ছাইন কৰা থাকিলে চালু কৰক।</string>
     <string name="spoof_vending_build_title">বিল্ড স্পুফ কৰক (Play Store)</string>

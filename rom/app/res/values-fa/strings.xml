@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">جعل ساخت</string>
     <string name="spoof_build_summary">جعل فیلدهای pif.prop (به‌طور پیش‌فرض روشن).</string>
     <string name="spoof_props_title">جعل ویژگی‌ها</string>
-    <string name="spoof_props_summary">جعل ویژگی‌های سیستم؛ اگر از TrickyStore یا TEESimulator استفاده نمی‌کنید روشن کنید.</string>
+    <string name="spoof_props_summary">جعل ویژگی‌های سیستم.</string>
     <string name="spoof_provider_title">جعل ارائه‌دهنده</string>
-    <string name="spoof_provider_summary">ارائه‌دهندهٔ سفارشی انبار کلید؛ اگر از TrickyStore یا TEESimulator استفاده نمی‌کنید روشن کنید.</string>
+    <string name="spoof_provider_summary">ارائه‌دهندهٔ سفارشی انبار کلید.</string>
     <string name="spoof_signature_title">جعل امضا</string>
     <string name="spoof_signature_summary">جعل امضای ROM؛ اگر ROM شما با testkey امضا شده روشن کنید.</string>
     <string name="spoof_vending_build_title">جعل ساخت (Play Store)</string>

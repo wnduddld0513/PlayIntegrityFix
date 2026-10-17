@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">ಬಿಲ್ಡ್ ಸ್ಪೂಫ್ ಮಾಡಿ</string>
     <string name="spoof_build_summary">pif.prop ನಲ್ಲಿರುವ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ (ಡೀಫಾಲ್ಟ್ ಆಗಿ ಆನ್).</string>
     <string name="spoof_props_title">ಪ್ರಾಪರ್ಟಿಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ</string>
-    <string name="spoof_props_summary">ಸಿಸ್ಟಂ ಪ್ರಾಪರ್ಟಿಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ; TrickyStore ಅಥವಾ TEESimulator ಬಳಸದಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
+    <string name="spoof_props_summary">ಸಿಸ್ಟಂ ಪ್ರಾಪರ್ಟಿಗಳನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ.</string>
     <string name="spoof_provider_title">ಪ್ರೊವೈಡರ್ ಸ್ಪೂಫ್ ಮಾಡಿ</string>
-    <string name="spoof_provider_summary">ಕಸ್ಟಮ್ ಕೀಸ್ಟೋರ್ ಪ್ರೊವೈಡರ್; TrickyStore ಅಥವಾ TEESimulator ಬಳಸದಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
+    <string name="spoof_provider_summary">ಕಸ್ಟಮ್ ಕೀಸ್ಟೋರ್ ಪ್ರೊವೈಡರ್.</string>
     <string name="spoof_signature_title">ಸಹಿಯನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ</string>
     <string name="spoof_signature_summary">ROM ಸಹಿಯನ್ನು ಸ್ಪೂಫ್ ಮಾಡಿ; ನಿಮ್ಮ ROM testkey ನಿಂದ ಸಹಿ ಮಾಡಲ್ಪಟ್ಟಿದ್ದರೆ ಆನ್ ಮಾಡಿ.</string>
     <string name="spoof_vending_build_title">ಬಿಲ್ಡ್ ಸ್ಪೂಫ್ ಮಾಡಿ (Play Store)</string>

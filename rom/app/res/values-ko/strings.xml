@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">빌드 위장</string>
     <string name="spoof_build_summary">pif.prop의 필드를 위장합니다(기본적으로 사용).</string>
     <string name="spoof_props_title">속성 위장</string>
-    <string name="spoof_props_summary">시스템 속성을 위장합니다. TrickyStore 또는 TEESimulator를 사용하지 않는 경우 사용하세요.</string>
+    <string name="spoof_props_summary">시스템 속성을 위장합니다.</string>
     <string name="spoof_provider_title">제공자 위장</string>
-    <string name="spoof_provider_summary">맞춤 키 저장소 제공자입니다. TrickyStore 또는 TEESimulator를 사용하지 않는 경우 사용하세요.</string>
+    <string name="spoof_provider_summary">맞춤 키 저장소 제공자입니다.</string>
     <string name="spoof_signature_title">서명 위장</string>
     <string name="spoof_signature_summary">ROM 서명을 위장합니다. ROM이 testkey로 서명된 경우 사용하세요.</string>
     <string name="spoof_vending_build_title">빌드 위장(Play 스토어)</string>

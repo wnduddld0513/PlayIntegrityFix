@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Forfalsk bygg</string>
     <string name="spoof_build_summary">Forfalsk feltene i pif.prop (på som standard).</string>
     <string name="spoof_props_title">Forfalsk egenskaper</string>
-    <string name="spoof_props_summary">Forfalsk systemegenskaper; slå på hvis du ikke bruker TrickyStore eller TEESimulator.</string>
+    <string name="spoof_props_summary">Forfalsk systemegenskaper.</string>
     <string name="spoof_provider_title">Forfalsk leverandør</string>
-    <string name="spoof_provider_summary">Egendefinert nøkkellagerleverandør; slå på hvis du ikke bruker TrickyStore eller TEESimulator.</string>
+    <string name="spoof_provider_summary">Egendefinert nøkkellagerleverandør.</string>
     <string name="spoof_signature_title">Forfalsk signatur</string>
     <string name="spoof_signature_summary">Forfalsk ROM-signaturen; slå på hvis ROM-en din er signert med testkey.</string>
     <string name="spoof_vending_build_title">Forfalsk bygg (Play Butikk)</string>

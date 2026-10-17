@@ -33,7 +33,7 @@ import java.util.Map;
 
 /** State of the Play Integrity Fix page, kept in Settings.Global. */
 final class PifStore {
-    /** Read by PropImitationHooks: 1 loads the module into GMS (DroidGuard) and the Play Store. */
+    /** Read by PropImitationHooks: unset or 1 loads the module into GMS (DroidGuard) and the Play Store; only 0 turns it off. */
     static final String SWITCH_SETTING = "lenovo_pif_module";
 
     // module/pif.prop of the module's repository (webui/src/constant.ts).
@@ -53,7 +53,7 @@ final class PifStore {
     private PifStore() {}
 
     static boolean isEnabled(Context context) {
-        return Settings.Global.getInt(context.getContentResolver(), SWITCH_SETTING, 0) != 0;
+        return Settings.Global.getInt(context.getContentResolver(), SWITCH_SETTING, 1) != 0;
     }
 
     static void setEnabled(Context context, boolean enabled) {

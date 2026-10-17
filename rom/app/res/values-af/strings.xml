@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Boots bou na</string>
     <string name="spoof_build_summary">Boots velde in pif.prop na (by verstek aan).</string>
     <string name="spoof_props_title">Boots eienskappe na</string>
-    <string name="spoof_props_summary">Boots stelseleienskappe na; skakel aan as jy nie TrickyStore of TEESimulator gebruik nie.</string>
+    <string name="spoof_props_summary">Boots stelseleienskappe na.</string>
     <string name="spoof_provider_title">Boots verskaffer na</string>
-    <string name="spoof_provider_summary">Pasgemaakte sleutelstoor-verskaffer; skakel aan as jy nie TrickyStore of TEESimulator gebruik nie.</string>
+    <string name="spoof_provider_summary">Pasgemaakte sleutelstoor-verskaffer.</string>
     <string name="spoof_signature_title">Boots handtekening na</string>
     <string name="spoof_signature_summary">Boots die ROM-handtekening na; skakel aan as jou ROM met testkey onderteken is.</string>
     <string name="spoof_vending_build_title">Boots bou na (Play Winkel)</string>

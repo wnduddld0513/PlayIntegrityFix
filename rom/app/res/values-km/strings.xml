@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">ក្លែងបន្លំកំណែបង្កើត</string>
     <string name="spoof_build_summary">ក្លែងបន្លំវាលក្នុង pif.prop (បើកតាមលំនាំដើម)។</string>
     <string name="spoof_props_title">ក្លែងបន្លំលក្ខណសម្បត្តិ</string>
-    <string name="spoof_props_summary">ក្លែងបន្លំលក្ខណសម្បត្តិប្រព័ន្ធ ហើយបើកវា ប្រសិនបើអ្នកមិនប្រើ TrickyStore ឬ TEESimulator។</string>
+    <string name="spoof_props_summary">ក្លែងបន្លំលក្ខណសម្បត្តិប្រព័ន្ធ។</string>
     <string name="spoof_provider_title">ក្លែងបន្លំអ្នកផ្តល់សេវា</string>
-    <string name="spoof_provider_summary">អ្នកផ្តល់សេវាកន្លែងផ្ទុកសោផ្ទាល់ខ្លួន ហើយបើកវា ប្រសិនបើអ្នកមិនប្រើ TrickyStore ឬ TEESimulator។</string>
+    <string name="spoof_provider_summary">អ្នកផ្តល់សេវាកន្លែងផ្ទុកសោផ្ទាល់ខ្លួន។</string>
     <string name="spoof_signature_title">ក្លែងបន្លំហត្ថលេខា</string>
     <string name="spoof_signature_summary">ក្លែងបន្លំហត្ថលេខា ROM ហើយបើកវា ប្រសិនបើ ROM របស់អ្នកចុះហត្ថលេខាដោយ testkey។</string>
     <string name="spoof_vending_build_title">ក្លែងបន្លំកំណែបង្កើត (Play Store)</string>

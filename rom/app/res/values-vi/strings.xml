@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">Giả mạo bản dựng</string>
     <string name="spoof_build_summary">Giả mạo các trường trong pif.prop (bật theo mặc định).</string>
     <string name="spoof_props_title">Giả mạo thuộc tính</string>
-    <string name="spoof_props_summary">Giả mạo thuộc tính hệ thống; hãy bật nếu bạn không dùng TrickyStore hoặc TEESimulator.</string>
+    <string name="spoof_props_summary">Giả mạo thuộc tính hệ thống.</string>
     <string name="spoof_provider_title">Giả mạo trình cung cấp</string>
-    <string name="spoof_provider_summary">Trình cung cấp kho khóa tùy chỉnh; hãy bật nếu bạn không dùng TrickyStore hoặc TEESimulator.</string>
+    <string name="spoof_provider_summary">Trình cung cấp kho khóa tùy chỉnh.</string>
     <string name="spoof_signature_title">Giả mạo chữ ký</string>
     <string name="spoof_signature_summary">Giả mạo chữ ký của ROM; hãy bật nếu ROM của bạn được ký bằng testkey.</string>
     <string name="spoof_vending_build_title">Giả mạo bản dựng (Cửa hàng Play)</string>

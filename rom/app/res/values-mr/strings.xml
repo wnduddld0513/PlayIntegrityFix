@@ -4,7 +4,7 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     spoof_build_summary, spoof_props_summary, spoof_provider_summary, spoof_vending_sdk_summary,
+     spoof_build_summary, spoof_vending_sdk_summary,
      pif_fetch_title, pif_fetch_summary, pif_edit_title and pif_fetch_failed are the strings of the
      module's WebUI (webui/public/locales/strings, KOWX712/PlayIntegrityFix, GPL-3.0), with the
      module's translations where it has them. save, cancel, profile_model and
@@ -16,9 +16,9 @@
     <string name="spoof_build_title">बिल्ड स्पूफ करा</string>
     <string name="spoof_build_summary">pif.prop मधील फील्ड स्पूफ करा (डीफॉल्टनुसार सुरू).</string>
     <string name="spoof_props_title">प्रॉपर्टी स्पूफ करा</string>
-    <string name="spoof_props_summary">सिस्टम प्रॉपर्टी स्पूफ करा; तुम्ही TrickyStore किंवा TEESimulator वापरत नसल्यास सुरू करा.</string>
+    <string name="spoof_props_summary">सिस्टम प्रॉपर्टी स्पूफ करा.</string>
     <string name="spoof_provider_title">प्रोव्हायडर स्पूफ करा</string>
-    <string name="spoof_provider_summary">कस्टम कीस्टोअर प्रोव्हायडर; तुम्ही TrickyStore किंवा TEESimulator वापरत नसल्यास सुरू करा.</string>
+    <string name="spoof_provider_summary">कस्टम कीस्टोअर प्रोव्हायडर.</string>
     <string name="spoof_signature_title">स्वाक्षरी स्पूफ करा</string>
     <string name="spoof_signature_summary">ROM ची स्वाक्षरी स्पूफ करा; तुमचा ROM testkey ने साइन केलेला असल्यास सुरू करा.</string>
     <string name="spoof_vending_build_title">बिल्ड स्पूफ करा (Play Store)</string>
