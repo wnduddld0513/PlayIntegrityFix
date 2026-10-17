@@ -12,11 +12,11 @@ namespace pif {
         bool spoofProvider = false;
         bool spoofSignature = false;
         bool debug = false;
-        std::string deviceInitialSdkInt = "32";
+        std::string deviceInitialSdkInt = "34";
         std::string securityPatch;
         std::string buildId;
         bool spoofVendingSdk = false;
-        bool spoofVendingBuild = false;
+        bool spoofVendingBuild = true;
 
         [[nodiscard]] bool needsDex() const {
             return spoofProvider || spoofSignature;

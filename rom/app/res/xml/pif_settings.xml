@@ -32,6 +32,12 @@
             android:persistent="false" />
 
         <SwitchPreferenceCompat
+            android:key="spoofVendingBuild"
+            android:title="@string/spoof_vending_build_title"
+            android:summary="@string/spoof_vending_build_summary"
+            android:persistent="false" />
+
+        <SwitchPreferenceCompat
             android:key="spoofProvider"
             android:title="@string/spoof_provider_title"
             android:summary="@string/spoof_provider_summary"
@@ -41,12 +47,6 @@
             android:key="spoofSignature"
             android:title="@string/spoof_signature_title"
             android:summary="@string/spoof_signature_summary"
-            android:persistent="false" />
-
-        <SwitchPreferenceCompat
-            android:key="spoofVendingBuild"
-            android:title="@string/spoof_vending_build_title"
-            android:summary="@string/spoof_vending_build_summary"
             android:persistent="false" />
 
         <SwitchPreferenceCompat

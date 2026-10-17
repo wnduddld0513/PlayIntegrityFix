@@ -44,8 +44,8 @@ public class PifFragment extends SettingsBasePreferenceFragment {
     private static final String KEY_MAIN = "pif_enabled";
     private static final String[] CATEGORIES = {"pif_options", "pif_profile", "pif_config"};
     private static final String[] OPTION_KEYS = {
-        PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_PROVIDER,
-        PifConfig.SPOOF_SIGNATURE, PifConfig.SPOOF_VENDING_BUILD, PifConfig.SPOOF_VENDING_SDK,
+        PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_VENDING_BUILD,
+        PifConfig.SPOOF_PROVIDER, PifConfig.SPOOF_SIGNATURE, PifConfig.SPOOF_VENDING_SDK,
     };
 
     private final ExecutorService mExecutor = Executors.newSingleThreadExecutor();

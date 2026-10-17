@@ -32,6 +32,7 @@ cc_library_shared {
         "zygisk/src/main/cpp/pif_config.cpp",
         "zygisk/src/main/cpp/property_virtualizer.cpp",
     ],
+    header_libs: ["jni_headers"],
     local_include_dirs: ["zygisk/src/main/cpp"],
     shared_libs: ["liblog"],
     cpp_std: "c++20",

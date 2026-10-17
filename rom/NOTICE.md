@@ -11,7 +11,7 @@ directory runs the same logic inside the ROM instead.
 | `rom/entry/.../PifConfig.java` | Java port of `pif_config.cpp` and the pif.prop handling of `webui/src/lib/PROP.ts`, `PifConfig.ts` |
 | `rom/entry/.../RomEntry.java` | replaces the routing of `zygisk.cpp` (preAppSpecialize/postAppSpecialize, `doSpoofVending`) |
 | `zygisk/src/main/cpp/pif_config.cpp`, `property_virtualizer.cpp` | built unmodified into `libpif_propvirt`; `rom/native/pif_jni.cpp` is the JNI glue |
-| `rom/etc/pif.prop` | the option keys of `module/pif.prop` (no device profile; it is fetched on first run) |
+| `rom/etc/pif.prop` | the built-in profile (Pixel 9 tokay) and default options (`spoofBuild`, `spoofProps`, `spoofVendingBuild`) |
 | `rom/app/**` | settings page after `webui/src/data/spoofConfig.ts`, `App.tsx`, `lib/Update.ts`; strings after `webui/public/locales/strings` (translations of ar, id, pl, tr, zh-CN, zh-TW reused) |
 
 Intentionally not included (they depend on root-only tooling): the module scripts

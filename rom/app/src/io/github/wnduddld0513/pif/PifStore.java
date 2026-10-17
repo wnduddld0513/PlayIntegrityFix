@@ -46,8 +46,8 @@ final class PifStore {
             "https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/inject_s/module/pif.prop";
     // The options stay as the user set them; everything else comes from the fetched file.
     private static final String[] OPTIONS = {
-        PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_PROVIDER,
-        PifConfig.SPOOF_SIGNATURE, PifConfig.SPOOF_VENDING_BUILD, PifConfig.SPOOF_VENDING_SDK,
+        PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_VENDING_BUILD,
+        PifConfig.SPOOF_PROVIDER, PifConfig.SPOOF_SIGNATURE, PifConfig.SPOOF_VENDING_SDK,
         "DEBUG",
     };
 
@@ -111,7 +111,7 @@ final class PifStore {
         stopTargets(context);
     }
 
-    /** Drops the stored profile and options (back to the shipped option defaults) and fetches again. */
+    /** Drops the stored profile and options, restoring the shipped Pixel 9 defaults. */
     static void reset(Context context) {
         Settings.Global.putString(context.getContentResolver(), PifConfig.CONFIG_SETTING, "");
         stopTargets(context);

@@ -19,18 +19,19 @@ are in [`rom/`](rom) and [`Android.bp`](Android.bp).
   property virtualizer (`spoofProps`, `libpif_propvirt`), the keystore provider
   (`spoofProvider`, skipped while the ROM has its own keybox) and the signature
   (`spoofSignature`).
-- **Device profile.** None is shipped. After the first boot the app downloads
-  `module/pif.prop` from the upstream `inject_s` branch as soon as a network is
-  available (retrying with backoff), keeps the chosen options, stores the result
-  and restarts Play services and the Play Store.
+- **Device profile.** Shipped with a built-in Pixel 9 tokay profile
+  (`FINGERPRINT`, `MANUFACTURER`, `MODEL`, `SECURITY_PATCH`, `DEVICE_INITIAL_SDK_INT`).
+  The user can view, edit, reset to default, or fetch an updated profile from
+  GitHub, keeping the chosen options.
 - **Settings.** Settings > Advanced features > Experimental features > Play
   Integrity Fix: a main switch (on by default, `Settings.Global lenovo_pif_module`),
   the option switches, the active profile, Fetch, View/Edit `pif.prop` and Reset.
   Every change restarts Play services and the Play Store. The page is translated
   into the locales of the AOSP Settings app.
 
-Default options (`rom/etc/pif.prop`): `spoofBuild`, `spoofProps`, `spoofProvider`
-and `spoofVendingBuild` on; `spoofSignature`, `spoofVendingSdk` and `DEBUG` off.
+Default options (`rom/etc/pif.prop`): `spoofBuild`, `spoofProps` and
+`spoofVendingBuild` on; `spoofProvider`, `spoofSignature`, `spoofVendingSdk`
+and `DEBUG` off.
 
 Not included, because they need root: the module scripts that reset boot and
 lock state properties (`post-fs-data.sh`, `service.sh`), the Zygisk denylist

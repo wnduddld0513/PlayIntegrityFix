@@ -32,9 +32,9 @@ import java.util.Map;
 public final class PifConfig {
     public static final String SPOOF_BUILD = "spoofBuild";
     public static final String SPOOF_PROPS = "spoofProps";
+    public static final String SPOOF_VENDING_BUILD = "spoofVendingBuild";
     public static final String SPOOF_PROVIDER = "spoofProvider";
     public static final String SPOOF_SIGNATURE = "spoofSignature";
-    public static final String SPOOF_VENDING_BUILD = "spoofVendingBuild";
     public static final String SPOOF_VENDING_SDK = "spoofVendingSdk";
 
     /** Settings.Global: the user's pif.prop (empty or unset: the system default). */
@@ -50,12 +50,12 @@ public final class PifConfig {
     // Defaults of the module (pif_config.hpp).
     public boolean spoofBuild = true;
     public boolean spoofProps = true;
+    public boolean spoofVendingBuild = true;
     public boolean spoofProvider = false;
     public boolean spoofSignature = false;
-    public boolean spoofVendingBuild = false;
     public boolean spoofVendingSdk = false;
     public boolean debug = false;
-    public String deviceInitialSdkInt = "32";
+    public String deviceInitialSdkInt = "34";
     public String securityPatch = "";
     public String buildId = "";
     /** Build / Build.VERSION fields to spoof, by field name. */
@@ -149,9 +149,9 @@ public final class PifConfig {
         switch (key) {
             case SPOOF_BUILD: return config.spoofBuild;
             case SPOOF_PROPS: return config.spoofProps;
+            case SPOOF_VENDING_BUILD: return config.spoofVendingBuild;
             case SPOOF_PROVIDER: return config.spoofProvider;
             case SPOOF_SIGNATURE: return config.spoofSignature;
-            case SPOOF_VENDING_BUILD: return config.spoofVendingBuild;
             case SPOOF_VENDING_SDK: return config.spoofVendingSdk;
             default: return false;
         }
