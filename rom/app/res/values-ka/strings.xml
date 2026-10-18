@@ -39,4 +39,6 @@
     <string name="profile_model">\"მოდელი\"</string>
     <string name="profile_security_patch">\"Android-ის უსაფრთხოების განახლება\"</string>
     <string name="pif_not_fetched">ჯერ არ არის მიღებული</string>
+    <string name="pif_auto_update_title">ავტომატური განახლება</string>
+    <string name="pif_auto_update_summary">pif.prop-ის ავტომატური მიღება და გამოყენება, როცა ის GitHub-ზე განახლდება</string>
 </resources>

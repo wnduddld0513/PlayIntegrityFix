@@ -39,4 +39,6 @@
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Sigurnosno ažuriranje za Android\"</string>
     <string name="pif_not_fetched">Još nije dohvaćeno</string>
+    <string name="pif_auto_update_title">Automatsko ažuriranje</string>
+    <string name="pif_auto_update_summary">Automatski dohvati i primijeni pif.prop kad se ažurira na GitHubu</string>
 </resources>

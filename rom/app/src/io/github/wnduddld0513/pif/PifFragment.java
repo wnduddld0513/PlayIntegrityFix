@@ -8,7 +8,8 @@
  * App.tsx; KOWX712/PlayIntegrityFix, tag v4.9-inject-s, Copyright KOWX712) to
  * preferences: spoofBuild, spoofProps, spoofProvider, spoofSignature,
  * spoofVendingBuild and spoofVendingSdk switches, the Fetch, View and Reset
- * actions of the WebUI, and the active profile of pif.prop.
+ * actions of the WebUI, the automatic update (autopif_ota.sh of the module) and
+ * the active profile of pif.prop.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -42,6 +43,7 @@ import java.util.concurrent.Executors;
 /** Main switch of Play Integrity Fix followed by the module's options, on while it is on. */
 public class PifFragment extends SettingsBasePreferenceFragment {
     private static final String KEY_MAIN = "pif_enabled";
+    private static final String KEY_AUTO_UPDATE = "pif_auto_update";
     private static final String[] CATEGORIES = {"pif_options", "pif_profile", "pif_config"};
     private static final String[] OPTION_KEYS = {
         PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_VENDING_BUILD,
@@ -53,6 +55,7 @@ public class PifFragment extends SettingsBasePreferenceFragment {
 
     private MainSwitchPreference mMainSwitch;
     private Preference mFetch;
+    private SwitchPreferenceCompat mAutoUpdate;
     private Preference mReset;
 
     @Override
@@ -80,6 +83,11 @@ public class PifFragment extends SettingsBasePreferenceFragment {
         mFetch = findPreference("pif_fetch");
         mFetch.setOnPreferenceClickListener(preference -> {
             fetch();
+            return true;
+        });
+        mAutoUpdate = findPreference(KEY_AUTO_UPDATE);
+        mAutoUpdate.setOnPreferenceChangeListener((preference, value) -> {
+            PifStore.setAutoUpdate(requireContext(), (Boolean) value);
             return true;
         });
         findPreference("pif_edit").setOnPreferenceClickListener(preference -> {
@@ -124,6 +132,7 @@ public class PifFragment extends SettingsBasePreferenceFragment {
         }
         // PifConfig's spoofVendingSdk only applies while spoofVendingBuild is off (zygisk.cpp)
         findPreference(PifConfig.SPOOF_VENDING_SDK).setEnabled(!config.spoofVendingBuild);
+        mAutoUpdate.setChecked(PifStore.isAutoUpdate(context));
 
         findPreference("profile_fingerprint").setSummary(PifStore.profileValue(context, config.props.get("FINGERPRINT")));
         findPreference("profile_model").setSummary(PifStore.profileValue(context, config.props.get("MODEL")));

@@ -1,7 +1,8 @@
 # Options and default profile of the Play Integrity Fix shipped with the ROM (GPL-3.0, see LICENSE),
 # after module/pif.prop of KOWX712/PlayIntegrityFix v4.9-inject-s.
 # spoofProvider is skipped while the ROM's own keybox is set;
-# spoofVendingBuild gives the Play Store the same build as Droidguard, like the module.
+# spoofVendingBuild gives the Play Store the same build as Droidguard, like the module;
+# spoofSignature is on because the ROM is signed with the test keys.
 FINGERPRINT=google/tokay_beta/tokay:CANARY/ZP11.260918.007/16484274:user/release-keys
 MANUFACTURER=Google
 MODEL=Pixel 9
@@ -11,6 +12,6 @@ spoofBuild=true
 spoofProps=true
 spoofVendingBuild=true
 spoofProvider=false
-spoofSignature=false
+spoofSignature=true
 spoofVendingSdk=false
 DEBUG=false

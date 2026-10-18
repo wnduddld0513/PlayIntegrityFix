@@ -39,4 +39,6 @@
     <string name="profile_model">\"Muundo\"</string>
     <string name="profile_security_patch">\"Sasisho la usalama la Android\"</string>
     <string name="pif_not_fetched">Haijaletwa bado</string>
+    <string name="pif_auto_update_title">Kusasisha kiotomatiki</string>
+    <string name="pif_auto_update_summary">Pata na utumie pif.prop kiotomatiki inaposasishwa kwenye GitHub</string>
 </resources>

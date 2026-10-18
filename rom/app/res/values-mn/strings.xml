@@ -39,4 +39,6 @@
     <string name="profile_model">\"Загвар\"</string>
     <string name="profile_security_patch">\"Android-н аюулгүй байдлын шинэчлэлт\"</string>
     <string name="pif_not_fetched">Хараахан татаагүй</string>
+    <string name="pif_auto_update_title">Автомат шинэчлэлт</string>
+    <string name="pif_auto_update_summary">GitHub дээр шинэчлэгдэхэд pif.prop-г автоматаар татаж, ашиглах</string>
 </resources>

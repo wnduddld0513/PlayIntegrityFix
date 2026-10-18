@@ -41,4 +41,6 @@
     <string name="profile_model">Model</string>
     <string name="profile_security_patch">Android security update</string>
     <string name="pif_not_fetched">Not fetched yet</string>
+    <string name="pif_auto_update_title">Auto update</string>
+    <string name="pif_auto_update_summary">Fetch and apply pif.prop automatically when it is updated on GitHub</string>
 </resources>

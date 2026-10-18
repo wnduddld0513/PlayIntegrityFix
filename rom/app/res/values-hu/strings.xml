@@ -39,4 +39,6 @@
     <string name="profile_model">\"Modell\"</string>
     <string name="profile_security_patch">\"Android biztonsági frissítés\"</string>
     <string name="pif_not_fetched">Még nincs lekérve</string>
+    <string name="pif_auto_update_title">Automatikus frissítés</string>
+    <string name="pif_auto_update_summary">A pif.prop automatikus letöltése és alkalmazása, amikor frissül a GitHubon</string>
 </resources>

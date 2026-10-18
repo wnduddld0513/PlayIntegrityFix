@@ -39,4 +39,6 @@
     <string name="profile_model">\"Modeloa\"</string>
     <string name="profile_security_patch">\"Android-en segurtasun-eguneratzea\"</string>
     <string name="pif_not_fetched">Oraindik ez da eskuratu</string>
+    <string name="pif_auto_update_title">Eguneratze automatikoa</string>
+    <string name="pif_auto_update_summary">Lortu eta aplikatu pif.prop automatikoki GitHub-en eguneratzen denean</string>
 </resources>

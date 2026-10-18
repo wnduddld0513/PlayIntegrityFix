@@ -39,4 +39,6 @@
     <string name="profile_model">\"Imodeli\"</string>
     <string name="profile_security_patch">\"Isibuyekezo sokuvikela kwe-Android\"</string>
     <string name="pif_not_fetched">Akulethwa okwamanje</string>
+    <string name="pif_auto_update_title">Ukubuyekeza okuzenzakalelayo</string>
+    <string name="pif_auto_update_summary">Thola futhi usebenzise i-pif.prop ngokuzenzakalela uma ibuyekezwa ku-GitHub</string>
 </resources>

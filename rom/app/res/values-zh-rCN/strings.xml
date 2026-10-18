@@ -39,4 +39,6 @@
     <string name="profile_model">\"型号\"</string>
     <string name="profile_security_patch">\"Android 安全更新\"</string>
     <string name="pif_not_fetched">尚未获取</string>
+    <string name="pif_auto_update_title">自动更新</string>
+    <string name="pif_auto_update_summary">GitHub 上的 pif.prop 更新后自动获取并应用</string>
 </resources>

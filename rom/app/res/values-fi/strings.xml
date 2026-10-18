@@ -39,4 +39,6 @@
     <string name="profile_model">\"Malli\"</string>
     <string name="profile_security_patch">\"Androidin tietoturvapäivitys\"</string>
     <string name="pif_not_fetched">Ei vielä noudettu</string>
+    <string name="pif_auto_update_title">Automaattinen päivitys</string>
+    <string name="pif_auto_update_summary">Hae ja ota pif.prop käyttöön automaattisesti, kun se päivittyy GitHubissa</string>
 </resources>

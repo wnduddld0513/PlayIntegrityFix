@@ -39,4 +39,6 @@
     <string name="profile_model">\"Gerð\"</string>
     <string name="profile_security_patch">\"Öryggisuppfærsla fyrir Android\"</string>
     <string name="pif_not_fetched">Ekki enn sótt</string>
+    <string name="pif_auto_update_title">Sjálfvirk uppfærsla</string>
+    <string name="pif_auto_update_summary">Sækja og nota pif.prop sjálfkrafa þegar það er uppfært á GitHub</string>
 </resources>

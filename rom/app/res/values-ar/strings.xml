@@ -39,4 +39,6 @@
     <string name="profile_model">\"الطراز\"</string>
     <string name="profile_security_patch">\"‏تحديث أمان نظام Android\"</string>
     <string name="pif_not_fetched">لم يتم الجلب بعد</string>
+    <string name="pif_auto_update_title">التحديث التلقائي</string>
+    <string name="pif_auto_update_summary">جلب pif.prop وتطبيقه تلقائيًا عند تحديثه على GitHub</string>
 </resources>

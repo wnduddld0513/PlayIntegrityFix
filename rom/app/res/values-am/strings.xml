@@ -39,4 +39,6 @@
     <string name="profile_model">\"ሞዴል\"</string>
     <string name="profile_security_patch">\"የAndroid ደህንነት ዝማኔ\"</string>
     <string name="pif_not_fetched">ገና አልተገኘም</string>
+    <string name="pif_auto_update_title">ራስ-ሰር ዝማኔ</string>
+    <string name="pif_auto_update_summary">pif.prop በGitHub ላይ ሲዘምን በራስ-ሰር ያምጡ እና ይተግብሩ</string>
 </resources>

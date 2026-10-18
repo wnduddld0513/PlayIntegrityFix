@@ -39,4 +39,6 @@
     <string name="profile_model">\"Mudel\"</string>
     <string name="profile_security_patch">\"Androidi turvavärskendus\"</string>
     <string name="pif_not_fetched">Pole veel toodud</string>
+    <string name="pif_auto_update_title">Automaatne värskendamine</string>
+    <string name="pif_auto_update_summary">Too ja rakenda pif.prop automaatselt, kui seda GitHubis värskendatakse</string>
 </resources>

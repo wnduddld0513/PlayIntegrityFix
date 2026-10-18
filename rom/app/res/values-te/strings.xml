@@ -39,4 +39,6 @@
     <string name="profile_model">\"మోడల్\"</string>
     <string name="profile_security_patch">\"Android సెక్యూరిటీ అప్‌డేట్\"</string>
     <string name="pif_not_fetched">ఇంకా పొందలేదు</string>
+    <string name="pif_auto_update_title">ఆటోమేటిక్ అప్‌డేట్</string>
+    <string name="pif_auto_update_summary">GitHubలో pif.prop అప్‌డేట్ అయినప్పుడు దాన్ని ఆటోమేటిక్‌గా పొంది వర్తింపజేయండి</string>
 </resources>

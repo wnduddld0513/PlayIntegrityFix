@@ -39,4 +39,6 @@
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Android xavfsizlik yangilanishi\"</string>
     <string name="pif_not_fetched">Hali olinmagan</string>
+    <string name="pif_auto_update_title">Avtomatik yangilash</string>
+    <string name="pif_auto_update_summary">GitHub’da yangilanganda pif.prop avtomatik yuklab olinadi va qoʻllanadi</string>
 </resources>

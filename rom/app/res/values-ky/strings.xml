@@ -39,4 +39,6 @@
     <string name="profile_model">\"Үлгүсү\"</string>
     <string name="profile_security_patch">\"Android\\\'дин коопсуздук системасын жаңыртуу\"</string>
     <string name="pif_not_fetched">Азырынча алына элек</string>
+    <string name="pif_auto_update_title">Автоматтык түрдө жаңыртуу</string>
+    <string name="pif_auto_update_summary">GitHub\'да жаңыртылганда pif.prop файлын автоматтык түрдө алып, колдонуу</string>
 </resources>

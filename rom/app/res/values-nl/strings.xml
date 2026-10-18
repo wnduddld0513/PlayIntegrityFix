@@ -39,4 +39,6 @@
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Android-beveiligingsupdate\"</string>
     <string name="pif_not_fetched">Nog niet opgehaald</string>
+    <string name="pif_auto_update_title">Automatisch updaten</string>
+    <string name="pif_auto_update_summary">pif.prop automatisch ophalen en toepassen als dit wordt geüpdatet op GitHub</string>
 </resources>

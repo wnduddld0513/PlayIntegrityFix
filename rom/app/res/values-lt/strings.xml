@@ -39,4 +39,6 @@
     <string name="profile_model">\"Modelis\"</string>
     <string name="profile_security_patch">\"„Android“ saugos naujinys\"</string>
     <string name="pif_not_fetched">Dar negauta</string>
+    <string name="pif_auto_update_title">Automatinis atnaujinimas</string>
+    <string name="pif_auto_update_summary">Automatiškai gauti ir taikyti pif.prop, kai jis atnaujinamas „GitHub“</string>
 </resources>

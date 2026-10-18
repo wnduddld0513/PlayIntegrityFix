@@ -39,4 +39,6 @@
     <string name="profile_model">\"ម៉ូដែល\"</string>
     <string name="profile_security_patch">\"កំណែ​សុវត្ថិភាពថ្មី​របស់ Android\"</string>
     <string name="pif_not_fetched">មិនទាន់ទាញយកនៅឡើយ</string>
+    <string name="pif_auto_update_title">ការដំឡើងកំណែស្វ័យប្រវត្តិ</string>
+    <string name="pif_auto_update_summary">ទាញយក និងប្រើ pif.prop ដោយស្វ័យប្រវត្តិ នៅពេលវាត្រូវបានដំឡើងកំណែនៅលើ GitHub</string>
 </resources>

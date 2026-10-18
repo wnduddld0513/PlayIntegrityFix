@@ -39,4 +39,6 @@
     <string name="profile_model">\"Modeli\"</string>
     <string name="profile_security_patch">\"Përditësim sigurie për Android\"</string>
     <string name="pif_not_fetched">Ende i pamarrë</string>
+    <string name="pif_auto_update_title">Përditësim automatik</string>
+    <string name="pif_auto_update_summary">Merr dhe zbato automatikisht pif.prop kur përditësohet në GitHub</string>
 </resources>

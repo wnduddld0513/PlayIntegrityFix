@@ -39,4 +39,6 @@
     <string name="profile_model">\"ໂມເດວ\"</string>
     <string name="profile_security_patch">\"ອັບເດດຄວາມປອດໄພ Android\"</string>
     <string name="pif_not_fetched">ຍັງບໍ່ໄດ້ດຶງຂໍ້ມູນເທື່ອ</string>
+    <string name="pif_auto_update_title">ອັບເດດອັດຕະໂນມັດ</string>
+    <string name="pif_auto_update_summary">ດຶງ ແລະ ນຳໃຊ້ pif.prop ອັດຕະໂນມັດເມື່ອມີການອັບເດດຢູ່ GitHub</string>
 </resources>

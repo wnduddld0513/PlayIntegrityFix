@@ -87,6 +87,12 @@
             android:title="@string/pif_fetch_title"
             android:summary="@string/pif_fetch_summary" />
 
+        <SwitchPreferenceCompat
+            android:key="pif_auto_update"
+            android:title="@string/pif_auto_update_title"
+            android:summary="@string/pif_auto_update_summary"
+            android:persistent="false" />
+
         <Preference
             android:key="pif_edit"
             android:title="@string/pif_edit_title" />

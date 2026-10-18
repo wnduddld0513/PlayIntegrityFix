@@ -29,7 +29,7 @@
             android:permission="android.permission.WRITE_SECURE_SETTINGS"
             android:exported="true" />
 
-        <!-- First run: fetches the profile once online (switch on, none stored). -->
+        <!-- Automatic update: checks the profile once online, at boot and periodically. -->
         <receiver
             android:name=".PifBootReceiver"
             android:exported="true">

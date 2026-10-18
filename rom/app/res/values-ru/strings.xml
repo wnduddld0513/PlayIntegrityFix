@@ -39,4 +39,6 @@
     <string name="profile_model">\"Модель\"</string>
     <string name="profile_security_patch">\"Обновление системы безопасности Android\"</string>
     <string name="pif_not_fetched">Ещё не получено</string>
+    <string name="pif_auto_update_title">Автообновление</string>
+    <string name="pif_auto_update_summary">Автоматически загружать и применять pif.prop при его обновлении на GitHub</string>
 </resources>

@@ -39,4 +39,6 @@
     <string name="profile_model">\"Modelis\"</string>
     <string name="profile_security_patch">\"Android drošības atjauninājums\"</string>
     <string name="pif_not_fetched">Vēl nav iegūts</string>
+    <string name="pif_auto_update_title">Automātiska atjaunināšana</string>
+    <string name="pif_auto_update_summary">Automātiski iegūt un lietot pif.prop, kad tas tiek atjaunināts vietnē GitHub</string>
 </resources>

@@ -39,4 +39,6 @@
     <string name="profile_model">\"ମଡେଲ\"</string>
     <string name="profile_security_patch">\"Android ସୁରକ୍ଷା ଅପଡେଟ\"</string>
     <string name="pif_not_fetched">ଏପର୍ଯ୍ୟନ୍ତ ଆଣାଯାଇ ନାହିଁ</string>
+    <string name="pif_auto_update_title">ସ୍ୱତଃ ଅପଡେଟ</string>
+    <string name="pif_auto_update_summary">GitHubରେ pif.prop ଅପଡେଟ ହେଲେ ଏହାକୁ ସ୍ୱତଃ ଆଣି ଲାଗୁ କରନ୍ତୁ</string>
 </resources>

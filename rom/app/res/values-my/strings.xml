@@ -39,4 +39,6 @@
     <string name="profile_model">\"မိုဒယ်\"</string>
     <string name="profile_security_patch">\"Android လုံခြုံရေးအပ်ဒိတ်\"</string>
     <string name="pif_not_fetched">မရယူရသေးပါ</string>
+    <string name="pif_auto_update_title">အလိုအလျောက် အပ်ဒိတ်လုပ်ခြင်း</string>
+    <string name="pif_auto_update_summary">GitHub တွင် pif.prop အပ်ဒိတ်လုပ်သည့်အခါ အလိုအလျောက် ရယူပြီး အသုံးပြုသည်</string>
 </resources>

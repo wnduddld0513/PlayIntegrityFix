@@ -39,4 +39,6 @@
     <string name="profile_model">\"ਮਾਡਲ\"</string>
     <string name="profile_security_patch">\"Android ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ\"</string>
     <string name="pif_not_fetched">ਹਾਲੇ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ</string>
+    <string name="pif_auto_update_title">ਸਵੈਚਲਿਤ ਅੱਪਡੇਟ</string>
+    <string name="pif_auto_update_summary">GitHub \'ਤੇ pif.prop ਦੇ ਅੱਪਡੇਟ ਹੋਣ \'ਤੇ ਇਸਨੂੰ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਪ੍ਰਾਪਤ ਕਰਕੇ ਲਾਗੂ ਕਰੋ</string>
 </resources>

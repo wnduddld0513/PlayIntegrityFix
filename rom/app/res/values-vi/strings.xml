@@ -39,4 +39,6 @@
     <string name="profile_model">\"Kiểu máy\"</string>
     <string name="profile_security_patch">\"Bản cập nhật bảo mật Android\"</string>
     <string name="pif_not_fetched">Chưa được tìm nạp</string>
+    <string name="pif_auto_update_title">Tự động cập nhật</string>
+    <string name="pif_auto_update_summary">Tự động tải và áp dụng pif.prop khi tệp này được cập nhật trên GitHub</string>
 </resources>
