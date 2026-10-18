@@ -10,7 +10,8 @@
  * /data/adb/pif.prop, and "Fetch" downloads module/pif.prop of the module's
  * repository, as the WebUI does, keeping the options chosen by the user. The
  * automatic update replaces the module's autopif_ota.sh: it downloads the same
- * file and applies it whenever it changed upstream.
+ * file, records the first download as the baseline without replacing the profile
+ * shipped with the ROM, and applies a later change upstream.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -154,14 +155,23 @@ final class PifStore {
     }
 
     /**
-     * The automatic update: applies the module's pif.prop when it changed upstream since
-     * the last download, so a profile edited or reset by the user stays until then.
-     * Blocking; call it from a worker thread.
+     * The automatic update: the first check only records the downloaded pif.prop as the
+     * baseline, so the profile shipped with the ROM stays; afterwards applies the module's
+     * pif.prop when it changed upstream since the last download, so a profile edited or
+     * reset by the user stays until then. Blocking; call it from a worker thread.
      */
     static void update(Context context) throws IOException {
         final String fetched = download();
-        if (!fetched.equals(Settings.Global.getString(context.getContentResolver(),
-                FETCHED_SETTING))) {
+        final String baseline = Settings.Global.getString(context.getContentResolver(),
+                FETCHED_SETTING);
+        if (baseline == null || baseline.isBlank()) {
+            // First boot, or the setting was cleared: pif.prop in effect is still the one
+            // shipped with the ROM. Only remember what upstream has, to detect its next
+            // change; applying it here would replace the shipped profile.
+            Settings.Global.putString(context.getContentResolver(), FETCHED_SETTING, fetched);
+            return;
+        }
+        if (!fetched.equals(baseline)) {
             apply(context, fetched);
         }
     }
