@@ -57,17 +57,18 @@ public final class RomEntry {
             }
             final PifConfig config = PifConfig.parse(text);
             if (droidGuard) {
-                if (config.spoofProps) {
-                    if (!spoofProps(text)) {
-                        Log.e(TAG, "Native spoofProps failed; returning false before Java spoofing");
-                        return false;
-                    }
-                }
+                // Native property virtualization is a separate capability from the Java
+                // spoofing below: it rewrites the properties that native readers reach
+                // through __system_property_get, which the Build field writes cannot.
+                // When it is unavailable, still apply the Java side and record the
+                // degradation so the page reports it, instead of dropping the profile.
+                final boolean nativeProps = !config.spoofProps || spoofProps(text);
                 // The ROM's keybox, when set, already makes key attestation pass.
                 final boolean provider = config.spoofProvider
                         && !KeyProviderManager.isKeyboxAvailable();
                 EntryPoint.init(config.props, provider, config.spoofSignature,
                         config.spoofBuild);
+                PifConfig.setNativePropsState(context, nativeProps);
             } else if (config.spoofVendingBuild) {
                 EntryPoint.spoofBuildFields(config.props);
             } else if (config.spoofVendingSdk) {
