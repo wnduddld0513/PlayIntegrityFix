@@ -10,7 +10,9 @@
  * injected by Zygisk but loaded by the ROM (see RomEntry); the LSPosed
  * HiddenApiBypass calls are dropped (this jar is a platform framework jar, which
  * hidden API checks do not apply to); the build fields come from a parsed map
- * instead of JSON; fields are also set through Unsafe if reflection is refused.
+ * instead of JSON; fields are also set through Unsafe if reflection is refused,
+ * which is required for every static final field (PackageInfo.CREATOR included)
+ * once the runtime and the caller's target SDK both exceed Android 16.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -101,10 +103,20 @@ public final class EntryPoint {
 
         try {
             Field creatorField = findField(PackageInfo.class, "CREATOR");
-            creatorField.setAccessible(true);
-            creatorField.set(null, customCreator);
+            // Field.set() refuses every static final field once the runtime and the
+            // caller's target SDK both exceed Android 16 (ArtField::IsUnmodifiable),
+            // and package parsing reads PackageInfo through this field. Go through
+            // setField(), which falls back to Unsafe, as it already does for the
+            // static final Build fields.
+            setField(creatorField, customCreator);
+            if (creatorField.get(null) != customCreator) {
+                Log.e(TAG, "Couldn't replace PackageInfoCreator; spoofSignature has no effect");
+                return;
+            }
+            Log.i(TAG, "Replaced PackageInfo.CREATOR");
         } catch (Exception e) {
-            Log.e(TAG, "Couldn't replace PackageInfoCreator: " + e);
+            Log.e(TAG, "Couldn't replace PackageInfoCreator; spoofSignature has no effect: " + e);
+            return;
         }
 
         try {

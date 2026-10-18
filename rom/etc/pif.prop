@@ -1,16 +1,17 @@
-# pif.prop shipped with the ROM: module/pif.prop of KOWX712/PlayIntegrityFix
-# v4.9-inject-s, with spoofProvider=true (the provider is skipped while the ROM's own
-# keybox is set) and spoofVendingBuild=true (the Play Store gets the same build as
-# Droidguard, like the module). GPL-3.0, see LICENSE.
-FINGERPRINT=google/bluejay_beta/bluejay:CANARY/ZP11.260918.007/16484274:user/release-keys
+# Options and default profile of the Play Integrity Fix shipped with the ROM (GPL-3.0, see LICENSE),
+# after module/pif.prop of KOWX712/PlayIntegrityFix v4.9-inject-s.
+# spoofProvider is skipped while the ROM's own keybox is set;
+# spoofVendingBuild gives the Play Store the same build as Droidguard, like the module;
+# spoofSignature is on because the ROM is signed with the test keys.
+FINGERPRINT=google/tokay_beta/tokay:CANARY/ZP11.260918.007/16484274:user/release-keys
 MANUFACTURER=Google
-MODEL=Pixel 6a
+MODEL=Pixel 9
 SECURITY_PATCH=2026-10-05
-DEVICE_INITIAL_SDK_INT=32
+DEVICE_INITIAL_SDK_INT=34
 spoofBuild=true
 spoofProps=true
-spoofProvider=true
-spoofSignature=false
 spoofVendingBuild=true
+spoofProvider=false
+spoofSignature=true
 spoofVendingSdk=false
 DEBUG=false

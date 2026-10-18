@@ -39,22 +39,29 @@ public final class RomEntry {
 
     private RomEntry() {}
 
-    public static void init(Context context, String processName) {
+    /**
+     * Spoofs the process. Returns false when it did nothing (not a target process, or no
+     * profile fetched yet), so the caller can keep its own handling.
+     */
+    public static boolean init(Context context, String processName) {
         final boolean droidGuard = DROIDGUARD_PACKAGE.equals(processName);
         final boolean vending = VENDING_PACKAGE.equals(processName);
         if (!droidGuard && !vending) {
-            return;
+            return false;
         }
         try {
             final String text = PifConfig.readConfigText(context);
             if (!PifConfig.isValid(text)) {
-                Log.e(TAG, "pif.prop is empty or has no FINGERPRINT");
-                return;
+                Log.w(TAG, "No profile fetched yet, not spoofing");
+                return false;
             }
             final PifConfig config = PifConfig.parse(text);
             if (droidGuard) {
                 if (config.spoofProps) {
-                    spoofProps(text);
+                    if (!spoofProps(text)) {
+                        Log.e(TAG, "Native spoofProps failed; returning false before Java spoofing");
+                        return false;
+                    }
                 }
                 // The ROM's keybox, when set, already makes key attestation pass.
                 final boolean provider = config.spoofProvider
@@ -66,8 +73,10 @@ public final class RomEntry {
             } else if (config.spoofVendingSdk) {
                 spoofVendingSdk();
             }
+            return true;
         } catch (Throwable t) {
             Log.e(TAG, "init", t);
+            return false;
         }
     }
 
@@ -83,14 +92,22 @@ public final class RomEntry {
         Log.i(TAG, "[SDK_INT]: " + old + " -> " + target);
     }
 
-    private static void spoofProps(String text) {
+    private static boolean spoofProps(String text) {
         try {
             System.loadLibrary("pif_propvirt");
-            if (!nativeSpoofProps(text)) {
-                Log.e(TAG, "[PROP-VIRT] unavailable; property spoofing disabled for this process");
-            }
         } catch (Throwable t) {
-            Log.e(TAG, "[PROP-VIRT] unavailable; property spoofing disabled for this process", t);
+            Log.e(TAG, "[PROP-VIRT] Failed to load native library libpif_propvirt", t);
+            return false;
+        }
+        try {
+            if (!nativeSpoofProps(text)) {
+                Log.e(TAG, "[PROP-VIRT] Failed to apply native property virtualizer (nativeSpoofProps returned false)");
+                return false;
+            }
+            return true;
+        } catch (Throwable t) {
+            Log.e(TAG, "[PROP-VIRT] Exception during native property virtualizer application", t);
+            return false;
         }
     }
 
