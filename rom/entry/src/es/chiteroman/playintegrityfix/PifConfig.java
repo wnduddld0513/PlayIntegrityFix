@@ -41,6 +41,12 @@ public final class PifConfig {
     public static final String CONFIG_SETTING = "lenovo_pif_module_config";
     /** The pif.prop shipped with the system (module/pif.prop of the release). */
     public static final String DEFAULT_PROP = "/system_ext/etc/PlayIntegrityFix/pif.prop";
+    /**
+     * Settings.Global: 1 when the native property virtualizer applied for the last start of
+     * Play services, 0 when it was unavailable. Read by the page, which reports the
+     * degradation instead of letting it pass silently.
+     */
+    public static final String NATIVE_PROPS_STATE = "lenovo_pif_native_props";
 
     // Field names of the segments of a fingerprint, in order.
     private static final String[] FINGERPRINT_KEYS = {
@@ -123,6 +129,19 @@ public final class PifConfig {
         final String id = config.props.get("ID");
         if (id != null) config.buildId = id;
         return config;
+    }
+
+    /**
+     * Records whether the native property virtualizer applied, so the page can report a
+     * degraded start instead of showing the profile as fully in effect.
+     */
+    public static void setNativePropsState(Context context, boolean applied) {
+        try {
+            Settings.Global.putInt(context.getContentResolver(), NATIVE_PROPS_STATE,
+                    applied ? 1 : 0);
+        } catch (Throwable t) {
+            Log.e("PIF", "Couldn't record the native props state", t);
+        }
     }
 
     /** The text with the key set to the value, appended if it is missing. */
