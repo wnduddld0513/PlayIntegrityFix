@@ -43,4 +43,125 @@
     <string name="pif_not_fetched">Not fetched yet</string>
     <string name="pif_auto_update_title">Auto update</string>
     <string name="pif_auto_update_summary">Fetch and apply pif.prop automatically when it is updated on GitHub</string>
+    <string name="remove">Remove</string>
+    <string name="tee_title" translatable="false">TEESimulator</string>
+    <string name="specter_title" translatable="false">Specter</string>
+    <string name="keybox_category">Keybox</string>
+    <string name="keybox_status_title">Keybox status</string>
+    <string name="keybox_status_none">No keybox installed</string>
+    <string name="keybox_status_unavailable">Keybox service unavailable</string>
+    <string name="keybox_status_summary">Algorithms: %1$s\nEC certificates: %2$d, RSA certificates: %3$d\nExpires: %4$s\nRevocation: %5$s</string>
+    <string name="keybox_revoked_yes">Revoked</string>
+    <string name="keybox_revoked_no">Not revoked</string>
+    <string name="keybox_import_title">Import keybox</string>
+    <string name="keybox_import_summary">Choose a keybox XML file</string>
+    <string name="keybox_imported">Keybox imported</string>
+    <string name="keybox_import_failed">Invalid keybox: %1$s</string>
+    <string name="keybox_fetch_title">Fetch keybox online</string>
+    <string name="keybox_fetch_summary">Downloads a keybox that is not revoked from the Specter catalog</string>
+    <string name="keybox_fetched">Keybox installed</string>
+    <string name="keybox_fetch_failed">Could not fetch a keybox: check the network connection</string>
+    <string name="keybox_clear_title">Remove keybox</string>
+    <string name="keybox_clear_message">Remove the stored keybox?</string>
+    <string name="keybox_check_title">Check revocation</string>
+    <string name="keybox_check_summary">Compare the keybox with Google\'s revocation list</string>
+    <string name="keybox_check_revoked">This keybox is revoked</string>
+    <string name="keybox_check_ok">This keybox is not revoked</string>
+    <string name="keybox_check_unknown">Could not check the revocation: offline or no certificate data</string>
+    <string name="targets_category">Target apps</string>
+    <string name="target_add_title">Add app</string>
+    <string name="target_remove_message">Remove %1$s from the target apps?</string>
+    <string name="target_auto_title">Add new apps automatically</string>
+    <string name="target_auto_summary">Apps that you install are added to the target apps</string>
+    <string name="patch_category">Security patch</string>
+    <string name="patch_title">Security patch level</string>
+    <string name="patch_auto">Auto (from the profile)</string>
+    <string name="patch_auto_button">Auto</string>
+    <string name="patch_invalid">Enter a date as YYYY-MM-DD</string>
+    <string name="patch_fetch_title">Get the latest security patch</string>
+    <string name="patch_fetch_summary">Looks up the latest patch level online and offers it as the manual value</string>
+    <string name="patch_fetch_failed">Could not get the latest security patch</string>
+    <string name="apply_category">Apply</string>
+    <string name="apply_now_title">Apply now</string>
+    <string name="apply_now_summary">Stops Google Play services and the Play Store, and clears the Play Store\'s storage if that option is on</string>
+    <string name="apply_done">Applied</string>
+    <string name="rom_category">ROM fingerprint</string>
+    <string name="rom_build_type">Build type</string>
+    <string name="specter_sync_category">Synchronization</string>
+    <string name="specter_auto_title">Auto-update</string>
+    <string name="specter_auto_summary">Keeps the Play Integrity Fix profile and TEESimulator (security patch, target apps) up to date together</string>
+    <string name="specter_update_now_title">Update now</string>
+    <string name="specter_update_now_summary">Fetches the latest profile, aligns TEESimulator with it, checks the revocation and applies</string>
+    <string name="specter_update_done">Updated</string>
+    <string name="specter_update_failed">Could not update: check the network connection</string>
+    <string name="specter_pif_category">Play Integrity Fix</string>
+    <string name="specter_main_switch">Use Specter</string>
+    <string name="tee_main_switch">Use TEESimulator</string>
+    <string name="interval_title">Interval</string>
+    <string-array name="interval_entries">
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+    </string-array>
+    <string-array name="interval_values" translatable="false">
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+    <string name="steps_category">Update steps</string>
+    <string name="step_gms_title">Google Play services / Play Store</string>
+    <string name="step_gms_summary">Restart them as set below</string>
+    <string name="step_targets_title">Target apps</string>
+    <string name="step_targets_summary">Keep Google Play services and the Play Store among the target apps</string>
+    <string name="step_patch_title">Security patch</string>
+    <string name="step_patch_summary">Set the security patch from the chosen source</string>
+    <string name="step_keybox_title">Keybox</string>
+    <string name="step_keybox_summary">Check the revocation and take a new keybox when it is missing or revoked</string>
+    <string name="step_pif_title">Play Integrity Fix profile</string>
+    <string name="step_pif_summary">Fetch the profile of the chosen device</string>
+    <string name="gms_stop_title">Force stop Google Play services and the Play Store</string>
+    <string name="gms_stop_summary">They read the new state when they start again</string>
+    <string name="gms_clear_title">Clear Play Store data</string>
+    <string name="gms_clear_summary">Also clears the Play Store\'s storage when applying</string>
+    <string name="pif_preferred_title">Preferred devices</string>
+    <string name="pif_blocked_title">Blocked devices</string>
+    <string name="pif_devices_auto">Automatic</string>
+    <string name="keybox_provider_title">Keybox provider</string>
+    <string name="keybox_provider_auto">Automatic</string>
+    <string name="keybox_url_title">Keybox from URL</string>
+    <string name="keybox_url_summary">Downloads a keybox from an address, checks it and installs it</string>
+    <string name="keybox_info_title">Keybox info</string>
+    <string name="keybox_info_present">Installed</string>
+    <string name="keybox_info_revoked_google">Revoked by Google</string>
+    <string name="keybox_info_revoked_catalog">Revoked in the catalog</string>
+    <string name="keybox_info_softbanned">Soft-banned in the catalog</string>
+    <string name="keybox_info_source">Source: %1$s, version %2$s</string>
+    <string name="target_exclude_title">Auto-target exclusions</string>
+    <string name="target_exclude_none">None</string>
+    <string name="patch_source_title">Security patch source</string>
+    <string-array name="patch_source_entries">
+        <item>Play Integrity Fix profile</item>
+        <item>Device</item>
+        <item>Bulletin</item>
+        <item>Synthetic</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="patch_source_values" translatable="false">
+        <item>profile</item>
+        <item>device</item>
+        <item>bulletin</item>
+        <item>synthetic</item>
+        <item>manual</item>
+    </string-array>
+    <string name="patch_src_device_title">Device source</string>
+    <string name="patch_src_device_summary">The security patch of this device</string>
+    <string name="patch_src_bulletin_title">Bulletin source</string>
+    <string name="patch_src_bulletin_summary">The latest patch level of the Pixel security bulletin</string>
+    <string name="patch_src_synthetic_title">Synthetic source</string>
+    <string name="patch_src_synthetic_summary">The current month with day 05</string>
+    <string name="adb_category">ADB</string>
+    <string name="adb_dev_title">Turn off developer options</string>
+    <string name="adb_dev_summary">Turns developer options off whenever Specter updates</string>
+    <string name="adb_usb_title">Turn off USB debugging</string>
+    <string name="adb_usb_summary">Turns USB debugging off whenever Specter updates</string>
 </resources>

@@ -26,6 +26,7 @@ import android.app.job.JobScheduler;
 import android.content.ComponentName;
 import android.content.Context;
 import android.provider.Settings;
+import android.util.Log;
 
 import es.chiteroman.playintegrityfix.PifConfig;
 
@@ -50,11 +51,24 @@ final class PifStore {
     // At boot, when turned on, and periodically: upstream regenerates the file once a day.
     private static final int UPDATE_JOB_ID = 1;
     private static final int PERIODIC_UPDATE_JOB_ID = 2;
-    private static final long UPDATE_INTERVAL_MS = 12 * 60 * 60 * 1000L;
 
-    // module/pif.prop of the module's repository (webui/src/constant.ts).
-    private static final String FETCH_URL =
-            "https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/inject_s/module/pif.prop";
+    // device_prop/<product>.prop of the bot branch of the module's repository, as Specter
+    // reads it; the mirrors are tried in this order. %s is the product.
+    private static final String[] FETCH_URLS = {
+        "https://fastly.jsdelivr.net/gh/KOWX712/PlayIntegrityFix@bot/device_prop/%s.prop",
+        "https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/bot/device_prop/%s.prop",
+        "https://gh.sevencdn.com/https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/bot/device_prop/%s.prop",
+    };
+    private static final String DEFAULT_PRODUCT = "tokay_beta";
+    // device_list.json of the same branch: the Canary devices Specter offers
+    private static final String[] LIST_URLS = {
+        "https://fastly.jsdelivr.net/gh/KOWX712/PlayIntegrityFix@bot/device_list.json",
+        "https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/bot/device_list.json",
+        "https://gh.sevencdn.com/https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/bot/device_list.json",
+    };
+    /** The product chosen on the Specter page (e.g. tokay_beta); unset or empty follows the profile in effect. */
+    static final String DEVICE_SETTING = "lenovo_pif_device";
+    private static final String TAG = "PifStore";
     // The options stay as the user set them; everything else comes from the fetched file.
     private static final String[] OPTIONS = {
         PifConfig.SPOOF_BUILD, PifConfig.SPOOF_PROPS, PifConfig.SPOOF_VENDING_BUILD,
@@ -110,7 +124,7 @@ final class PifStore {
                 .build());
         scheduler.schedule(new JobInfo.Builder(PERIODIC_UPDATE_JOB_ID, service)
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-                .setPeriodic(UPDATE_INTERVAL_MS)
+                .setPeriodic(SpecterSync.intervalMs(context))
                 .build());
     }
 
@@ -143,7 +157,13 @@ final class PifStore {
     /** Drops the stored profile and options, restoring the shipped Pixel 9 defaults. */
     static void reset(Context context) {
         Settings.Global.putString(context.getContentResolver(), PifConfig.CONFIG_SETTING, "");
+        Settings.Global.putInt(context.getContentResolver(), AUTO_UPDATE_SETTING, 1);
+        Settings.Global.putString(context.getContentResolver(), FETCHED_SETTING, "");
+        Settings.Global.putString(context.getContentResolver(), DEVICE_SETTING, "");
+        SpecterSync.resetDefaults(context);
         stopTargets(context);
+        // The scheduled job runs the first update again as soon as the device is online
+        scheduleUpdates(context);
     }
 
     /**
@@ -151,7 +171,7 @@ final class PifStore {
      * user's options. Blocking; call it from a worker thread.
      */
     static void fetch(Context context) throws IOException {
-        apply(context, download());
+        apply(context, download(context));
     }
 
     /**
@@ -161,7 +181,7 @@ final class PifStore {
      * reset by the user stays until then. Blocking; call it from a worker thread.
      */
     static void update(Context context) throws IOException {
-        final String fetched = download();
+        final String fetched = download(context);
         final String baseline = Settings.Global.getString(context.getContentResolver(),
                 FETCHED_SETTING);
         if (baseline == null || baseline.isBlank()) {
@@ -176,11 +196,76 @@ final class PifStore {
         }
     }
 
-    private static String download() throws IOException {
-        final HttpURLConnection connection = (HttpURLConnection) new URL(FETCH_URL).openConnection();
+    /** The device of the current profile when it is a *_beta one (google/tokay_beta/tokay:... -> tokay_beta). */
+    private static String product(Context context) {
+        final String chosen = device(context);
+        if (!chosen.isEmpty()) {
+            return chosen;
+        }
+        final String fingerprint = PifConfig.parseRaw(text(context)).get("FINGERPRINT");
+        if (fingerprint != null) {
+            final String[] parts = fingerprint.split("/");
+            if (parts.length > 1 && parts[1].endsWith("_beta")) {
+                return parts[1];
+            }
+        }
+        return DEFAULT_PRODUCT;
+    }
+
+    static String device(Context context) {
+        final String value = Settings.Global.getString(context.getContentResolver(), DEVICE_SETTING);
+        return value == null ? "" : value;
+    }
+
+    static void setDevice(Context context, String product) {
+        Settings.Global.putString(context.getContentResolver(), DEVICE_SETTING, product);
+    }
+
+    /** {model, product} of the Canary devices on offer; throws naming the last failing URL. */
+    static java.util.List<String[]> deviceList() throws IOException {
+        IOException last = null;
+        for (String url : LIST_URLS) {
+            try {
+                final org.json.JSONArray array = new org.json.JSONArray(get(url));
+                final java.util.List<String[]> devices = new java.util.ArrayList<>();
+                for (int i = 0; i < array.length(); i++) {
+                    final org.json.JSONObject entry = array.getJSONObject(i);
+                    devices.add(new String[] {entry.getString("model"), entry.getString("product")});
+                }
+                return devices;
+            } catch (IOException | org.json.JSONException e) {
+                Log.w(TAG, "Fetching " + url + " failed", e);
+                last = new IOException(url + ": " + e, e);
+            }
+        }
+        throw last;
+    }
+
+    /** The first mirror that downloads a valid file; throws naming the last failing URL. */
+    private static String download(Context context) throws IOException {
+        final String product = product(context);
+        IOException last = null;
+        for (String template : FETCH_URLS) {
+            final String url = String.format(template, product);
+            try {
+                final String fetched = get(url);
+                if (!PifConfig.isValid(fetched)) {
+                    throw new IOException("Invalid pif.prop");
+                }
+                return fetched;
+            } catch (IOException e) {
+                Log.w(TAG, "Fetching " + url + " failed", e);
+                last = new IOException(url + ": " + e, e);
+            }
+        }
+        throw last;
+    }
+
+    private static String get(String url) throws IOException {
+        final HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
         connection.setConnectTimeout(10000);
         connection.setReadTimeout(10000);
-        final String fetched;
+        connection.setRequestProperty("User-Agent", "PlayIntegrityFix");
         try (InputStream in = connection.getInputStream()) {
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
             final byte[] buffer = new byte[4096];
@@ -188,14 +273,10 @@ final class PifStore {
             while ((n = in.read(buffer)) > 0) {
                 out.write(buffer, 0, n);
             }
-            fetched = out.toString(StandardCharsets.UTF_8);
+            return out.toString(StandardCharsets.UTF_8);
         } finally {
             connection.disconnect();
         }
-        if (!PifConfig.isValid(fetched)) {
-            throw new IOException("Invalid pif.prop");
-        }
-        return fetched;
     }
 
     /** Merges the downloaded pif.prop into the current one; restarts the targets if it changed. */
@@ -221,7 +302,7 @@ final class PifStore {
     }
 
     /** Google Play services and the Play Store read the new state when they start. */
-    private static void stopTargets(Context context) {
+    static void stopTargets(Context context) {
         final ActivityManager am = context.getSystemService(ActivityManager.class);
         for (String pkg : TARGET_PACKAGES) {
             am.forceStopPackage(pkg);

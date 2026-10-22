@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.InputType;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -149,6 +150,7 @@ public class PifFragment extends SettingsBasePreferenceFragment {
                 PifStore.fetch(context);
                 ok = true;
             } catch (Exception e) {
+                Log.w("PifStore", "Fetch failed", e);
                 ok = false;
             }
             final boolean success = ok;

@@ -16,6 +16,7 @@ package io.github.wnduddld0513.pif;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
+import android.content.Context;
 
 /** Downloads the profile in the background and applies it when it changed upstream. */
 public class PifFetchService extends JobService {
@@ -27,7 +28,13 @@ public class PifFetchService extends JobService {
         new Thread(() -> {
             boolean retry;
             try {
-                PifStore.update(getApplicationContext());
+                final Context context = getApplicationContext();
+                if (SpecterSync.isFirstUpdateDone(context) || !SpecterSync.isEnabled(context)) {
+                    PifStore.update(context);
+                    SpecterSync.afterScheduledUpdate(context);
+                } else {
+                    SpecterSync.firstUpdate(context);
+                }
                 retry = false;
             } catch (Exception e) {
                 retry = true;

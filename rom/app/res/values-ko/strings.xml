@@ -41,4 +41,111 @@
     <string name="pif_not_fetched">아직 가져오지 않음</string>
     <string name="pif_auto_update_title">자동 업데이트</string>
     <string name="pif_auto_update_summary">GitHub의 pif.prop이 업데이트되면 자동으로 가져와 적용합니다</string>
+    <string name="remove">삭제</string>
+    <string name="keybox_category">키박스</string>
+    <string name="keybox_status_title">키박스 상태</string>
+    <string name="keybox_status_none">설치된 키박스 없음</string>
+    <string name="keybox_status_unavailable">키박스 서비스를 사용할 수 없음</string>
+    <string name="keybox_status_summary">알고리즘: %1$s\nEC 인증서: %2$d개, RSA 인증서: %3$d개\n만료: %4$s\n폐기 여부: %5$s</string>
+    <string name="keybox_revoked_yes">폐기됨</string>
+    <string name="keybox_revoked_no">폐기되지 않음</string>
+    <string name="keybox_import_title">키박스 가져오기</string>
+    <string name="keybox_import_summary">키박스 XML 파일을 선택합니다</string>
+    <string name="keybox_imported">키박스를 가져왔습니다</string>
+    <string name="keybox_import_failed">잘못된 키박스: %1$s</string>
+    <string name="keybox_fetch_title">온라인에서 키박스 가져오기</string>
+    <string name="keybox_fetch_summary">Specter 카탈로그에서 폐기되지 않은 키박스를 내려받습니다</string>
+    <string name="keybox_fetched">키박스를 설치했습니다</string>
+    <string name="keybox_fetch_failed">키박스를 가져오지 못했습니다. 네트워크 연결을 확인하세요</string>
+    <string name="keybox_clear_title">키박스 삭제</string>
+    <string name="keybox_clear_message">저장된 키박스를 삭제할까요?</string>
+    <string name="keybox_check_title">폐기 여부 확인</string>
+    <string name="keybox_check_summary">키박스를 Google의 폐기 목록과 비교합니다</string>
+    <string name="keybox_check_revoked">이 키박스는 폐기되었습니다</string>
+    <string name="keybox_check_ok">이 키박스는 폐기되지 않았습니다</string>
+    <string name="keybox_check_unknown">폐기 여부를 확인하지 못했습니다. 오프라인이거나 인증서 정보가 없습니다</string>
+    <string name="targets_category">대상 앱</string>
+    <string name="target_add_title">앱 추가</string>
+    <string name="target_remove_message">%1$s을(를) 대상 앱에서 삭제할까요?</string>
+    <string name="target_auto_title">새 앱 자동 추가</string>
+    <string name="target_auto_summary">설치한 앱을 대상 앱에 자동으로 추가합니다</string>
+    <string name="patch_category">보안 패치</string>
+    <string name="patch_title">보안 패치 수준</string>
+    <string name="patch_auto">자동(프로필 기준)</string>
+    <string name="patch_auto_button">자동</string>
+    <string name="patch_invalid">날짜를 YYYY-MM-DD 형식으로 입력하세요</string>
+    <string name="patch_fetch_title">최신 보안 패치 가져오기</string>
+    <string name="patch_fetch_summary">온라인에서 최신 패치 수준을 찾아 직접 입력 값으로 제안합니다</string>
+    <string name="patch_fetch_failed">최신 보안 패치를 가져오지 못했습니다</string>
+    <string name="apply_category">적용</string>
+    <string name="apply_now_title">지금 적용</string>
+    <string name="apply_now_summary">Google Play 서비스와 Play 스토어를 중지하고, 옵션을 켠 경우 Play 스토어 저장공간을 삭제합니다</string>
+    <string name="apply_done">적용했습니다</string>
+    <string name="rom_category">ROM 지문</string>
+    <string name="rom_build_type">빌드 유형</string>
+    <string name="specter_sync_category">동기화</string>
+    <string name="specter_auto_title">자동 업데이트</string>
+    <string name="specter_auto_summary">Play Integrity Fix 프로필과 TEESimulator(보안 패치, 대상 앱)를 함께 최신 상태로 유지합니다</string>
+    <string name="specter_update_now_title">지금 업데이트</string>
+    <string name="specter_update_now_summary">최신 프로필을 가져와 TEESimulator를 맞추고 폐기 여부를 확인한 뒤 적용합니다</string>
+    <string name="specter_update_done">업데이트했습니다</string>
+    <string name="specter_update_failed">업데이트하지 못했습니다. 네트워크 연결을 확인하세요</string>
+    <string name="specter_pif_category">Play Integrity Fix</string>
+    <string name="specter_main_switch">Specter 사용</string>
+    <string name="tee_main_switch">TEESimulator 사용</string>
+    <string name="interval_title">간격</string>
+    <string-array name="interval_entries">
+        <item>6시간</item>
+        <item>12시간</item>
+        <item>24시간</item>
+    </string-array>
+    <string name="steps_category">업데이트 단계</string>
+    <string name="step_gms_title">Google Play 서비스 / Play 스토어</string>
+    <string name="step_gms_summary">아래 설정에 따라 다시 시작합니다</string>
+    <string name="step_targets_title">대상 앱</string>
+    <string name="step_targets_summary">Google Play 서비스와 Play 스토어를 대상 앱에 유지합니다</string>
+    <string name="step_patch_title">보안 패치</string>
+    <string name="step_patch_summary">선택한 출처에서 보안 패치를 설정합니다</string>
+    <string name="step_keybox_title">키박스</string>
+    <string name="step_keybox_summary">폐기 여부를 확인하고 키박스가 없거나 폐기되었으면 새로 받습니다</string>
+    <string name="step_pif_title">Play Integrity Fix 프로필</string>
+    <string name="step_pif_summary">선택한 기기의 프로필을 가져옵니다</string>
+    <string name="gms_stop_title">Google Play 서비스와 Play 스토어 강제 중지</string>
+    <string name="gms_stop_summary">다시 시작할 때 새 상태를 읽습니다</string>
+    <string name="gms_clear_title">Play 스토어 데이터 삭제</string>
+    <string name="gms_clear_summary">적용할 때 Play 스토어 저장공간도 삭제합니다</string>
+    <string name="pif_preferred_title">선호 기기</string>
+    <string name="pif_blocked_title">차단한 기기</string>
+    <string name="pif_devices_auto">자동</string>
+    <string name="keybox_provider_title">키박스 제공처</string>
+    <string name="keybox_provider_auto">자동</string>
+    <string name="keybox_url_title">URL에서 키박스 가져오기</string>
+    <string name="keybox_url_summary">주소에서 키박스를 내려받아 확인한 뒤 설치합니다</string>
+    <string name="keybox_info_title">키박스 정보</string>
+    <string name="keybox_info_present">설치됨</string>
+    <string name="keybox_info_revoked_google">Google에서 폐기함</string>
+    <string name="keybox_info_revoked_catalog">카탈로그에서 폐기됨</string>
+    <string name="keybox_info_softbanned">카탈로그에서 제한됨</string>
+    <string name="keybox_info_source">출처: %1$s, 버전 %2$s</string>
+    <string name="target_exclude_title">자동 추가 제외 앱</string>
+    <string name="target_exclude_none">없음</string>
+    <string name="patch_source_title">보안 패치 출처</string>
+    <string-array name="patch_source_entries">
+        <item>Play Integrity Fix 프로필</item>
+        <item>기기</item>
+        <item>보안 공지</item>
+        <item>합성</item>
+        <item>직접 입력</item>
+    </string-array>
+    <string name="patch_src_device_title">기기 출처</string>
+    <string name="patch_src_device_summary">이 기기의 보안 패치</string>
+    <string name="patch_src_bulletin_title">보안 공지 출처</string>
+    <string name="patch_src_bulletin_summary">Pixel 보안 공지의 최신 패치 수준</string>
+    <string name="patch_src_synthetic_title">합성 출처</string>
+    <string name="patch_src_synthetic_summary">이번 달의 5일</string>
+    <string name="adb_category">ADB</string>
+    <string name="adb_dev_title">개발자 옵션 끄기</string>
+    <string name="adb_dev_summary">Specter가 업데이트할 때마다 개발자 옵션을 끕니다</string>
+    <string name="adb_usb_title">USB 디버깅 끄기</string>
+    <string name="adb_usb_summary">Specter가 업데이트할 때마다 USB 디버깅을 끕니다</string>
 </resources>
