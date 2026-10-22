@@ -10,5 +10,7 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <!-- Restart Google Play services and the Play Store after a change -->
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <!-- Clear the Play Store's storage with "Apply now" -->
+        <permission name="android.permission.CLEAR_APP_USER_DATA"/>
     </privapp-permissions>
 </permissions>

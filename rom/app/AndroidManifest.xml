@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
 
     <application
         android:allowBackup="false"
@@ -28,6 +29,29 @@
             android:label="@string/app_name"
             android:permission="android.permission.WRITE_SECURE_SETTINGS"
             android:exported="true" />
+
+        <!-- The TEESimulator and Specter pages, opened the same way. -->
+        <activity
+            android:name=".TeeSimulatorActivity"
+            android:label="@string/tee_title"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS"
+            android:exported="true" />
+        <activity
+            android:name=".SpecterActivity"
+            android:label="@string/specter_title"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS"
+            android:exported="true" />
+
+        <!-- Adds a newly installed app to the target apps while "add new apps
+             automatically" is on. -->
+        <receiver
+            android:name=".PifPackageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
 
         <!-- Automatic update: checks the profile once online, at boot and periodically. -->
         <receiver
