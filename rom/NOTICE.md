@@ -16,6 +16,6 @@ directory runs the same logic inside the ROM instead.
 
 Intentionally not included (they depend on root-only tooling): the module scripts
 (`post-fs-data.sh`, `service.sh`: resetprop of verified boot / lock state props),
-the Zygisk denylist handling, the TrickyStore / TEESimulator integration
-(`autopif.sh`, `security_patch.sh`). The ROM-side hook is the Apache-2.0 code in
+the Zygisk denylist handling. The TrickyStore / TEESimulator integration (`autopif.sh`,
+`security_patch.sh`) is replaced by the Specter and TEESimulator pages of this app. The ROM-side hook is the Apache-2.0 code in
 frameworks/base `PropImitationHooks.loadPifModule()`; it only loads this jar.
