@@ -41,12 +41,12 @@ import java.util.Map;
 /** State of the Play Integrity Fix page, kept in Settings.Global. */
 final class PifStore {
     /** Read by PropImitationHooks: unset or 1 loads the module into GMS (DroidGuard) and the Play Store; only 0 turns it off. */
-    static final String SWITCH_SETTING = "lenovo_pif_module";
+    static final String SWITCH_SETTING = "pif_module";
 
     /** Unset or 1 downloads and applies the profile whenever it changes upstream. */
-    static final String AUTO_UPDATE_SETTING = "lenovo_pif_auto_update";
+    static final String AUTO_UPDATE_SETTING = "pif_auto_update";
     // The pif.prop last downloaded, to apply an update only once it changed upstream.
-    private static final String FETCHED_SETTING = "lenovo_pif_fetched";
+    private static final String FETCHED_SETTING = "pif_fetched";
 
     // At boot, when turned on, and periodically: upstream regenerates the file once a day.
     private static final int UPDATE_JOB_ID = 1;
@@ -67,7 +67,7 @@ final class PifStore {
         "https://gh.sevencdn.com/https://raw.githubusercontent.com/KOWX712/PlayIntegrityFix/bot/device_list.json",
     };
     /** The product chosen on the Specter page (e.g. tokay_beta); unset or empty follows the profile in effect. */
-    static final String DEVICE_SETTING = "lenovo_pif_device";
+    static final String DEVICE_SETTING = "pif_device";
     private static final String TAG = "PifStore";
     // The options stay as the user set them; everything else comes from the fetched file.
     private static final String[] OPTIONS = {

@@ -38,7 +38,7 @@ public final class PifConfig {
     public static final String SPOOF_VENDING_SDK = "spoofVendingSdk";
 
     /** Settings.Global: the user's pif.prop (empty or unset: the system default). */
-    public static final String CONFIG_SETTING = "lenovo_pif_module_config";
+    public static final String CONFIG_SETTING = "pif_module_config";
     /** The pif.prop shipped with the system (module/pif.prop of the release). */
     public static final String DEFAULT_PROP = "/system_ext/etc/PlayIntegrityFix/pif.prop";
     /**
@@ -46,7 +46,7 @@ public final class PifConfig {
      * Play services, 0 when it was unavailable. Read by the page, which reports the
      * degradation instead of letting it pass silently.
      */
-    public static final String NATIVE_PROPS_STATE = "lenovo_pif_native_props";
+    public static final String NATIVE_PROPS_STATE = "pif_native_props";
 
     // Field names of the segments of a fingerprint, in order.
     private static final String[] FINGERPRINT_KEYS = {
