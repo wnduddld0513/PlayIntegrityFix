@@ -3,7 +3,7 @@
 This branch is a fork of [KOWX712/PlayIntegrityFix](https://github.com/KOWX712/PlayIntegrityFix)
 (`v4.9-inject-s`) that runs the module inside the ROM, **without root, Magisk or Zygisk**.
 It is ported to **PixelOS 17.0** (Android 17) and used by its build for the Lenovo Yoga Tab Plus
-(TB520FU, `lapis`). The same app also carries the ROM ports of Specter and TEESimulator.
+(TB520FU). The same app also carries the ROM ports of Specter and TEESimulator.
 The module itself (`module/`, `zygisk/`, `webui/`) is kept as upstream; the ROM parts
 are in [`rom/`](rom) and [`Android.bp`](Android.bp).
 
@@ -67,7 +67,7 @@ changes in the ROM. Without them the package is installed but does nothing.
 | --- | --- |
 | `frameworks/base` ([lenovo-sm8650, `seventeen`](https://github.com/lenovo-sm8650/android_frameworks_base/tree/seventeen)) | `PropImitationHooks.loadPifModule()` loads `PlayIntegrityFixEntry.jar` into Google Play services (DroidGuard) and the Play Store while `Settings.Global pif_module` is on, and writes the spoofed fields through `Unsafe` |
 | `frameworks/base` | `KeyboxAttestationService` (service name `keybox_attestation`), started in `SystemServer` after `AttestationService`; the keystore hook `KeyboxImitationHooks` (called from `KeyStoreSecurityLevel.generateKey` and `KeyStore2.getKeyEntry`) asks it to sign; AIDL in `core/java/android/security/keybox` |
-| `device/lenovo/lapis` ([`seventeen`](https://github.com/lenovo-sm8650/android_device_lenovo_lapis/tree/seventeen)) | SELinux: `keybox_attestation_service` type in `sepolicy/private/service.te` and its entry in `service_contexts` |
+| `device/lenovo/TB520FU` ([`seventeen`](https://github.com/lenovo-sm8650/android_device_lenovo_TB520FU/tree/seventeen)) | SELinux: `keybox_attestation_service` type in `sepolicy/private/service.te` and its entry in `service_contexts` |
 | `hardware/lenovo` ([`seventeen`](https://github.com/lenovo-sm8650/android_hardware_lenovo/tree/seventeen)) | `custom/custom.mk` adds `PlayIntegrityFixSettings` to `PRODUCT_PACKAGES`; the *Integrity* category of Experimental features opens the three pages |
 
 ## Building it into a ROM
