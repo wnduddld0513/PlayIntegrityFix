@@ -155,8 +155,11 @@ final class SpecterSync {
      * targets) without clearing any data and is recorded only when it succeeds, so the job
      * retries it until the device is online; the later ones refresh what changed and restart
      * Google Play services only then. Blocking; call it from a worker thread.
+     *
+     * The passes run one at a time: at boot the first and the periodic job start together,
+     * and run side by side both would fetch and apply the same profile and keybox.
      */
-    static void scheduledPass(Context context) throws IOException {
+    static synchronized void scheduledPass(Context context) throws IOException {
         if (!isEnabled(context) || !isAutoUpdate(context)) return;
         if (!isFirstUpdateDone(context)) {
             run(context, false, false);
@@ -186,13 +189,13 @@ final class SpecterSync {
      * Specter's action.sh. Blocking; call it from a worker thread. Throws if the profile
      * cannot be fetched. Does nothing while Specter is off.
      */
-    static void propagate(Context context) throws IOException {
+    static synchronized void propagate(Context context) throws IOException {
         if (!isEnabled(context)) return;
         run(context, true, false);
     }
 
     /** propagate, installing a new keybox even if the stored one is fine. */
-    static void propagateReplacingKeybox(Context context) throws IOException {
+    static synchronized void propagateReplacingKeybox(Context context) throws IOException {
         if (!isEnabled(context)) return;
         run(context, true, true);
     }
