@@ -189,8 +189,15 @@ final class PifStore {
         stopTargets(context);
     }
 
-    /** Google Play services and the Play Store read the new state when they start. */
+    /**
+     * Google Play services and the Play Store read the new state when they start. Left
+     * alone until PixelOS turns its spoofing on (the first time Settings is opened after
+     * setup): it restarts them itself then, and Setup Wizard must not lose them.
+     */
     static void stopTargets(Context context) {
+        if (Settings.Secure.getInt(context.getContentResolver(), "spoof_activated", 0) == 0) {
+            return;
+        }
         final ActivityManager am = context.getSystemService(ActivityManager.class);
         for (String pkg : TARGET_PACKAGES) {
             try {
