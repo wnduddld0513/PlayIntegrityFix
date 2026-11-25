@@ -4,7 +4,8 @@
  * Copyright (C) 2026 wnduddld0513
  * SPDX-License-Identifier: GPL-3.0-only
  *
- * Schedules the automatic update of the profile after boot.
+ * Schedules Specter's passes after boot, so that a fresh setup gets a Play Integrity
+ * profile and a keybox without anyone opening a page.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -17,10 +18,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-/** Schedules the automatic update at boot when the switch and the automatic update are on. */
 public class PifBootReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        PifStore.scheduleUpdates(context);
+        SpecterSync.schedule(context);
     }
 }

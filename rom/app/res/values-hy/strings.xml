@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Օգտագործել Play Integrity Fix-ը</string>
-    <string name="pif_options_category">Կեղծման ընտրանքներ</string>
-    <string name="spoof_build_title">Կեղծել կառուցվածքը</string>
-    <string name="spoof_build_summary">Կեղծել pif.prop-ի դաշտերը (կանխադրված՝ միացված)։</string>
-    <string name="spoof_props_title">Կեղծել հատկությունները</string>
-    <string name="spoof_props_summary">Կեղծել համակարգային հատկությունները։</string>
-    <string name="spoof_provider_title">Կեղծել մատակարարին</string>
-    <string name="spoof_provider_summary">Անհատական բանալիների պահոցի մատակարար։</string>
-    <string name="spoof_signature_title">Կեղծել ստորագրությունը</string>
-    <string name="spoof_signature_summary">Կեղծել ROM-ի ստորագրությունը․ միացրեք, եթե ձեր ROM-ը ստորագրված է testkey-ով։</string>
-    <string name="spoof_vending_build_title">Կեղծել կառուցվածքը (Play Store)</string>
-    <string name="spoof_vending_build_summary">Կեղծել կառուցվածքը Play Store-ի (com.android.vending) համար, ոչ միայն Droidguard-ի։</string>
-    <string name="spoof_vending_sdk_title">Կեղծել SDK-ն (Play Store)</string>
-    <string name="spoof_vending_sdk_summary">Կեղծել SDK 32 տարբերակը, եթե սարքը գործարկում է Android 13 կամ ավելի նոր տարբերակ։ Այս ընտրանքը կարող է անկայունություն առաջացնել (կանխադրված՝ անջատված)։</string>
-    <string name="profile_category">Ակտիվ պրոֆիլ</string>
     <string name="profile_fingerprint">Կառուցվածքի մատնահետք</string>
-    <string name="pif_fetch_title">Ստանալ</string>
-    <string name="pif_fetch_summary">Ներբեռնել pif.prop-ի վերջին տարբերակը GitHub-ից, թարմացվում է օրը մեկ անգամ։</string>
-    <string name="pif_edit_title">Դիտել ներկայումս ակտիվ pif.prop-ը</string>
-    <string name="pif_reset_title">Վերականգնել կանխադրվածը</string>
-    <string name="pif_fetch_failed">Չհաջողվեց ստանալ pif.prop-ը</string>
-    <string name="pif_invalid">Անվավեր pif.prop</string>
-    <string name="pif_footer">Փոփոխությունները կկիրառվեն Google Play ծառայությունների և Play Store-ի հաջորդ գործարկման ժամանակ։ Կարգավորումը փոխելիս դրանք կանգնեցվում են։</string>
     <string name="save">\"Պահել\"</string>
     <string name="cancel">\"Չեղարկել\"</string>
     <string name="profile_model">\"Մոդել\"</string>
     <string name="profile_security_patch">\"Android-ի անվտանգության համակարգի թարմացում\"</string>
-    <string name="pif_not_fetched">Դեռ չի ստացվել</string>
-    <string name="pif_auto_update_title">Ավտոմատ թարմացում</string>
-    <string name="pif_auto_update_summary">Ավտոմատ ներբեռնել և կիրառել pif.prop-ը, երբ այն թարմացվում է GitHub-ում</string>
 </resources>

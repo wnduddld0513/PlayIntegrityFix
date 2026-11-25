@@ -4,9 +4,11 @@
  * Copyright (C) 2026 wnduddld0513
  * SPDX-License-Identifier: GPL-3.0-only
  *
- * Client of the keybox attestation service (android.security.keybox.IKeyboxManager) of the
- * framework, and the online parts of the keybox page that run in this app: the revocation
- * check against Google's published list and the lookup of the latest security patch.
+ * The keybox of the PixelOS TrickyStore port as Specter manages it: installing one from
+ * Specter's catalog or from an address, the revocation check against Google's published
+ * list and the catalog, and the lookup of the latest security patch. The keybox itself is
+ * stored where the PixelOS page keeps it (Spoof.setKeybox); the PixelOS page still imports
+ * or removes one by hand.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -19,9 +21,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.os.ServiceManager;
-import android.provider.Settings;
-import android.security.keybox.IKeyboxManager;
+import android.security.trickystore.KeyBoxManager;
 import android.util.Base64;
 import android.util.Log;
 
@@ -55,16 +55,13 @@ final class KeyboxStore {
     static final String GMS = "com.google.android.gms";
     static final String VENDING = "com.android.vending";
 
-    private static final String SERVICE = "keybox_attestation";
-    // Serials of the imported keybox, for the revocation check
     private static final String PREFS = "keybox";
-    private static final String PREF_SERIALS = "serials";
     // Source and version of the keybox that the catalog installed
     private static final String PREF_SOURCE = "source";
     private static final String PREF_VERSION = "version";
-
-    /** Read by the keybox service: unset or 1 is on; only 0 turns TEESimulator off. */
-    static final String TEE_SETTING = "tee_simulator";
+    // Result of the last revocation check and the keybox it was made for (Spoof.keyboxId)
+    private static final String PREF_REVOKED = "revoked";
+    private static final String PREF_CHECKED_ID = "checked_id";
 
     // Google's published list of revoked attestation keys
     private static final String REVOCATION_URL = "https://android.googleapis.com/attestation/status";
@@ -72,11 +69,11 @@ final class KeyboxStore {
     private static final String PATCH_URL = "https://source.android.com/docs/security/bulletin/pixel";
     private static final Pattern PATCH =
             Pattern.compile("\\b(20\\d\\d-(?:0[1-9]|1[0-2])-0[15])\\b");
-
     private static final String TAG = "KeyboxStore";
 
     // Specter's keybox catalog server: the list of the keyboxes and the body of one of them
     private static final String CATALOG_URL = "https://rawbin.dpejoh.com/catalog";
+    private static final String CATALOG_URL_FALLBACK = "https://rawbin.dpejoh.workers.dev/catalog";
     private static final String KEY_URL = "https://rawbin.dpejoh.com/key/%s/%s";
     private static final String FALLBACK_SOURCE = "Yuri";
     private static final String FALLBACK_VERSION = "8";
@@ -90,39 +87,43 @@ final class KeyboxStore {
 
     private KeyboxStore() {}
 
-    static boolean isTeeEnabled(Context context) {
-        return Settings.Global.getInt(context.getContentResolver(), TEE_SETTING, 1) != 0;
+    /** Whether no keybox is stored or the stored one was found revoked. */
+    static boolean needsKeybox(Context context) {
+        return Spoof.keybox(context) == null || isRevoked(context);
     }
 
-    static void setTeeEnabled(Context context, boolean enabled) {
-        Settings.Global.putInt(context.getContentResolver(), TEE_SETTING, enabled ? 1 : 0);
-    }
-
-    /** Whether no keybox is installed or the installed one is revoked. */
-    static boolean needsKeybox(IKeyboxManager svc) throws Exception {
-        return !svc.hasKeybox() || new JSONObject(svc.getKeyboxStatus()).optBoolean("revoked");
+    /** The result of the last revocation check, while it still is about the stored keybox. */
+    static boolean isRevoked(Context context) {
+        final SharedPreferences prefs = prefs(context);
+        return prefs.getBoolean(PREF_REVOKED, false)
+                && Spoof.keyboxId(context).equals(prefs.getString(PREF_CHECKED_ID, ""));
     }
 
     /**
-     * Installs a keybox from Specter's catalog: starting at a random entry, walks the
-     * candidates circularly until one downloads, is valid and is not revoked. Throws if
-     * none could be installed. Blocking; call it from a worker thread.
+     * Installs a keybox from the address set on the Specter page, or else from Specter's
+     * catalog: starting at a random entry (or the newest of the chosen provider), walks the
+     * candidates until one downloads, is valid and is not revoked. Throws if none could be
+     * installed. Blocking; call it from a worker thread.
      */
-    static void fetchOnline(Context context, IKeyboxManager svc) throws Exception {
+    static void fetchOnline(Context context) throws Exception {
+        final String url = SpecterSync.keyboxUrl(context);
+        if (!url.isEmpty()) {
+            installFromUrl(context, url);
+            return;
+        }
         final String provider = SpecterSync.prefs(context)
                 .getString(SpecterSync.KEY_PROVIDER, SpecterSync.PROVIDER_AUTO);
         final List<String[]> pool = candidates(provider);
         final Set<String> revokedSerials = revokedSerials();
-        // A chosen provider is walked newest first; automatic starts at a random entry
         final int start = SpecterSync.PROVIDER_AUTO.equals(provider)
                 ? new Random().nextInt(pool.size()) : 0;
         Exception last = null;
         for (int i = 0; i < pool.size(); i++) {
             final String[] c = pool.get((start + i) % pool.size());
             try {
-                installXml(context, svc, decode(get(String.format(KEY_URL, c[0], c[1]))),
-                        revokedSerials);
-                prefs(context).edit().putString(PREF_SOURCE, c[0]).putString(PREF_VERSION, c[1]).apply();
+                install(context, decode(get(String.format(KEY_URL, c[0], c[1]))), revokedSerials);
+                prefs(context).edit().putString(PREF_SOURCE, c[0]).putString(PREF_VERSION, c[1])
+                        .apply();
                 return;
             } catch (Exception e) {
                 Log.w(TAG, "Keybox " + c[0] + "/" + c[1] + " not installed: " + e);
@@ -133,21 +134,22 @@ final class KeyboxStore {
     }
 
     /**
-     * Downloads a keybox from a URL of the user, in the encoding of the catalog (the shuffled
+     * Downloads a keybox from an address, in the encoding of the catalog (the shuffled
      * base64) or as plain XML, validates it, checks Google's revocation list and installs it.
      * Throws with the reason if that fails. Blocking; call it from a worker thread.
      */
-    static void installFromUrl(Context context, IKeyboxManager svc, String url) throws Exception {
-        if (!url.startsWith("https://") && !url.startsWith("http://")) {
-            throw new IllegalArgumentException("Not a URL");
+    static void installFromUrl(Context context, String url) throws Exception {
+        if (!url.startsWith("https://")) {
+            throw new IllegalArgumentException("Not an https:// address");
         }
         final String body = get(url).trim();
-        installXml(context, svc, body.startsWith("<") ? body : decode(body), revokedSerials());
+        install(context, body.startsWith("<") ? body : decode(body), revokedSerials());
+        prefs(context).edit().remove(PREF_SOURCE).remove(PREF_VERSION).apply();
     }
 
-    /** Validates the keybox, rejects one that Google revoked and installs it; throws with the reason. */
-    private static void installXml(Context context, IKeyboxManager svc, String xml,
-            Set<String> revokedSerials) throws Exception {
+    /** Validates the keybox like the PixelOS page, rejects a revoked one and stores it. */
+    private static void install(Context context, String xml, Set<String> revokedSerials)
+            throws Exception {
         if (!KEY_BLOCK.matcher(xml).find()) {
             throw new IllegalArgumentException("No key block");
         }
@@ -155,16 +157,28 @@ final class KeyboxStore {
         if (serials.isEmpty() && !xml.contains("DeviceID")) {
             throw new IllegalArgumentException("No serial");
         }
+        final KeyBoxManager manager = new KeyBoxManager();
+        if (!manager.parseKeybox(xml) || !manager.hasKeyboxes()) {
+            throw new IllegalArgumentException("Not a valid keybox");
+        }
         if (!Collections.disjoint(serials, revokedSerials)) {
             throw new IOException("Revoked");
         }
-        importKeybox(context, svc, xml);
-        svc.setRevoked(false);
+        Spoof.setKeybox(context, xml);
+        prefs(context).edit().putBoolean(PREF_REVOKED, false)
+                .putString(PREF_CHECKED_ID, Spoof.keyboxId(context)).apply();
+        PifStore.stopTargets(context);
     }
 
-    /** The entries of Specter's catalog; throws while offline. */
+    /** The entries of Specter's catalog, from its mirror when the main server fails. */
     private static List<JSONObject> catalog() throws Exception {
-        final JSONArray entries = new JSONObject(get(CATALOG_URL)).getJSONArray("entries");
+        String body;
+        try {
+            body = get(CATALOG_URL);
+        } catch (IOException e) {
+            body = get(CATALOG_URL_FALLBACK);
+        }
+        final JSONArray entries = new JSONObject(body).getJSONArray("entries");
         final List<JSONObject> list = new ArrayList<>();
         for (int i = 0; i < entries.length(); i++) {
             list.add(entries.getJSONObject(i));
@@ -245,9 +259,10 @@ final class KeyboxStore {
         return 0;
     }
 
-    /** What the Specter page shows about the installed keybox. */
+    /** What the Specter page shows about the stored keybox. */
     static final class Info {
         boolean present;
+        boolean fromSpecter;
         boolean googleRevoked;
         boolean catalogRevoked;
         boolean softbanned;
@@ -256,26 +271,30 @@ final class KeyboxStore {
     }
 
     /**
-     * The state of the installed keybox: Google's revocation as the service holds it, and
-     * the catalog entry with the same serial (revoked, soft-banned, source, version). While
-     * the catalog is not reachable the source and version remembered at the install stay.
+     * The state of the stored keybox: the last revocation check, and the catalog entry with
+     * the same serial (revoked, soft-banned, source, version). While the catalog is not
+     * reachable the source and version remembered at the install stay.
      */
-    static Info info(Context context, IKeyboxManager svc) throws Exception {
-        final JSONObject status = new JSONObject(svc.getKeyboxStatus());
+    static Info info(Context context) {
         final Info info = new Info();
-        info.present = status.optBoolean("present");
-        info.googleRevoked = status.optBoolean("revoked");
+        final String xml = Spoof.keybox(context);
+        info.present = xml != null;
         if (!info.present) return info;
-        info.source = prefs(context).getString(PREF_SOURCE, "");
-        info.version = prefs(context).getString(PREF_VERSION, "");
-        final Set<String> serials = new HashSet<>();
-        for (String hex : installedSerials(context, svc)) {
-            serials.add(hex.replaceFirst("^0+(?!$)", ""));
-            serials.add(new java.math.BigInteger(hex, 16).toString());
+        info.fromSpecter = Spoof.isKeyboxFromSpecter(context);
+        info.googleRevoked = isRevoked(context);
+        if (info.fromSpecter) {
+            info.source = prefs(context).getString(PREF_SOURCE, "");
+            info.version = prefs(context).getString(PREF_VERSION, "");
         }
+        final Set<String> serials = new HashSet<>();
         try {
+            for (String hex : serials(xml)) {
+                serials.add(hex.replaceFirst("^0+(?!$)", ""));
+                serials.add(new java.math.BigInteger(hex, 16).toString());
+            }
             for (JSONObject entry : catalog()) {
-                if (serials.contains(entry.optString("serial").toLowerCase().replaceFirst("^0+(?!$)", ""))) {
+                if (serials.contains(entry.optString("serial").toLowerCase()
+                        .replaceFirst("^0+(?!$)", ""))) {
                     info.source = entry.optString("source", info.source);
                     info.version = entry.optString("version", info.version);
                     info.catalogRevoked = entry.optBoolean("revoked");
@@ -289,18 +308,45 @@ final class KeyboxStore {
         return info;
     }
 
-    /** Lower-case hex serials of the installed keybox, from the service or else those stored at the import. */
-    private static Set<String> installedSerials(Context context, IKeyboxManager svc) throws Exception {
-        final Set<String> serials = new HashSet<>();
-        final JSONArray fromStatus = new JSONObject(svc.getKeyboxStatus()).optJSONArray("serials");
-        if (fromStatus != null) {
-            for (int i = 0; i < fromStatus.length(); i++) {
-                serials.add(fromStatus.getString(i).toLowerCase());
-            }
-        } else {
-            serials.addAll(prefs(context).getStringSet(PREF_SERIALS, new HashSet<>()));
+    /**
+     * Checks the keybox's certificates against Google's revocation list and remembers the
+     * result for this keybox. Returns whether it is revoked; throws if there is no keybox,
+     * its serials are unknown or the list cannot be fetched.
+     */
+    static boolean checkRevocation(Context context) throws Exception {
+        final String xml = Spoof.keybox(context);
+        if (xml == null) throw new IOException("No keybox");
+        final List<String> serials = serials(xml);
+        if (serials.isEmpty()) throw new IOException("No certificate serials");
+        final boolean revoked = !Collections.disjoint(serials, revokedSerials());
+        prefs(context).edit().putBoolean(PREF_REVOKED, revoked)
+                .putString(PREF_CHECKED_ID, Spoof.keyboxId(context)).apply();
+        return revoked;
+    }
+
+    /** The latest Pixel security patch level (YYYY-MM-DD); throws while offline. */
+    static String latestSecurityPatch() throws IOException {
+        final Matcher m = PATCH.matcher(get(PATCH_URL));
+        String latest = null;
+        while (m.find()) {
+            if (latest == null || m.group(1).compareTo(latest) > 0) latest = m.group(1);
         }
-        return serials;
+        if (latest == null) throw new IOException("No security patch found");
+        return latest;
+    }
+
+    /**
+     * Force-stops Google Play services (with DroidGuard) and the Play Store, and clears the
+     * Play Store's storage, as the options of the update steps say.
+     */
+    static void applyNow(Context context) {
+        final SharedPreferences prefs = SpecterSync.prefs(context);
+        if (prefs.getBoolean(SpecterSync.KEY_GMS_STOP, true)) {
+            PifStore.stopTargets(context);
+        }
+        if (prefs.getBoolean(SpecterSync.KEY_GMS_CLEAR, false)) {
+            context.getSystemService(ActivityManager.class).clearApplicationUserData(VENDING, null);
+        }
     }
 
     /** Maps the shuffled alphabet back to the standard one and decodes the base64 to the keybox XML. */
@@ -321,62 +367,6 @@ final class KeyboxStore {
             revoked.add(it.next().toLowerCase());
         }
         return revoked;
-    }
-
-    /** The service, or null while the framework does not provide it. */
-    static IKeyboxManager service() {
-        return IKeyboxManager.Stub.asInterface(ServiceManager.getService(SERVICE));
-    }
-
-    /** Validates and stores the keybox; throws IllegalArgumentException with the reason if it is invalid. */
-    static void importKeybox(Context context, IKeyboxManager svc, String xml) throws Exception {
-        final List<String> serials = serials(xml);
-        svc.setKeybox(xml);
-        prefs(context).edit().putStringSet(PREF_SERIALS, new HashSet<>(serials))
-                .remove(PREF_SOURCE).remove(PREF_VERSION).apply();
-    }
-
-    static void clear(Context context, IKeyboxManager svc) throws Exception {
-        svc.clearKeybox();
-        prefs(context).edit().remove(PREF_SERIALS).remove(PREF_SOURCE).remove(PREF_VERSION).apply();
-    }
-
-    /**
-     * Checks the keybox's certificates against Google's revocation list and stores the result
-     * in the service. Returns whether it is revoked; throws if the list cannot be fetched or
-     * the serials are not known, leaving the stored state unchanged.
-     */
-    static boolean checkRevocation(Context context, IKeyboxManager svc) throws Exception {
-        final Set<String> serials = installedSerials(context, svc);
-        if (serials.isEmpty()) throw new IOException("No certificate serials");
-        final boolean revoked = !Collections.disjoint(serials, revokedSerials());
-        svc.setRevoked(revoked);
-        return revoked;
-    }
-
-    /** The latest Pixel security patch level (YYYY-MM-DD); throws while offline. */
-    static String latestSecurityPatch() throws IOException {
-        final Matcher m = PATCH.matcher(get(PATCH_URL));
-        String latest = null;
-        while (m.find()) {
-            if (latest == null || m.group(1).compareTo(latest) > 0) latest = m.group(1);
-        }
-        if (latest == null) throw new IOException("No security patch found");
-        return latest;
-    }
-
-    /**
-     * Force-stops Google Play services (with DroidGuard) and the Play Store, and clears the
-     * Play Store's storage, as the options of the Update steps say.
-     */
-    static void applyNow(Context context) {
-        final SharedPreferences prefs = SpecterSync.prefs(context);
-        if (prefs.getBoolean(SpecterSync.KEY_GMS_STOP, true)) {
-            PifStore.stopTargets(context);
-        }
-        if (prefs.getBoolean(SpecterSync.KEY_GMS_CLEAR, false)) {
-            context.getSystemService(ActivityManager.class).clearApplicationUserData(VENDING, null);
-        }
     }
 
     /** Lower-case hex serials of every certificate of the keybox, as the revocation list lists them. */
@@ -423,7 +413,7 @@ final class KeyboxStore {
         connection.setConnectTimeout(10000);
         connection.setReadTimeout(10000);
         connection.setRequestProperty("Cache-Control", "no-cache");
-        connection.setRequestProperty("User-Agent", "PlayIntegrityFix");
+        connection.setRequestProperty("User-Agent", "Specter");
         try (InputStream in = connection.getInputStream()) {
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
             final byte[] buffer = new byte[4096];

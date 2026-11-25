@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Utiliser Play Integrity Fix</string>
-    <string name="pif_options_category">Options d\'usurpation</string>
-    <string name="spoof_build_title">Usurper la version</string>
-    <string name="spoof_build_summary">Usurper les champs de pif.prop (activé par défaut).</string>
-    <string name="spoof_props_title">Usurper les propriétés</string>
-    <string name="spoof_props_summary">Usurper les propriétés système .</string>
-    <string name="spoof_provider_title">Usurper le fournisseur</string>
-    <string name="spoof_provider_summary">Fournisseur de keystore personnalisé .</string>
-    <string name="spoof_signature_title">Usurper la signature</string>
-    <string name="spoof_signature_summary">Usurper la signature de la ROM ; à activer si votre ROM est signée avec testkey.</string>
-    <string name="spoof_vending_build_title">Usurper la version (Play Store)</string>
-    <string name="spoof_vending_build_summary">Usurper la version pour le Play Store (com.android.vending), pas seulement pour Droidguard.</string>
-    <string name="spoof_vending_sdk_title">Usurper le SDK (Play Store)</string>
-    <string name="spoof_vending_sdk_summary">Usurper la version de SDK 32 si votre appareil utilise Android 13 ou version ultérieure. Cette option peut causer des instabilités (désactivée par défaut).</string>
-    <string name="profile_category">Profil actif</string>
     <string name="profile_fingerprint">Empreinte de la version</string>
-    <string name="pif_fetch_title">Récupérer</string>
-    <string name="pif_fetch_summary">Télécharge le dernier pif.prop depuis GitHub, mis à jour une fois par jour.</string>
-    <string name="pif_edit_title">Afficher le pif.prop actif</string>
-    <string name="pif_reset_title">Rétablir les valeurs par défaut</string>
-    <string name="pif_fetch_failed">Échec de la récupération de pif.prop</string>
-    <string name="pif_invalid">pif.prop non valide</string>
-    <string name="pif_footer">Les modifications s\'appliquent au prochain démarrage des services Google Play et du Play Store. Ils sont arrêtés lorsque vous modifiez un paramètre.</string>
     <string name="save">\"Enregistrer\"</string>
     <string name="cancel">\"Annuler\"</string>
     <string name="profile_model">\"Modèle\"</string>
     <string name="profile_security_patch">\"Mise à jour de sécurité Android\"</string>
-    <string name="pif_not_fetched">Pas encore récupéré</string>
-    <string name="pif_auto_update_title">Mise à jour automatique</string>
-    <string name="pif_auto_update_summary">Récupérer et appliquer automatiquement pif.prop lorsqu\'il est mis à jour sur GitHub</string>
 </resources>

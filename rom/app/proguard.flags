@@ -1,2 +1,1 @@
 -keep class io.github.wnduddld0513.pif.** { *; }
--keep class es.chiteroman.playintegrityfix.** { *; }

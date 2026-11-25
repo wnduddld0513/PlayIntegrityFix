@@ -6,7 +6,7 @@
 -->
 <permissions>
     <privapp-permissions package="io.github.wnduddld0513.pif">
-        <!-- Switch and pif.prop in Settings.Global -->
+        <!-- The PixelOS spoofing settings (Settings.Secure) and the Specter switch -->
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <!-- Restart Google Play services and the Play Store after a change -->
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>

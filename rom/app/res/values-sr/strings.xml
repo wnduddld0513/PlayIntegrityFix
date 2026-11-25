@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Користи Play Integrity Fix</string>
-    <string name="pif_options_category">Опције лажирања</string>
-    <string name="spoof_build_title">Лажирај верзију</string>
-    <string name="spoof_build_summary">Лажирај поља у датотеци pif.prop (подразумевано укључено).</string>
-    <string name="spoof_props_title">Лажирај својства</string>
-    <string name="spoof_props_summary">Лажирај системска својства.</string>
-    <string name="spoof_provider_title">Лажирај добављача</string>
-    <string name="spoof_provider_summary">Прилагођени добављач складишта кључева.</string>
-    <string name="spoof_signature_title">Лажирај потпис</string>
-    <string name="spoof_signature_summary">Лажирај потпис ROM-а; укључите ако је ваш ROM потписан помоћу testkey.</string>
-    <string name="spoof_vending_build_title">Лажирај верзију (Play продавница)</string>
-    <string name="spoof_vending_build_summary">Лажирај верзију за Play продавницу (com.android.vending), а не само за Droidguard.</string>
-    <string name="spoof_vending_sdk_title">Лажирај SDK (Play продавница)</string>
-    <string name="spoof_vending_sdk_summary">Лажирај SDK верзију 32 ако уређај користи Android 13 или новији. Ова опција може да изазове нестабилност (подразумевано искључено).</string>
-    <string name="profile_category">Активни профил</string>
     <string name="profile_fingerprint">Отисак верзије</string>
-    <string name="pif_fetch_title">Преузми</string>
-    <string name="pif_fetch_summary">Преузмите најновији pif.prop са GitHub-а, ажурира се једном дневно.</string>
-    <string name="pif_edit_title">Прикажи тренутно активан pif.prop</string>
-    <string name="pif_reset_title">Врати на подразумевано</string>
-    <string name="pif_fetch_failed">Преузимање датотеке pif.prop није успело</string>
-    <string name="pif_invalid">Неважећи pif.prop</string>
-    <string name="pif_footer">Промене се примењују при следећем покретању Google Play услуга и Play продавнице. Зауставе се када промените подешавање.</string>
     <string name="save">\"Сачувај\"</string>
     <string name="cancel">\"Откажи\"</string>
     <string name="profile_model">\"Модел\"</string>
     <string name="profile_security_patch">\"Безбедносно ажурирање за Android\"</string>
-    <string name="pif_not_fetched">Још није преузето</string>
-    <string name="pif_auto_update_title">Аутоматско ажурирање</string>
-    <string name="pif_auto_update_summary">Аутоматски преузми и примени pif.prop када се ажурира на GitHub-у</string>
 </resources>

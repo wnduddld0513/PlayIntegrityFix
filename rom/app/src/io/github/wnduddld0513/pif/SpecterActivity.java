@@ -13,7 +13,7 @@ package io.github.wnduddld0513.pif;
 
 import androidx.fragment.app.Fragment;
 
-/** The Specter page: revocation check, automatic targets, latest patch, apply and fingerprint. */
+/** The Specter page over the PixelOS spoofing: profile, keybox, security patch and apply. */
 public class SpecterActivity extends PifPageActivity {
     @Override
     Fragment createFragment() {

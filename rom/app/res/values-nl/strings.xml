@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Play Integrity Fix gebruiken</string>
-    <string name="pif_options_category">Opties voor vervalsing</string>
-    <string name="spoof_build_title">Build vervalsen</string>
-    <string name="spoof_build_summary">Velden in pif.prop vervalsen (standaard ingeschakeld).</string>
-    <string name="spoof_props_title">Eigenschappen vervalsen</string>
-    <string name="spoof_props_summary">Systeemeigenschappen vervalsen.</string>
-    <string name="spoof_provider_title">Provider vervalsen</string>
-    <string name="spoof_provider_summary">Aangepaste keystore-provider.</string>
-    <string name="spoof_signature_title">Handtekening vervalsen</string>
-    <string name="spoof_signature_summary">ROM-handtekening vervalsen; schakel in als je ROM is ondertekend met testkey.</string>
-    <string name="spoof_vending_build_title">Build vervalsen (Play Store)</string>
-    <string name="spoof_vending_build_summary">Build vervalsen voor de Play Store (com.android.vending), niet alleen voor Droidguard.</string>
-    <string name="spoof_vending_sdk_title">SDK vervalsen (Play Store)</string>
-    <string name="spoof_vending_sdk_summary">SDK-versie 32 vervalsen als je apparaat Android 13 of hoger gebruikt. Deze optie kan instabiliteit veroorzaken (standaard uitgeschakeld).</string>
-    <string name="profile_category">Actief profiel</string>
     <string name="profile_fingerprint">Build-vingerafdruk</string>
-    <string name="pif_fetch_title">Ophalen</string>
-    <string name="pif_fetch_summary">Download de nieuwste pif.prop van GitHub, wordt één keer per dag bijgewerkt.</string>
-    <string name="pif_edit_title">Huidige actieve pif.prop bekijken</string>
-    <string name="pif_reset_title">Standaardwaarden herstellen</string>
-    <string name="pif_fetch_failed">Kan pif.prop niet ophalen</string>
-    <string name="pif_invalid">Ongeldige pif.prop</string>
-    <string name="pif_footer">Wijzigingen worden toegepast bij de volgende start van Google Play-services en de Play Store. Ze worden gestopt als je een instelling wijzigt.</string>
     <string name="save">\"Opslaan\"</string>
     <string name="cancel">\"Annuleren\"</string>
     <string name="profile_model">\"Model\"</string>
     <string name="profile_security_patch">\"Android-beveiligingsupdate\"</string>
-    <string name="pif_not_fetched">Nog niet opgehaald</string>
-    <string name="pif_auto_update_title">Automatisch updaten</string>
-    <string name="pif_auto_update_summary">pif.prop automatisch ophalen en toepassen als dit wordt geüpdatet op GitHub</string>
 </resources>

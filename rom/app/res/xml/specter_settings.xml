@@ -4,9 +4,9 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     The Specter page: the update pipeline, the Play Integrity Fix devices, the keybox
-     source, target apps, security patch source, apply, ADB and the ROM fingerprint. The
-     preferences with a default are stored in the "specter" preferences under their key.
+     The Specter page: the update pipeline over the PixelOS spoofing, the Play Integrity
+     profile, the keybox, the security patch source, apply, ADB and the ROM fingerprint.
+     The preferences with a default are stored in the "specter" preferences under their key.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/specter_title">
@@ -93,21 +93,44 @@
         android:key="specter_pif"
         android:title="@string/specter_pif_category">
 
+        <Preference
+            android:key="pif_profile"
+            android:title="@string/pif_profile_title"
+            android:selectable="false" />
+
+        <Preference
+            android:key="pif_fetch"
+            android:title="@string/pif_fetch_now_title"
+            android:summary="@string/pif_fetch_now_summary" />
+
         <MultiSelectListPreference
             android:key="pif_preferred"
-            android:title="@string/pif_preferred_title"
-            android:dialogTitle="@string/pif_preferred_title" />
+            android:title="@string/pif_preferred_title" />
 
         <MultiSelectListPreference
             android:key="pif_blocked"
-            android:title="@string/pif_blocked_title"
-            android:dialogTitle="@string/pif_blocked_title" />
+            android:title="@string/pif_blocked_title" />
+
+        <Preference
+            android:key="pif_open"
+            android:title="@string/pif_open_title"
+            android:summary="@string/pif_open_summary" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="specter_keybox"
         android:title="@string/keybox_category">
+
+        <Preference
+            android:key="keybox_info"
+            android:title="@string/keybox_info_title"
+            android:selectable="false" />
+
+        <Preference
+            android:key="keybox_fetch"
+            android:title="@string/keybox_fetch_now_title"
+            android:summary="@string/keybox_fetch_now_summary" />
 
         <ListPreference
             android:key="keybox_provider"
@@ -117,35 +140,17 @@
 
         <Preference
             android:key="keybox_url"
-            android:title="@string/keybox_url_title"
-            android:summary="@string/keybox_url_summary" />
-
-        <Preference
-            android:key="keybox_info"
-            android:title="@string/keybox_info_title"
-            android:selectable="false" />
+            android:title="@string/keybox_url_title" />
 
         <Preference
             android:key="keybox_check"
             android:title="@string/keybox_check_title"
             android:summary="@string/keybox_check_summary" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="specter_targets"
-        android:title="@string/targets_category">
-
-        <SwitchPreferenceCompat
-            android:key="target_auto"
-            android:title="@string/target_auto_title"
-            android:summary="@string/target_auto_summary"
-            android:persistent="false" />
-
-        <MultiSelectListPreference
-            android:key="target_exclude"
-            android:title="@string/target_exclude_title"
-            android:dialogTitle="@string/target_exclude_title" />
+        <Preference
+            android:key="keybox_open"
+            android:title="@string/keybox_open_title"
+            android:summary="@string/keybox_open_summary" />
 
     </PreferenceCategory>
 

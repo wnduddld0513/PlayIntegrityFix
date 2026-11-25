@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Bruk Play Integrity Fix</string>
-    <string name="pif_options_category">Alternativer for forfalskning</string>
-    <string name="spoof_build_title">Forfalsk bygg</string>
-    <string name="spoof_build_summary">Forfalsk feltene i pif.prop (på som standard).</string>
-    <string name="spoof_props_title">Forfalsk egenskaper</string>
-    <string name="spoof_props_summary">Forfalsk systemegenskaper.</string>
-    <string name="spoof_provider_title">Forfalsk leverandør</string>
-    <string name="spoof_provider_summary">Egendefinert nøkkellagerleverandør.</string>
-    <string name="spoof_signature_title">Forfalsk signatur</string>
-    <string name="spoof_signature_summary">Forfalsk ROM-signaturen; slå på hvis ROM-en din er signert med testkey.</string>
-    <string name="spoof_vending_build_title">Forfalsk bygg (Play Butikk)</string>
-    <string name="spoof_vending_build_summary">Forfalsk bygget for Play Butikk (com.android.vending), ikke bare for Droidguard.</string>
-    <string name="spoof_vending_sdk_title">Forfalsk SDK (Play Butikk)</string>
-    <string name="spoof_vending_sdk_summary">Forfalsk SDK-versjon 32 hvis enheten kjører Android 13 eller nyere. Dette alternativet kan gi ustabilitet (av som standard).</string>
-    <string name="profile_category">Aktiv profil</string>
     <string name="profile_fingerprint">Byggets fingeravtrykk</string>
-    <string name="pif_fetch_title">Hent</string>
-    <string name="pif_fetch_summary">Last ned nyeste pif.prop fra GitHub, oppdateres én gang om dagen.</string>
-    <string name="pif_edit_title">Se gjeldende aktive pif.prop</string>
-    <string name="pif_reset_title">Tilbakestill til standard</string>
-    <string name="pif_fetch_failed">Kunne ikke hente pif.prop</string>
-    <string name="pif_invalid">Ugyldig pif.prop</string>
-    <string name="pif_footer">Endringene trer i kraft neste gang Google Play-tjenester og Play Butikk starter. De stoppes når du endrer en innstilling.</string>
     <string name="save">\"Lagre\"</string>
     <string name="cancel">\"Avbryt\"</string>
     <string name="profile_model">\"Modell\"</string>
     <string name="profile_security_patch">\"Sikkerhetsoppdatering for Android\"</string>
-    <string name="pif_not_fetched">Ikke hentet ennå</string>
-    <string name="pif_auto_update_title">Automatisk oppdatering</string>
-    <string name="pif_auto_update_summary">Hent og bruk pif.prop automatisk når den oppdateres på GitHub</string>
 </resources>

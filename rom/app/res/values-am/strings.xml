@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Play Integrity Fix ተጠቀም</string>
-    <string name="pif_options_category">የማስመሰል አማራጮች</string>
-    <string name="spoof_build_title">ግንባታን አስመስል</string>
-    <string name="spoof_build_summary">በpif.prop ውስጥ ያሉ መስኮችን አስመስል (በነባሪነት በርቷል)።</string>
-    <string name="spoof_props_title">ባሕርያትን አስመስል</string>
-    <string name="spoof_props_summary">የሥርዓት ባሕርያትን አስመስል።</string>
-    <string name="spoof_provider_title">አቅራቢን አስመስል</string>
-    <string name="spoof_provider_summary">ብጁ የቁልፍ ማከማቻ አቅራቢ።</string>
-    <string name="spoof_signature_title">ፊርማን አስመስል</string>
-    <string name="spoof_signature_summary">የROM ፊርማን አስመስል፤ ROMዎ በtestkey የተፈረመ ከሆነ ያብሩ።</string>
-    <string name="spoof_vending_build_title">ግንባታን አስመስል (Play መደብር)</string>
-    <string name="spoof_vending_build_summary">ግንባታውን ለPlay መደብር (com.android.vending) አስመስል፣ ለDroidguard ብቻ አይደለም።</string>
-    <string name="spoof_vending_sdk_title">SDKን አስመስል (Play መደብር)</string>
-    <string name="spoof_vending_sdk_summary">መሣሪያዎ Android 13 ወይም ከዚያ በላይ የሚጠቀም ከሆነ የSDK ስሪት 32ን አስመስል። ይህ አማራጭ አለመረጋጋት ሊፈጥር ይችላል (በነባሪነት ጠፍቷል)።</string>
-    <string name="profile_category">ገባሪ መገለጫ</string>
     <string name="profile_fingerprint">የግንባታ የጣት አሻራ</string>
-    <string name="pif_fetch_title">አምጣ</string>
-    <string name="pif_fetch_summary">የቅርብ ጊዜውን pif.prop ከGitHub አውርድ፣ በቀን አንድ ጊዜ ይዘምናል።</string>
-    <string name="pif_edit_title">አሁን ገባሪ የሆነውን pif.prop ተመልከት</string>
-    <string name="pif_reset_title">ወደ ነባሪ ዳግም አስጀምር</string>
-    <string name="pif_fetch_failed">pif.propን ማምጣት አልተሳካም</string>
-    <string name="pif_invalid">ልክ ያልሆነ pif.prop</string>
-    <string name="pif_footer">ለውጦች Google Play አገልግሎቶች እና Play መደብር በሚቀጥለው ጊዜ ሲጀምሩ ተፈጻሚ ይሆናሉ። ቅንብር ሲቀይሩ ይቆማሉ።</string>
     <string name="save">\"አስቀምጥ\"</string>
     <string name="cancel">\"ይቅር\"</string>
     <string name="profile_model">\"ሞዴል\"</string>
     <string name="profile_security_patch">\"የAndroid ደህንነት ዝማኔ\"</string>
-    <string name="pif_not_fetched">ገና አልተገኘም</string>
-    <string name="pif_auto_update_title">ራስ-ሰር ዝማኔ</string>
-    <string name="pif_auto_update_summary">pif.prop በGitHub ላይ ሲዘምን በራስ-ሰር ያምጡ እና ይተግብሩ</string>
 </resources>

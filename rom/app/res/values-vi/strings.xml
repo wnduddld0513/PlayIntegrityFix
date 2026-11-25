@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Dùng Play Integrity Fix</string>
-    <string name="pif_options_category">Tùy chọn giả mạo</string>
-    <string name="spoof_build_title">Giả mạo bản dựng</string>
-    <string name="spoof_build_summary">Giả mạo các trường trong pif.prop (bật theo mặc định).</string>
-    <string name="spoof_props_title">Giả mạo thuộc tính</string>
-    <string name="spoof_props_summary">Giả mạo thuộc tính hệ thống.</string>
-    <string name="spoof_provider_title">Giả mạo trình cung cấp</string>
-    <string name="spoof_provider_summary">Trình cung cấp kho khóa tùy chỉnh.</string>
-    <string name="spoof_signature_title">Giả mạo chữ ký</string>
-    <string name="spoof_signature_summary">Giả mạo chữ ký của ROM; hãy bật nếu ROM của bạn được ký bằng testkey.</string>
-    <string name="spoof_vending_build_title">Giả mạo bản dựng (Cửa hàng Play)</string>
-    <string name="spoof_vending_build_summary">Giả mạo bản dựng cho Cửa hàng Play (com.android.vending), không chỉ cho Droidguard.</string>
-    <string name="spoof_vending_sdk_title">Giả mạo SDK (Cửa hàng Play)</string>
-    <string name="spoof_vending_sdk_summary">Giả mạo phiên bản SDK 32 nếu thiết bị chạy Android 13 trở lên. Tùy chọn này có thể gây mất ổn định (tắt theo mặc định).</string>
-    <string name="profile_category">Hồ sơ đang dùng</string>
     <string name="profile_fingerprint">Dấu vân tay bản dựng</string>
-    <string name="pif_fetch_title">Tìm nạp</string>
-    <string name="pif_fetch_summary">Tải pif.prop mới nhất từ GitHub, cập nhật mỗi ngày một lần.</string>
-    <string name="pif_edit_title">Xem pif.prop đang dùng</string>
-    <string name="pif_reset_title">Đặt lại về mặc định</string>
-    <string name="pif_fetch_failed">Không tìm nạp được pif.prop</string>
-    <string name="pif_invalid">pif.prop không hợp lệ</string>
-    <string name="pif_footer">Các thay đổi được áp dụng vào lần tiếp theo Dịch vụ Google Play và Cửa hàng Play khởi động. Các ứng dụng này sẽ bị dừng khi bạn thay đổi một chế độ cài đặt.</string>
     <string name="save">\"Lưu\"</string>
     <string name="cancel">\"Hủy\"</string>
     <string name="profile_model">\"Kiểu máy\"</string>
     <string name="profile_security_patch">\"Bản cập nhật bảo mật Android\"</string>
-    <string name="pif_not_fetched">Chưa được tìm nạp</string>
-    <string name="pif_auto_update_title">Tự động cập nhật</string>
-    <string name="pif_auto_update_summary">Tự động tải và áp dụng pif.prop khi tệp này được cập nhật trên GitHub</string>
 </resources>

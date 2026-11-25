@@ -11,34 +11,9 @@
      profile_security_patch are strings of the AOSP Settings (Apache-2.0).
 -->
 <resources>
-    <string name="pif_main_switch">Використовувати Play Integrity Fix</string>
-    <string name="pif_options_category">Параметри підміни</string>
-    <string name="spoof_build_title">Підміна збірки</string>
-    <string name="spoof_build_summary">Підміняти поля в pif.prop (за умовчанням увімкнено).</string>
-    <string name="spoof_props_title">Підміна властивостей</string>
-    <string name="spoof_props_summary">Підміняти системні властивості.</string>
-    <string name="spoof_provider_title">Підміна постачальника</string>
-    <string name="spoof_provider_summary">Власний постачальник сховища ключів.</string>
-    <string name="spoof_signature_title">Підміна підпису</string>
-    <string name="spoof_signature_summary">Підміняти підпис ROM; увімкніть, якщо ваш ROM підписано ключем testkey.</string>
-    <string name="spoof_vending_build_title">Підміна збірки (Play Маркет)</string>
-    <string name="spoof_vending_build_summary">Підміняти збірку для Play Маркета (com.android.vending), а не лише для Droidguard.</string>
-    <string name="spoof_vending_sdk_title">Підміна SDK (Play Маркет)</string>
-    <string name="spoof_vending_sdk_summary">Підміняти версію SDK на 32, якщо на пристрої Android 13 або новіша. Цей параметр може спричинити нестабільність (за умовчанням вимкнено).</string>
-    <string name="profile_category">Активний профіль</string>
     <string name="profile_fingerprint">Відбиток збірки</string>
-    <string name="pif_fetch_title">Отримати</string>
-    <string name="pif_fetch_summary">Завантажити останній pif.prop із GitHub, оновлюється раз на добу.</string>
-    <string name="pif_edit_title">Переглянути поточний активний pif.prop</string>
-    <string name="pif_reset_title">Скинути до стандартних</string>
-    <string name="pif_fetch_failed">Не вдалося отримати pif.prop</string>
-    <string name="pif_invalid">Недійсний pif.prop</string>
-    <string name="pif_footer">Зміни застосовуються під час наступного запуску сервісів Google Play і Play Маркета. Під час зміни налаштування їх зупиняють.</string>
     <string name="save">\"Зберегти\"</string>
     <string name="cancel">\"Скасувати\"</string>
     <string name="profile_model">\"Модель\"</string>
     <string name="profile_security_patch">\"Оновлення системи безпеки Android\"</string>
-    <string name="pif_not_fetched">Ще не отримано</string>
-    <string name="pif_auto_update_title">Автоматичне оновлення</string>
-    <string name="pif_auto_update_summary">Автоматично завантажувати й застосовувати pif.prop, коли його оновлено на GitHub</string>
 </resources>

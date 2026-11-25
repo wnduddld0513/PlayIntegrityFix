@@ -4,8 +4,9 @@
  * Copyright (C) 2026 wnduddld0513
  * SPDX-License-Identifier: GPL-3.0-only
  *
- * Runs the automatic update (in place of the module's autopif_ota.sh) once the device
- * is online, at boot and periodically; retried with backoff on failure.
+ * Runs Specter's scheduled pass (in place of the module's autopif_ota.sh and Specter's
+ * scheduler) once the device is online; the first pass is retried with backoff until it
+ * succeeds.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 3 as published by the Free
@@ -17,30 +18,26 @@ package io.github.wnduddld0513.pif;
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.content.Context;
+import android.util.Log;
 
-/** Downloads the profile in the background and applies it when it changed upstream. */
 public class PifFetchService extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
-        if (!PifStore.isEnabled(this) || !PifStore.isAutoUpdate(this)) {
+        if (!SpecterSync.isEnabled(this) || !SpecterSync.isAutoUpdate(this)) {
             return false;
         }
+        final Context context = getApplicationContext();
         new Thread(() -> {
-            boolean retry;
+            boolean retry = false;
             try {
-                final Context context = getApplicationContext();
-                if (SpecterSync.isFirstUpdateDone(context) || !SpecterSync.isEnabled(context)) {
-                    PifStore.update(context);
-                    SpecterSync.afterScheduledUpdate(context);
-                } else {
-                    SpecterSync.firstUpdate(context);
-                }
-                retry = false;
+                SpecterSync.scheduledPass(context);
             } catch (Exception e) {
-                retry = true;
+                Log.w("SpecterSync", "Scheduled pass failed", e);
+                // Only the first pass retries; the periodic one runs again anyway
+                retry = !SpecterSync.isFirstUpdateDone(context);
             }
             jobFinished(params, retry);
-        }).start();
+        }, "specter-pass").start();
         return true;
     }
 

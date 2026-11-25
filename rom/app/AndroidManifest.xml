@@ -4,8 +4,8 @@
      Copyright (C) 2026 wnduddld0513
      SPDX-License-Identifier: GPL-3.0-only
 
-     The page of the Play Integrity Fix (module: KOWX712/PlayIntegrityFix) in the
-     Experimental features app (hardware/lenovo/custom), opened by an explicit intent.
+     Specter over the PixelOS spoofing: the Specter page of the Experimental features app
+     (hardware/lenovo/custom), opened by an explicit intent, and its scheduled passes.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.wnduddld0513.pif"
@@ -19,41 +19,18 @@
 
     <application
         android:allowBackup="false"
-        android:label="@string/app_name"
+        android:label="@string/specter_title"
         android:theme="@style/Theme.PlayIntegrityFix">
 
         <!-- No Settings tile of its own. Callers must hold WRITE_SECURE_SETTINGS (the
              system uid, Settings), so apps cannot open it. -->
-        <activity
-            android:name=".PifActivity"
-            android:label="@string/app_name"
-            android:permission="android.permission.WRITE_SECURE_SETTINGS"
-            android:exported="true" />
-
-        <!-- The TEESimulator and Specter pages, opened the same way. -->
-        <activity
-            android:name=".TeeSimulatorActivity"
-            android:label="@string/tee_title"
-            android:permission="android.permission.WRITE_SECURE_SETTINGS"
-            android:exported="true" />
         <activity
             android:name=".SpecterActivity"
             android:label="@string/specter_title"
             android:permission="android.permission.WRITE_SECURE_SETTINGS"
             android:exported="true" />
 
-        <!-- Adds a newly installed app to the target apps while "add new apps
-             automatically" is on. -->
-        <receiver
-            android:name=".PifPackageReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
-
-        <!-- Automatic update: checks the profile once online, at boot and periodically. -->
+        <!-- Schedules the passes at boot: the first one sets up a fresh install. -->
         <receiver
             android:name=".PifBootReceiver"
             android:exported="true">
