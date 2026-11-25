@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Build-fingeraftryk</string>
-    <string name="save">\"Gem\"</string>
-    <string name="cancel">\"Annuller\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Sikkerhedsopdatering til Android\"</string>
+    <string name="save">Gem</string>
+    <string name="cancel">Annuller</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Sikkerhedsopdatering til Android</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Darinio kontrolinis kodas</string>
-    <string name="save">\"Išsaugoti\"</string>
-    <string name="cancel">\"Atšaukti\"</string>
-    <string name="profile_model">\"Modelis\"</string>
-    <string name="profile_security_patch">\"„Android“ saugos naujinys\"</string>
+    <string name="save">Išsaugoti</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="profile_model">Modelis</string>
+    <string name="profile_security_patch">„Android“ saugos naujinys</string>
 </resources>

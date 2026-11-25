@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Järgu sõrmejälg</string>
-    <string name="save">\"Salvesta\"</string>
-    <string name="cancel">\"Tühista\"</string>
-    <string name="profile_model">\"Mudel\"</string>
-    <string name="profile_security_patch">\"Androidi turvavärskendus\"</string>
+    <string name="save">Salvesta</string>
+    <string name="cancel">Tühista</string>
+    <string name="profile_model">Mudel</string>
+    <string name="profile_security_patch">Androidi turvavärskendus</string>
 </resources>

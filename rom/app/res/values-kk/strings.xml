@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Құрастыру саусақ ізі</string>
-    <string name="save">\"Сақтау\"</string>
-    <string name="cancel">\"Бас тарту\"</string>
-    <string name="profile_model">\"Моделі\"</string>
-    <string name="profile_security_patch">\"Android қауіпсіздік жүйесін жаңарту\"</string>
+    <string name="save">Сақтау</string>
+    <string name="cancel">Бас тарту</string>
+    <string name="profile_model">Моделі</string>
+    <string name="profile_security_patch">Android қауіпсіздік жүйесін жаңарту</string>
 </resources>

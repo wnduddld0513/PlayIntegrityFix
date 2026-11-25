@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Dấu vân tay bản dựng</string>
-    <string name="save">\"Lưu\"</string>
-    <string name="cancel">\"Hủy\"</string>
-    <string name="profile_model">\"Kiểu máy\"</string>
-    <string name="profile_security_patch">\"Bản cập nhật bảo mật Android\"</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="profile_model">Kiểu máy</string>
+    <string name="profile_security_patch">Bản cập nhật bảo mật Android</string>
 </resources>

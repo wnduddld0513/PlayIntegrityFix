@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Бүтээлтийн хурууны хээ</string>
-    <string name="save">\"Хадгалах\"</string>
-    <string name="cancel">\"Цуцлах\"</string>
-    <string name="profile_model">\"Загвар\"</string>
-    <string name="profile_security_patch">\"Android-н аюулгүй байдлын шинэчлэлт\"</string>
+    <string name="save">Хадгалах</string>
+    <string name="cancel">Цуцлах</string>
+    <string name="profile_model">Загвар</string>
+    <string name="profile_security_patch">Android-н аюулгүй байдлын шинэчлэлт</string>
 </resources>

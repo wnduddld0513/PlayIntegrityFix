@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Koontiversion sormenjälki</string>
-    <string name="save">\"Tallenna\"</string>
-    <string name="cancel">\"Peru\"</string>
-    <string name="profile_model">\"Malli\"</string>
-    <string name="profile_security_patch">\"Androidin tietoturvapäivitys\"</string>
+    <string name="save">Tallenna</string>
+    <string name="cancel">Peru</string>
+    <string name="profile_model">Malli</string>
+    <string name="profile_security_patch">Androidin tietoturvapäivitys</string>
 </resources>

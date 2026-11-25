@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Αποτύπωμα έκδοσης</string>
-    <string name="save">\"Αποθήκευση\"</string>
-    <string name="cancel">\"Ακύρωση\"</string>
-    <string name="profile_model">\"Μοντέλο\"</string>
-    <string name="profile_security_patch">\"Ενημέρωση ασφαλείας Android\"</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="profile_model">Μοντέλο</string>
+    <string name="profile_security_patch">Ενημέρωση ασφαλείας Android</string>
 </resources>

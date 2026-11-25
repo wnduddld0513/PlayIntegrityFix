@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Cap jari binaan</string>
-    <string name="save">\"Simpan\"</string>
-    <string name="cancel">\"Batal\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Kemaskinian keselamatan Android\"</string>
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Kemaskinian keselamatan Android</string>
 </resources>

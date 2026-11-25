@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Otisk sestavení</string>
-    <string name="save">\"Uložit\"</string>
-    <string name="cancel">\"Zrušit\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Aktualizace zabezpečení Androidu\"</string>
+    <string name="save">Uložit</string>
+    <string name="cancel">Zrušit</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Aktualizace zabezpečení Androidu</string>
 </resources>

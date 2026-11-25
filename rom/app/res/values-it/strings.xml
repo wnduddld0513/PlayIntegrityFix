@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Impronta della build</string>
-    <string name="save">\"Salva\"</string>
-    <string name="cancel">\"Annulla\"</string>
-    <string name="profile_model">\"Modello\"</string>
-    <string name="profile_security_patch">\"Aggiornamento della sicurezza Android\"</string>
+    <string name="save">Salva</string>
+    <string name="cancel">Annulla</string>
+    <string name="profile_model">Modello</string>
+    <string name="profile_security_patch">Aggiornamento della sicurezza Android</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ဘီးလ် လက်ဗွေ</string>
-    <string name="save">\"သိမ်းရန်\"</string>
-    <string name="cancel">\"မလုပ်တော့\"</string>
-    <string name="profile_model">\"မိုဒယ်\"</string>
-    <string name="profile_security_patch">\"Android လုံခြုံရေးအပ်ဒိတ်\"</string>
+    <string name="save">သိမ်းရန်</string>
+    <string name="cancel">မလုပ်တော့</string>
+    <string name="profile_model">မိုဒယ်</string>
+    <string name="profile_security_patch">Android လုံခြုံရေးအပ်ဒိတ်</string>
 </resources>

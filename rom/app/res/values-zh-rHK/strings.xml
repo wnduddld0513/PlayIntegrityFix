@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">建構指紋</string>
-    <string name="save">\"儲存\"</string>
-    <string name="cancel">\"取消\"</string>
-    <string name="profile_model">\"型號\"</string>
-    <string name="profile_security_patch">\"Android 安全性更新\"</string>
+    <string name="save">儲存</string>
+    <string name="cancel">取消</string>
+    <string name="profile_model">型號</string>
+    <string name="profile_security_patch">Android 安全性更新</string>
 </resources>

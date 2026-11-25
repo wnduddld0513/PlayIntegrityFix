@@ -12,10 +12,10 @@
 -->
 <resources>
     <string name="profile_fingerprint">빌드 지문</string>
-    <string name="save">\"저장\"</string>
-    <string name="cancel">\"취소\"</string>
-    <string name="profile_model">\"모델\"</string>
-    <string name="profile_security_patch">\"Android 보안 업데이트\"</string>
+    <string name="save">저장</string>
+    <string name="cancel">취소</string>
+    <string name="profile_model">모델</string>
+    <string name="profile_security_patch">Android 보안 업데이트</string>
     <string name="keybox_category">키박스</string>
     <string name="keybox_status_none">설치된 키박스 없음</string>
     <string name="keybox_imported">키박스를 가져왔습니다</string>

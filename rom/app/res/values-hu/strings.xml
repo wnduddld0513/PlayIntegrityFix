@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Build ujjlenyomata</string>
-    <string name="save">\"Mentés\"</string>
-    <string name="cancel">\"Mégse\"</string>
-    <string name="profile_model">\"Modell\"</string>
-    <string name="profile_security_patch">\"Android biztonsági frissítés\"</string>
+    <string name="save">Mentés</string>
+    <string name="cancel">Mégse</string>
+    <string name="profile_model">Modell</string>
+    <string name="profile_security_patch">Android biztonsági frissítés</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">বিল্ড ফিংগাৰপ্ৰিণ্ট</string>
-    <string name="save">\"ছেভ কৰক\"</string>
-    <string name="cancel">\"বাতিল কৰক\"</string>
-    <string name="profile_model">\"মডেল\"</string>
-    <string name="profile_security_patch">\"Android সুৰক্ষা আপডে’ট\"</string>
+    <string name="save">ছেভ কৰক</string>
+    <string name="cancel">বাতিল কৰক</string>
+    <string name="profile_model">মডেল</string>
+    <string name="profile_security_patch">Android সুৰক্ষা আপডে’ট</string>
 </resources>

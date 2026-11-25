@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Empreinte de la version</string>
-    <string name="save">\"Enregistrer\"</string>
-    <string name="cancel">\"Annuler\"</string>
-    <string name="profile_model">\"Modèle\"</string>
-    <string name="profile_security_patch">\"Mise à jour de sécurité Android\"</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="profile_model">Modèle</string>
+    <string name="profile_security_patch">Mise à jour de sécurité Android</string>
 </resources>

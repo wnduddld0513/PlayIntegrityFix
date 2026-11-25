@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">טביעת אצבע של Build</string>
-    <string name="save">\"שמירה\"</string>
-    <string name="cancel">\"ביטול\"</string>
-    <string name="profile_model">\"דגם\"</string>
-    <string name="profile_security_patch">\"‏עדכון אבטחה ל-‏Android\"</string>
+    <string name="save">שמירה</string>
+    <string name="cancel">ביטול</string>
+    <string name="profile_model">דגם</string>
+    <string name="profile_security_patch">‏עדכון אבטחה ל-‏Android</string>
 </resources>

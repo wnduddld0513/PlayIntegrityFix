@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Отпечатък на изграждането</string>
-    <string name="save">\"Запазване\"</string>
-    <string name="cancel">\"Отказ\"</string>
-    <string name="profile_model">\"Модел\"</string>
-    <string name="profile_security_patch">\"Актуализация за сигурността на Android\"</string>
+    <string name="save">Запазване</string>
+    <string name="cancel">Отказ</string>
+    <string name="profile_model">Модел</string>
+    <string name="profile_security_patch">Актуализация за сигурността на Android</string>
 </resources>

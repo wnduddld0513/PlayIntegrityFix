@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">اثر انگشت ساخت</string>
-    <string name="save">\"ذخیره\"</string>
-    <string name="cancel">\"لغو\"</string>
-    <string name="profile_model">\"مدل\"</string>
-    <string name="profile_security_patch">\"‏به‌روزرسانی امنیتی Android\"</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">لغو</string>
+    <string name="profile_model">مدل</string>
+    <string name="profile_security_patch">‏به‌روزرسانی امنیتی Android</string>
 </resources>

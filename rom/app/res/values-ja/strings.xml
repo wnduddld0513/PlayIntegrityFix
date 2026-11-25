@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ビルドのフィンガープリント</string>
-    <string name="save">\"保存\"</string>
-    <string name="cancel">\"キャンセル\"</string>
-    <string name="profile_model">\"モデル\"</string>
-    <string name="profile_security_patch">\"Android セキュリティ アップデート\"</string>
+    <string name="save">保存</string>
+    <string name="cancel">キャンセル</string>
+    <string name="profile_model">モデル</string>
+    <string name="profile_security_patch">Android セキュリティ アップデート</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ស្នាមម្រាមដៃនៃកំណែបង្កើត</string>
-    <string name="save">\"រក្សាទុក\"</string>
-    <string name="cancel">\"បោះ​បង់​\"</string>
-    <string name="profile_model">\"ម៉ូដែល\"</string>
-    <string name="profile_security_patch">\"កំណែ​សុវត្ថិភាពថ្មី​របស់ Android\"</string>
+    <string name="save">រក្សាទុក</string>
+    <string name="cancel">បោះ​បង់​</string>
+    <string name="profile_model">ម៉ូដែល</string>
+    <string name="profile_security_patch">កំណែ​សុវត្ថិភាពថ្មី​របស់ Android</string>
 </resources>

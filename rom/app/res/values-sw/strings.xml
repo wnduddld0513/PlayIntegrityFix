@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Alama ya kidole ya muundo</string>
-    <string name="save">\"Hifadhi\"</string>
-    <string name="cancel">\"Ghairi\"</string>
-    <string name="profile_model">\"Muundo\"</string>
-    <string name="profile_security_patch">\"Sasisho la usalama la Android\"</string>
+    <string name="save">Hifadhi</string>
+    <string name="cancel">Ghairi</string>
+    <string name="profile_model">Muundo</string>
+    <string name="profile_security_patch">Sasisho la usalama la Android</string>
 </resources>

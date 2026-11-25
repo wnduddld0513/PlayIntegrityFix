@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Būvējuma pirkstu nospiedums</string>
-    <string name="save">\"Saglabāt\"</string>
-    <string name="cancel">\"Atcelt\"</string>
-    <string name="profile_model">\"Modelis\"</string>
-    <string name="profile_security_patch">\"Android drošības atjauninājums\"</string>
+    <string name="save">Saglabāt</string>
+    <string name="cancel">Atcelt</string>
+    <string name="profile_model">Modelis</string>
+    <string name="profile_security_patch">Android drošības atjauninājums</string>
 </resources>

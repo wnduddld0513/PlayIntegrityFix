@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Konpilazioaren hatz-marka</string>
-    <string name="save">\"Gorde\"</string>
-    <string name="cancel">\"Utzi\"</string>
-    <string name="profile_model">\"Modeloa\"</string>
-    <string name="profile_security_patch">\"Android-en segurtasun-eguneratzea\"</string>
+    <string name="save">Gorde</string>
+    <string name="cancel">Utzi</string>
+    <string name="profile_model">Modeloa</string>
+    <string name="profile_security_patch">Android-en segurtasun-eguneratzea</string>
 </resources>

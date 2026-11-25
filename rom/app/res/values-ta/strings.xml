@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">பில்டு கைரேகை</string>
-    <string name="save">\"சேமி\"</string>
-    <string name="cancel">\"வேண்டாம்\"</string>
-    <string name="profile_model">\"மாடல்\"</string>
-    <string name="profile_security_patch">\"Android பாதுகாப்புப் புதுப்பிப்பு\"</string>
+    <string name="save">சேமி</string>
+    <string name="cancel">வேண்டாம்</string>
+    <string name="profile_model">மாடல்</string>
+    <string name="profile_security_patch">Android பாதுகாப்புப் புதுப்பிப்பு</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Derleme parmak izi</string>
-    <string name="save">\"Kaydet\"</string>
-    <string name="cancel">\"İptal\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Android güvenlik güncellemesi\"</string>
+    <string name="save">Kaydet</string>
+    <string name="cancel">İptal</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Android güvenlik güncellemesi</string>
 </resources>

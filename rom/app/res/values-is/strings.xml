@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Fingrafar smíðar</string>
-    <string name="save">\"Vista\"</string>
-    <string name="cancel">\"Hætta við\"</string>
-    <string name="profile_model">\"Gerð\"</string>
-    <string name="profile_security_patch">\"Öryggisuppfærsla fyrir Android\"</string>
+    <string name="save">Vista</string>
+    <string name="cancel">Hætta við</string>
+    <string name="profile_model">Gerð</string>
+    <string name="profile_security_patch">Öryggisuppfærsla fyrir Android</string>
 </resources>

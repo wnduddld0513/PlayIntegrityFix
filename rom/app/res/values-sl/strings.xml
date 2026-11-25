@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Prstni odtis gradnje</string>
-    <string name="save">\"Shrani\"</string>
-    <string name="cancel">\"Prekliči\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Varnostna posodobitev za Android\"</string>
+    <string name="save">Shrani</string>
+    <string name="cancel">Prekliči</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Varnostna posodobitev za Android</string>
 </resources>

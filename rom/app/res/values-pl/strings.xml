@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Odcisk kompilacji</string>
-    <string name="save">\"Zapisz\"</string>
-    <string name="cancel">\"Anuluj\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Aktualizacja zabezpieczeń Androida\"</string>
+    <string name="save">Zapisz</string>
+    <string name="cancel">Anuluj</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Aktualizacja zabezpieczeń Androida</string>
 </resources>

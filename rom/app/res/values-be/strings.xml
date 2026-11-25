@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Адбітак зборкі</string>
-    <string name="save">\"Захаваць\"</string>
-    <string name="cancel">\"Скасаваць\"</string>
-    <string name="profile_model">\"Мадэль\"</string>
-    <string name="profile_security_patch">\"Абнаўленне сістэмы бяспекі Android\"</string>
+    <string name="save">Захаваць</string>
+    <string name="cancel">Скасаваць</string>
+    <string name="profile_model">Мадэль</string>
+    <string name="profile_security_patch">Абнаўленне сістэмы бяспекі Android</string>
 </resources>

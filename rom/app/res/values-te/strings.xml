@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">బిల్డ్ ఫింగర్‌ప్రింట్</string>
-    <string name="save">\"సేవ్ చేయండి\"</string>
-    <string name="cancel">\"రద్దు చేయండి\"</string>
-    <string name="profile_model">\"మోడల్\"</string>
-    <string name="profile_security_patch">\"Android సెక్యూరిటీ అప్‌డేట్\"</string>
+    <string name="save">సేవ్ చేయండి</string>
+    <string name="cancel">రద్దు చేయండి</string>
+    <string name="profile_model">మోడల్</string>
+    <string name="profile_security_patch">Android సెక్యూరిటీ అప్‌డేట్</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Unyigozi lwe-build</string>
-    <string name="save">\"Londoloza\"</string>
-    <string name="cancel">\"Khansela\"</string>
-    <string name="profile_model">\"Imodeli\"</string>
-    <string name="profile_security_patch">\"Isibuyekezo sokuvikela kwe-Android\"</string>
+    <string name="save">Londoloza</string>
+    <string name="cancel">Khansela</string>
+    <string name="profile_model">Imodeli</string>
+    <string name="profile_security_patch">Isibuyekezo sokuvikela kwe-Android</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">აწყობის თითის ანაბეჭდი</string>
-    <string name="save">\"შენახვა\"</string>
-    <string name="cancel">\"გაუქმება\"</string>
-    <string name="profile_model">\"მოდელი\"</string>
-    <string name="profile_security_patch">\"Android-ის უსაფრთხოების განახლება\"</string>
+    <string name="save">შენახვა</string>
+    <string name="cancel">გაუქმება</string>
+    <string name="profile_model">მოდელი</string>
+    <string name="profile_security_patch">Android-ის უსაფრთხოების განახლება</string>
 </resources>

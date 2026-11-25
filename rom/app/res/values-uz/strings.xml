@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Yigʻilma barmoq izi</string>
-    <string name="save">\"Saqlash\"</string>
-    <string name="cancel">\"Bekor qilish\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Android xavfsizlik yangilanishi\"</string>
+    <string name="save">Saqlash</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Android xavfsizlik yangilanishi</string>
 </resources>

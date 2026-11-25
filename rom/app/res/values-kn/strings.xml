@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ಬಿಲ್ಡ್ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್</string>
-    <string name="save">\"ಸೇವ್ ಮಾಡಿ\"</string>
-    <string name="cancel">\"ರದ್ದುಮಾಡಿ\"</string>
-    <string name="profile_model">\"ಮಾಡೆಲ್\"</string>
-    <string name="profile_security_patch">\"Android ಭದ್ರತೆ ಅಪ್‌ಡೇಟ್\"</string>
+    <string name="save">ಸೇವ್ ಮಾಡಿ</string>
+    <string name="cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="profile_model">ಮಾಡೆಲ್</string>
+    <string name="profile_security_patch">Android ಭದ್ರತೆ ಅಪ್‌ಡೇಟ್</string>
 </resources>

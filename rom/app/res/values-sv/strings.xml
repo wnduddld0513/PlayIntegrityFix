@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Byggets fingeravtryck</string>
-    <string name="save">\"Spara\"</string>
-    <string name="cancel">\"Avbryt\"</string>
-    <string name="profile_model">\"Modell\"</string>
-    <string name="profile_security_patch">\"Säkerhetsuppdatering för Android\"</string>
+    <string name="save">Spara</string>
+    <string name="cancel">Avbryt</string>
+    <string name="profile_model">Modell</string>
+    <string name="profile_security_patch">Säkerhetsuppdatering för Android</string>
 </resources>

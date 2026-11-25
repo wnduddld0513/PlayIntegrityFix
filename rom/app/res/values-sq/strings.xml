@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Shenja e gishtit e ndërtimit</string>
-    <string name="save">\"Ruaj\"</string>
-    <string name="cancel">\"Anulo\"</string>
-    <string name="profile_model">\"Modeli\"</string>
-    <string name="profile_security_patch">\"Përditësim sigurie për Android\"</string>
+    <string name="save">Ruaj</string>
+    <string name="cancel">Anulo</string>
+    <string name="profile_model">Modeli</string>
+    <string name="profile_security_patch">Përditësim sigurie për Android</string>
 </resources>

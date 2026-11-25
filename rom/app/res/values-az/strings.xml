@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Quruluş barmaq izi</string>
-    <string name="save">\"Yadda saxlayın\"</string>
-    <string name="cancel">\"Ləğv edin\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Android güvənlik güncəllənməsi\"</string>
+    <string name="save">Yadda saxlayın</string>
+    <string name="cancel">Ləğv edin</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Android güvənlik güncəllənməsi</string>
 </resources>

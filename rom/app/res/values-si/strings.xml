@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ගොඩනැංවීමේ ඇඟිලි සලකුණ</string>
-    <string name="save">\"සුරකින්න\"</string>
-    <string name="cancel">\"අවලංගු කරන්න\"</string>
-    <string name="profile_model">\"මාදිලිය\"</string>
-    <string name="profile_security_patch">\"Android ආරක්ෂක යාවත්කාලීනය\"</string>
+    <string name="save">සුරකින්න</string>
+    <string name="cancel">අවලංගු කරන්න</string>
+    <string name="profile_model">මාදිලිය</string>
+    <string name="profile_security_patch">Android ආරක්ෂක යාවත්කාලීනය</string>
 </resources>

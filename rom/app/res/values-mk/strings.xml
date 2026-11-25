@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Отпечаток на верзијата</string>
-    <string name="save">\"Зачувај\"</string>
-    <string name="cancel">\"Откажи\"</string>
-    <string name="profile_model">\"Модел\"</string>
-    <string name="profile_security_patch">\"Безбедносно ажурирање на Android\"</string>
+    <string name="save">Зачувај</string>
+    <string name="cancel">Откажи</string>
+    <string name="profile_model">Модел</string>
+    <string name="profile_security_patch">Безбедносно ажурирање на Android</string>
 </resources>

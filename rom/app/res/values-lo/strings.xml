@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">ລາຍນິ້ວມື build</string>
-    <string name="save">\"ບັນທຶກ\"</string>
-    <string name="cancel">\"ຍົກເລີກ\"</string>
-    <string name="profile_model">\"ໂມເດວ\"</string>
-    <string name="profile_security_patch">\"ອັບເດດຄວາມປອດໄພ Android\"</string>
+    <string name="save">ບັນທຶກ</string>
+    <string name="cancel">ຍົກເລີກ</string>
+    <string name="profile_model">ໂມເດວ</string>
+    <string name="profile_security_patch">ອັບເດດຄວາມປອດໄພ Android</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Куруунун манжа изи</string>
-    <string name="save">\"Сактоо\"</string>
-    <string name="cancel">\"Жок\"</string>
-    <string name="profile_model">\"Үлгүсү\"</string>
-    <string name="profile_security_patch">\"Android\\\'дин коопсуздук системасын жаңыртуу\"</string>
+    <string name="save">Сактоо</string>
+    <string name="cancel">Жок</string>
+    <string name="profile_model">Үлгүсү</string>
+    <string name="profile_security_patch">Android\'дин коопсуздук системасын жаңыртуу</string>
 </resources>

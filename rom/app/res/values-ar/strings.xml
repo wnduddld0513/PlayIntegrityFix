@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">بصمة البنية</string>
-    <string name="save">\"حفظ\"</string>
-    <string name="cancel">\"إلغاء\"</string>
-    <string name="profile_model">\"الطراز\"</string>
-    <string name="profile_security_patch">\"‏تحديث أمان نظام Android\"</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="profile_model">الطراز</string>
+    <string name="profile_security_patch">‏تحديث أمان نظام Android</string>
 </resources>

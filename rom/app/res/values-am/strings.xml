@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">የግንባታ የጣት አሻራ</string>
-    <string name="save">\"አስቀምጥ\"</string>
-    <string name="cancel">\"ይቅር\"</string>
-    <string name="profile_model">\"ሞዴል\"</string>
-    <string name="profile_security_patch">\"የAndroid ደህንነት ዝማኔ\"</string>
+    <string name="save">አስቀምጥ</string>
+    <string name="cancel">ይቅር</string>
+    <string name="profile_model">ሞዴል</string>
+    <string name="profile_security_patch">የAndroid ደህንነት ዝማኔ</string>
 </resources>

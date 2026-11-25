@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Bou-vingerafdruk</string>
-    <string name="save">\"Stoor\"</string>
-    <string name="cancel">\"Kanselleer \"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Android-sekuriteitopdatering\"</string>
+    <string name="save">Stoor</string>
+    <string name="cancel">Kanselleer </string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Android-sekuriteitopdatering</string>
 </resources>

@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Build fingerprint</string>
-    <string name="save">\"Save\"</string>
-    <string name="cancel">\"Cancel\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Android security update\"</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Android security update</string>
 </resources>

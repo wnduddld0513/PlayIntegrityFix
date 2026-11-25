@@ -12,8 +12,8 @@
 -->
 <resources>
     <string name="profile_fingerprint">Amprenta versiunii</string>
-    <string name="save">\"Salvează\"</string>
-    <string name="cancel">\"Anulează\"</string>
-    <string name="profile_model">\"Model\"</string>
-    <string name="profile_security_patch">\"Actualizare de securitate Android\"</string>
+    <string name="save">Salvează</string>
+    <string name="cancel">Anulează</string>
+    <string name="profile_model">Model</string>
+    <string name="profile_security_patch">Actualizare de securitate Android</string>
 </resources>
